@@ -1,0 +1,277 @@
+{
+  "_comment": "관심 프로필. 여기만 고치면 스코어링이 바뀝니다. 가중치는 초록 기준, 제목에 나오면 2배.",
+  "keywords": {
+    "tier1_core": {
+      "weight": 10,
+      "terms": [
+        "mechanistic interpretability",
+        "sparse autoencoder",
+        "sparse autoencoders",
+        "activation patching",
+        "attribution patching",
+        "causal tracing",
+        "causal scrubbing",
+        "path patching",
+        "activation steering",
+        "steering vector",
+        "feature steering",
+        "logit lens",
+        "tuned lens",
+        "superposition",
+        "monosemantic",
+        "polysemantic",
+        "dictionary learning",
+        "transcoder",
+        "crosscoder",
+        "induction head",
+        "induction heads",
+        "circuit discovery",
+        "feature circuit",
+        "sparse feature",
+        "sparse probing",
+        "representation engineering",
+        "concept bottleneck",
+        "linear probe",
+        "linear probing",
+        "probing classifier",
+        "neuron interpretation",
+        "model internals",
+        "internal representation",
+        "internal representations",
+        "linear representation",
+        "residual stream",
+        "feature visualization",
+        "interpretable feature",
+        "latent direction",
+        "concept vector",
+        "weight interpretability"
+      ]
+    },
+    "tier2_adjacent": {
+      "weight": 6,
+      "terms": [
+        "interpretability",
+        "interpretable",
+        "explainability",
+        "explainable",
+        "mechanistic",
+        "circuit",
+        "circuits",
+        "probing",
+        "probe",
+        "attribution",
+        "saliency",
+        "faithfulness",
+        "faithful",
+        "white-box",
+        "black-box",
+        "latent space",
+        "representation analysis",
+        "model editing",
+        "knowledge editing",
+        "unlearning",
+        "grokking",
+        "emergent ability",
+        "emergent abilities",
+        "introspection",
+        "self-explanation",
+        "chain-of-thought faithfulness",
+        "attention pattern",
+        "hidden state",
+        "hidden states",
+        "activation",
+        "activations",
+        "world model",
+        "feature learning",
+        "generalization mechanism",
+        "inductive bias",
+        "memorization",
+        "attention head",
+        "attention heads"
+      ]
+    },
+    "tier3_llm": {
+      "weight": 3,
+      "terms": [
+        "large language model",
+        "large language models",
+        "language model",
+        "language models",
+        "transformer",
+        "transformers",
+        "in-context learning",
+        "instruction tuning",
+        "alignment",
+        "rlhf",
+        "reasoning",
+        "chain-of-thought",
+        "fine-tuning",
+        "pretraining"
+      ]
+    },
+    "tier4_vlm": {
+      "weight": 2,
+      "terms": [
+        "vision-language",
+        "vision language",
+        "multimodal",
+        "multi-modal",
+        "vision transformer",
+        "image-text",
+        "visual reasoning",
+        "cross-modal"
+      ]
+    },
+    "acronyms": {
+      "weight": 8,
+      "_comment": "단어경계 정확매칭(대소문자 구분). 짧은 약어라 별도 처리.",
+      "terms": [
+        "SAE",
+        "SAEs",
+        "XAI",
+        "TCAV",
+        "ROME",
+        "MEMIT",
+        "CBM"
+      ]
+    },
+    "negative": {
+      "weight": -4,
+      "_comment": "명백히 무관한 응용 도메인만. 과하면 좋은 논문도 날아가니 조심.",
+      "terms": [
+        "drug discovery",
+        "molecular property",
+        "protein folding",
+        "medical imaging",
+        "recommendation system",
+        "recommender system",
+        "click-through rate",
+        "traffic forecasting",
+        "wireless network",
+        "supply chain",
+        "stock prediction",
+        "crop yield",
+        "wind power",
+        "battery state"
+      ]
+    }
+  },
+  "arxiv": {
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "recent_per_category": 60,
+    "targeted_queries": [
+      "abs:\"mechanistic interpretability\"",
+      "abs:\"sparse autoencoder\"",
+      "abs:\"activation steering\" OR abs:\"steering vector\"",
+      "abs:\"circuit\" AND abs:\"language model\"",
+      "abs:\"probing\" AND abs:\"representation\"",
+      "abs:\"interpretability\" AND abs:\"vision-language\""
+    ],
+    "targeted_per_query": 15
+  },
+  "dblp_dive": {
+    "_comment": "학회 oral 스크레이퍼가 이 역할을 대체함. n_papers를 0보다 크게 하면 DBLP 랜덤 발굴이 다시 켜진다(초록 없는 경우 많음).",
+    "n_papers": 0,
+    "venues": [
+      "conf/nips",
+      "conf/iclr",
+      "conf/icml",
+      "conf/acl",
+      "conf/emnlp",
+      "conf/naacl",
+      "conf/cvpr",
+      "conf/iccv",
+      "conf/aaai"
+    ],
+    "keywords": [
+      "mechanistic interpretability",
+      "sparse autoencoder",
+      "interpretability",
+      "probing",
+      "circuits",
+      "activation",
+      "explanation",
+      "representation",
+      "attention analysis",
+      "concept",
+      "steering",
+      "model editing",
+      "faithfulness"
+    ],
+    "min_year": 2018
+  },
+  "output": {
+    "_comment": "세 갈래로 나눠 요약한다. 합계 30~40편 수준.",
+    "hf_daily_all": true,
+    "hf_daily_target_day": "yesterday",
+    "conference_n": 10,
+    "interest_n": 10,
+    "min_score_to_include": 8,
+    "listing_extra": 30,
+    "interest_strong_score": 18,
+    "_interest_note": "interest_n은 상한. interest_strong_score 미만은 정원이 남아도 넣지 않는다. 억지로 채우면 다이제스트 신뢰도가 떨어진다."
+  },
+  "feedback": {
+    "_comment": "mark_read.py 로 읽은 논문을 표시하면 그 키워드가 아래 가중치만큼 추가 가산됩니다.",
+    "read_boost_weight": 4,
+    "max_learned_terms": 40
+  },
+  "conference_orals": {
+    "_comment": "학회 공식 virtual 사이트의 oral/spotlight 목록. 제목+초록이 한 페이지에 다 있다. spotlight 등급이 없는 해는 자동으로 건너뛴다.",
+    "n_papers": 10,
+    "sources": [
+      {
+        "site": "iclr.cc",
+        "year": 2025,
+        "segments": [
+          "oral"
+        ]
+      },
+      {
+        "site": "icml.cc",
+        "year": 2025,
+        "segments": [
+          "oral"
+        ]
+      },
+      {
+        "site": "neurips.cc",
+        "year": 2024,
+        "segments": [
+          "oral",
+          "spotlight"
+        ]
+      },
+      {
+        "site": "iclr.cc",
+        "year": 2024,
+        "segments": [
+          "oral",
+          "spotlight"
+        ]
+      },
+      {
+        "site": "icml.cc",
+        "year": 2024,
+        "segments": [
+          "oral"
+        ]
+      },
+      {
+        "site": "neurips.cc",
+        "year": 2023,
+        "segments": [
+          "oral",
+          "spotlight"
+        ]
+      }
+    ],
+    "interest_bias": 0.6,
+    "_bias_note": "0=완전 랜덤, 1=관심도 점수 최상위만. 0.6이면 관심분야 쪽으로 기울되 발굴 여지를 남긴다."
+  }
+}

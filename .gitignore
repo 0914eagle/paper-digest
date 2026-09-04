@@ -1,0 +1,6 @@
+# 매일 통째로 다시 쓰이는 캐시. 변경량만 크고 이력 가치는 없다.
+state/seen.json
+
+__pycache__/
+*.pyc
+.DS_Store
