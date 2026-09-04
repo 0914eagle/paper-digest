@@ -236,7 +236,8 @@ def main():
             if hm:
                 section = hm.group(1).strip()
                 toc.append((section, []))
-            pm = re.match(r"^###\s+(\d+\.\s+.*)$", line)
+            # 번호가 없는 ### 도 논문으로 본다 (정전 섹션이 그렇다).
+            pm = re.match(r"^###\s+(.*)$", line)
             if pm:
                 heading = pm.group(1).strip()
                 t = re.sub(r"^\d+\.\s+", "", heading)
@@ -246,7 +247,7 @@ def main():
                 index.append({"d": date, "t": t, "s": section, "a": anchor,
                               "k": " ".join(kws)})
                 if toc:
-                    toc[-1][1].append((anchor, "%d. %s" % (len(papers), t)))
+                    toc[-1][1].append((anchor, heading))
 
         first = ""
         fm = re.search(r"^\s*1\.\s+\*\*(.+?)\*\*", md, re.M)
