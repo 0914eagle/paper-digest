@@ -88,6 +88,11 @@ def inline(text):
     return re.sub(r"\x00(\d+)\x00", lambda m: slots[int(m.group(1))], text)
 
 
+def norm(text):
+    """검색·대조용 정규화. 하이픈과 공백 차이로 검색이 빗나가지 않게 한다."""
+    return re.sub(r"[\s\-_/]+", " ", (text or "").lower()).strip()
+
+
 def slug(text):
     return re.sub(r"[^a-z0-9가-힣]+", "-", text.lower()).strip("-")[:60]
 
@@ -175,6 +180,26 @@ def main():
         print("digest/*.md 가 없습니다.", file=sys.stderr)
         return 1
 
+    # data/*.json 의 매칭 키워드를 검색 인덱스에 함께 싣는다.
+    # 제목 문자열만으로는 "logit lens" 같은 개념 검색이 안 걸린다.
+    kw_by_title = {}
+    data_dir = os.path.join(ROOT, "data")
+    if os.path.isdir(data_dir):
+        for dj in os.listdir(data_dir):
+            if not dj.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(data_dir, dj), encoding="utf-8") as f:
+                    payload = json.load(f)
+            except (IOError, ValueError):
+                continue
+            for bucket in ("hf_daily", "conference", "interest", "conference_dive"):
+                for pp in payload.get(bucket) or []:
+                    t = norm(pp.get("title", ""))
+                    if t:
+                        kw_by_title[t] = sorted(set(
+                            (pp.get("core_matched") or []) + (pp.get("matched") or [])))[:14]
+
     entries, index = [], []
     for fn in files:
         date = fn[:-3]
@@ -194,7 +219,9 @@ def main():
                 t = re.sub(r"^\d+\.\s+", "", heading)
                 anchor = slug(heading)
                 papers.append(t)
-                index.append({"d": date, "t": t, "s": section, "a": anchor})
+                kws = kw_by_title.get(norm(t), [])
+                index.append({"d": date, "t": t, "s": section, "a": anchor,
+                              "k": " ".join(kws)})
 
         first = ""
         fm = re.search(r"^\s*1\.\s+\*\*(.+?)\*\*", md, re.M)
@@ -222,11 +249,13 @@ def main():
         'autocomplete=off>'
         '<div id=hits></div><div id=list>%s</div>'
         "<script>const IDX=%s;"
+        "const N=s=>(s||'').toLowerCase().replace(/[\\s\\-_/]+/g,' ').trim();"
+        "IDX.forEach(x=>{x._t=N(x.t);x._k=N(x.k)});"
         "const q=document.getElementById('q'),h=document.getElementById('hits'),"
         "l=document.getElementById('list');"
-        "q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();"
+        "q.addEventListener('input',()=>{const v=N(q.value);"
         "if(!v){h.innerHTML='';l.style.display='';return}l.style.display='none';"
-        "const r=IDX.filter(x=>x.t.toLowerCase().includes(v)).slice(0,60);"
+        "const r=IDX.filter(x=>x._t.includes(v)||x._k.includes(v)).slice(0,60);"
         "h.innerHTML=r.length?'<div class=count>'+r.length+'건</div>'+r.map(x=>"
         "'<div class=hit><a class=t href=\"'+x.d+'.html#'+x.a+'\">'+x.t.replace(/</g,'&lt;')+"
         "'</a><span class=w>'+x.d+' · '+x.s.replace(/</g,'&lt;')+'</span></div>').join(''):"
