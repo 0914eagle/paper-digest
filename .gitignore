@@ -4,3 +4,7 @@ state/seen.json
 __pycache__/
 *.pyc
 .DS_Store
+
+# 공개 저장소라 읽은 논문 이력은 올리지 않는다.
+# 백업하고 싶으면 이 줄을 지우면 된다.
+state/read.json

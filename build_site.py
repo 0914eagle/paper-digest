@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""digest/*.md → site/*.html 정적 사이트 생성.
+"""digest/*.md → docs/*.html 정적 사이트 생성.
 
-외부 의존성 없음. 생성된 site/ 는 그대로
+외부 의존성 없음. 생성된 docs/ 는 그대로 (GitHub Pages의 /docs 소스로 바로 쓰인다)
   - `python3 -m http.server` 로 로컬에서 보거나
   - GitHub Pages에 올려서 보거나
 둘 다 수정 없이 동작한다.
@@ -15,7 +15,7 @@ from datetime import datetime
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIGEST = os.path.join(ROOT, "digest")
-SITE = os.path.join(ROOT, "site")
+SITE = os.path.join(ROOT, "docs")
 
 CSS = """
 :root{--bg:#fbfaf8;--fg:#1c1b19;--dim:#6b6862;--line:#e3e0da;--card:#fff;
@@ -236,7 +236,7 @@ def main():
     with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8") as f:
         f.write(page("논문 다이제스트", body, back=False))
 
-    print("site/ 생성: %d일치, 논문 %d편, 검색 인덱스 %d건"
+    print("docs/ 생성: %d일치, 논문 %d편, 검색 인덱스 %d건"
           % (len(entries), total, len(index)))
     print(os.path.join(SITE, "index.html"))
     return 0
