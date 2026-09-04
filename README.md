@@ -3,7 +3,7 @@
 매일 아침 논문을 수집해 요약본을 쌓는 개인용 자동화. mechanistic
 interpretability와 모델 내부를 관찰하는 연구에 가중치를 둔다.
 
-읽기: **[GitHub Pages 사이트](https://heejae.github.io/paper-digest/)** ·
+읽기: **[GitHub Pages 사이트](https://0914eagle.github.io/paper-digest/)** ·
 로컬은 `python3 -m http.server 8731 --directory docs`
 
 ## 무엇을 모으나
