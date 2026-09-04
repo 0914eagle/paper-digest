@@ -1,0 +1,1441 @@
+{
+  "built": "2026-09-04",
+  "papers": [
+    {
+      "arxiv_id": "2309.08600",
+      "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+      "abstract": "One of the roadblocks to a better understanding of neural networks' internals is \\textit{polysemanticity}, where neurons appear to activate in multiple, semantically distinct contexts. Polysemanticity prevents us from identifying concise, human-understandable explanations for what neural networks are doing internally. One hypothesised cause of polysemanticity is \\textit{superposition}, where neural networks represent more features than they have neurons by assigning features to an overcomplete set of directions in activation space, rather than to individual neurons. Here, we attempt to identify those directions, using sparse autoencoders to reconstruct the internal activations of a language model. These autoencoders learn sets of sparsely activating features that are more interpretable and monosemantic than directions identified by alternative approaches, where interpretability is measured by automated methods. Moreover, we show that with our learned set of features, we can pinpoint the features that are causally responsible for counterfactual behaviour on the indirect object identification task \\citep{wang2022interpretability} to a finer degree than previous decompositions. This work indicates that it is possible to resolve superposition in language models using a scalable, unsupervised method. Our method may serve as a foundation for future mechanistic interpretability work, which we hope will enable greater model transparency and steerability.",
+      "year": 2023,
+      "authors": [
+        "Hoagy Cunningham",
+        "Aidan Ewart",
+        "Logan Riggs",
+        "Robert Huben",
+        "Lee Sharkey"
+      ],
+      "url": "https://arxiv.org/abs/2309.08600",
+      "relevance": 147.5,
+      "core_matched": [
+        "mechanistic interpretability",
+        "monosemantic",
+        "sparse autoencoders",
+        "superposition"
+      ],
+      "citations": 1527,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2007.04612",
+      "title": "Concept Bottleneck Models",
+      "abstract": "We seek to learn models that we can interact with using high-level concepts: if the model did not think there was a bone spur in the x-ray, would it still predict severe arthritis? State-of-the-art models today do not typically support the manipulation of concepts like \"the existence of bone spurs\", as they are trained end-to-end to go directly from raw input (e.g., pixels) to output (e.g., arthritis severity). We revisit the classic idea of first predicting concepts that are provided at training time, and then using these concepts to predict the label. By construction, we can intervene on these concept bottleneck models by editing their predicted concept values and propagating these changes to the final prediction. On x-ray grading and bird identification, concept bottleneck models achieve competitive accuracy with standard end-to-end models, while enabling interpretation in terms of high-level clinical concepts (\"bone spurs\") or bird attributes (\"wing color\"). These models also allow for richer human-model interaction: accuracy improves significantly if we can correct model mistakes on concepts at test time.",
+      "year": 2020,
+      "authors": [
+        "Pang Wei Koh",
+        "Thao Nguyen",
+        "Yew Siang Tang",
+        "Stephen Mussmann",
+        "Emma Pierson",
+        "Been Kim"
+      ],
+      "url": "https://arxiv.org/abs/2007.04612",
+      "relevance": 20.0,
+      "core_matched": [
+        "concept bottleneck"
+      ],
+      "citations": 1473,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2211.00593",
+      "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+      "abstract": "Research in mechanistic interpretability seeks to explain behaviors of machine learning models in terms of their internal components. However, most previous work either focuses on simple behaviors in small models, or describes complicated behaviors in larger models with broad strokes. In this work, we bridge this gap by presenting an explanation for how GPT-2 small performs a natural language task called indirect object identification (IOI). Our explanation encompasses 26 attention heads grouped into 7 main classes, which we discovered using a combination of interpretability approaches relying on causal interventions. To our knowledge, this investigation is the largest end-to-end attempt at reverse-engineering a natural behavior \"in the wild\" in a language model. We evaluate the reliability of our explanation using three quantitative criteria--faithfulness, completeness and minimality. Though these criteria support our explanation, they also point to remaining gaps in our understanding. Our work provides evidence that a mechanistic understanding of large ML models is feasible, opening opportunities to scale our understanding to both larger models and more complex tasks.",
+      "year": 2022,
+      "authors": [
+        "Kevin Wang",
+        "Alexandre Variengien",
+        "Arthur Conmy",
+        "Buck Shlegeris",
+        "Jacob Steinhardt"
+      ],
+      "url": "https://arxiv.org/abs/2211.00593",
+      "relevance": 20.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 1250,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2107.10912",
+      "title": "Explainable artificial intelligence (XAI) in deep learning-based medical image analysis",
+      "abstract": "With an increase in deep learning-based methods, the call for explainability of such methods grows, especially in high-stakes decision making areas such as medical image analysis. This survey presents an overview of eXplainable Artificial Intelligence (XAI) used in deep learning-based medical image analysis. A framework of XAI criteria is introduced to classify deep learning-based medical image analysis methods. Papers on XAI techniques in medical image analysis are then surveyed and categorized according to the framework and according to anatomical location. The paper concludes with an outlook of future opportunities for XAI in medical image analysis.",
+      "year": 2021,
+      "authors": [
+        "Bas H. M. van der Velden",
+        "Hugo J. Kuijf",
+        "Kenneth G. A. Gilhuijs",
+        "Max A. Viergever"
+      ],
+      "url": "https://arxiv.org/abs/2107.10912",
+      "relevance": 32.0,
+      "core_matched": [
+        "XAI"
+      ],
+      "citations": 1116,
+      "venue": "Medical Image Anal."
+    },
+    {
+      "arxiv_id": "2209.10652",
+      "title": "Toy Models of Superposition",
+      "abstract": "Neural networks often pack many unrelated concepts into a single neuron - a puzzling phenomenon known as 'polysemanticity' which makes interpretability much more challenging. This paper provides a toy model where polysemanticity can be fully understood, arising as a result of models storing additional sparse features in \"superposition.\" We demonstrate the existence of a phase change, a surprising connection to the geometry of uniform polytopes, and evidence of a link to adversarial examples. We also discuss potential implications for mechanistic interpretability.",
+      "year": 2022,
+      "authors": [
+        "Nelson Elhage",
+        "Tristan Hume",
+        "Catherine Olsson",
+        "Nicholas Schiefer",
+        "Tom Henighan",
+        "Shauna Kravec"
+      ],
+      "url": "https://arxiv.org/abs/2209.10652",
+      "relevance": 52.5,
+      "core_matched": [
+        "mechanistic interpretability",
+        "superposition"
+      ],
+      "citations": 1009,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2209.11895",
+      "title": "In-context Learning and Induction Heads",
+      "abstract": "\"Induction heads\" are attention heads that implement a simple algorithm to complete token sequences like [A][B] ... [A] -> [B]. In this work, we present preliminary and indirect evidence for a hypothesis that induction heads might constitute the mechanism for the majority of all \"in-context learning\" in large transformer models (i.e. decreasing loss at increasing token indices). We find that induction heads develop at precisely the same point as a sudden sharp increase in in-context learning ability, visible as a bump in the training loss. We present six complementary lines of evidence, arguing that induction heads may be the mechanistic source of general in-context learning in transformer models of any size. For small attention-only models, we present strong, causal evidence; for larger models with MLPs, we present correlational evidence.",
+      "year": 2022,
+      "authors": [
+        "Catherine Olsson",
+        "Nelson Elhage",
+        "Neel Nanda",
+        "Nicholas Joseph",
+        "Nova DasSarma",
+        "Tom Henighan"
+      ],
+      "url": "https://arxiv.org/abs/2209.11895",
+      "relevance": 40.0,
+      "core_matched": [
+        "induction heads"
+      ],
+      "citations": 1006,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2304.14997",
+      "title": "Towards Automated Circuit Discovery for Mechanistic Interpretability",
+      "abstract": "Through considerable effort and intuition, several recent works have reverse-engineered nontrivial behaviors of transformer models. This paper systematizes the mechanistic interpretability process they followed. First, researchers choose a metric and dataset that elicit the desired model behavior. Then, they apply activation patching to find which abstract neural network units are involved in the behavior. By varying the dataset, metric, and units under investigation, researchers can understand the functionality of each component. We automate one of the process' steps: to identify the circuit that implements the specified behavior in the model's computational graph. We propose several algorithms and reproduce previous interpretability results to validate them. For example, the ACDC algorithm rediscovered 5/5 of the component types in a circuit in GPT-2 Small that computes the Greater-Than operation. ACDC selected 68 of the 32,000 edges in GPT-2 Small, all of which were manually found by previous work. Our code is available at https://github.com/ArthurConmy/Automatic-Circuit-Discovery.",
+      "year": 2023,
+      "authors": [
+        "Arthur Conmy",
+        "Augustine N. Mavor-Parker",
+        "Aengus Lynch",
+        "Stefan Heimersheim",
+        "Adrià Garriga-Alonso"
+      ],
+      "url": "https://arxiv.org/abs/2304.14997",
+      "relevance": 130.0,
+      "core_matched": [
+        "activation patching",
+        "circuit discovery",
+        "mechanistic interpretability"
+      ],
+      "citations": 799,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2605.29358",
+      "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+      "abstract": "We demonstrate that sparse autoencoders can extract interpretable features from Claude 3 Sonnet, a production-scale language model, addressing the open question of whether dictionary learning methods scale beyond small transformers. We trained sparse autoencoders with up to 34 million features on the model's middle layer residual stream, using scaling laws to guide hyperparameter selection. The resulting features are multilingual and multimodal (generalizing to images despite text-only training), respond to both concrete instances and abstract discussions of concepts, and can be used to steer model behavior in ways consistent with their interpretations. We find features corresponding to famous entities and locations, as well as more abstract concepts like sarcasm or errors in code. We also identify features relevant to ways in which language models might cause harm--including features representing deception, power-seeking, sycophancy, and bias--and show that these causally influence model outputs when manipulated. Additionally, we conduct analyses of feature interpretability, geometry, and computational function. However, significant limitations remain: our suite of features is incomplete, and we lack rigorous methods for evaluating whether our features faithfully capture model computations.",
+      "year": 2026,
+      "authors": [
+        "Adly Templeton",
+        "Tom Conerly",
+        "Jonathan Marcus",
+        "Jack Lindsey",
+        "Trenton Bricken",
+        "Brian Chen"
+      ],
+      "url": "https://arxiv.org/abs/2605.29358",
+      "relevance": 80.0,
+      "core_matched": [
+        "dictionary learning",
+        "residual stream",
+        "sparse autoencoders"
+      ],
+      "citations": 763,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2303.08112",
+      "title": "Eliciting Latent Predictions from Transformers with the Tuned Lens",
+      "abstract": "We analyze transformers from the perspective of iterative inference, seeking to understand how model predictions are refined layer by layer. To do so, we train an affine probe for each block in a frozen pretrained model, making it possible to decode every hidden state into a distribution over the vocabulary. Our method, the tuned lens, is a refinement of the earlier \"logit lens\" technique, which yielded useful insights but is often brittle. We test our method on various autoregressive language models with up to 20B parameters, showing it to be more predictive, reliable and unbiased than the logit lens. With causal experiments, we show the tuned lens uses similar features to the model itself. We also find the trajectory of latent predictions can be used to detect malicious inputs with high accuracy. All code needed to reproduce our results can be found at https://github.com/AlignmentResearch/tuned-lens.",
+      "year": 2023,
+      "authors": [
+        "Nora Belrose",
+        "Igor Ostrovsky",
+        "Lev McKinney",
+        "Zach Furman",
+        "Logan Smith",
+        "Danny Halawi"
+      ],
+      "url": "https://arxiv.org/abs/2303.08112",
+      "relevance": 61.5,
+      "core_matched": [
+        "logit lens",
+        "tuned lens"
+      ],
+      "citations": 586,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2406.04093",
+      "title": "Scaling and evaluating sparse autoencoders",
+      "abstract": "Sparse autoencoders provide a promising unsupervised approach for extracting interpretable features from a language model by reconstructing activations from a sparse bottleneck layer. Since language models learn many concepts, autoencoders need to be very large to recover all relevant features. However, studying the properties of autoencoder scaling is difficult due to the need to balance reconstruction and sparsity objectives and the presence of dead latents. We propose using k-sparse autoencoders [Makhzani and Frey, 2013] to directly control sparsity, simplifying tuning and improving the reconstruction-sparsity frontier. Additionally, we find modifications that result in few dead latents, even at the largest scales we tried. Using these techniques, we find clean scaling laws with respect to autoencoder size and sparsity. We also introduce several new metrics for evaluating feature quality based on the recovery of hypothesized features, the explainability of activation patterns, and the sparsity of downstream effects. These metrics all generally improve with autoencoder size. To demonstrate the scalability of our approach, we train a 16 million latent autoencoder on GPT-4 activations for 40 billion tokens. We release training code and autoencoders for open-source models, as well as a visualizer.",
+      "year": 2024,
+      "authors": [
+        "Leo Gao",
+        "Tom Dupré la Tour",
+        "Henk Tillman",
+        "Gabriel Goh",
+        "Rajan Troll",
+        "Alec Radford"
+      ],
+      "url": "https://arxiv.org/abs/2406.04093",
+      "relevance": 40.0,
+      "core_matched": [
+        "sparse autoencoders"
+      ],
+      "citations": 571,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2404.14082",
+      "title": "Mechanistic Interpretability for AI Safety -- A Review",
+      "abstract": "Understanding AI systems' inner workings is critical for ensuring value alignment and safety. This review explores mechanistic interpretability: reverse engineering the computational mechanisms and representations learned by neural networks into human-understandable algorithms and concepts to provide a granular, causal understanding. We establish foundational concepts such as features encoding knowledge within neural activations and hypotheses about their representation and computation. We survey methodologies for causally dissecting model behaviors and assess the relevance of mechanistic interpretability to AI safety. We examine benefits in understanding, control, alignment, and risks such as capability gains and dual-use concerns. We investigate challenges surrounding scalability, automation, and comprehensive interpretation. We advocate for clarifying concepts, setting standards, and scaling techniques to handle complex models and behaviors and expand to domains such as vision and reinforcement learning. Mechanistic interpretability could help prevent catastrophic outcomes as AI systems become more powerful and inscrutable.",
+      "year": 2024,
+      "authors": [
+        "Leonard Bereska",
+        "Efstratios Gavves"
+      ],
+      "url": "https://arxiv.org/abs/2404.14082",
+      "relevance": 40.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 517,
+      "venue": "Trans. Mach. Learn. Res."
+    },
+    {
+      "arxiv_id": "2403.19647",
+      "title": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+      "abstract": "We introduce methods for discovering and applying sparse feature circuits. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.",
+      "year": 2024,
+      "authors": [
+        "Samuel Marks",
+        "Can Rager",
+        "Eric J. Michaud",
+        "Yonatan Belinkov",
+        "David Bau",
+        "Aaron Mueller"
+      ],
+      "url": "https://arxiv.org/abs/2403.19647",
+      "relevance": 70.5,
+      "core_matched": [
+        "polysemantic",
+        "sparse feature"
+      ],
+      "citations": 434,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2205.15480",
+      "title": "Post-hoc Concept Bottleneck Models",
+      "abstract": "Concept Bottleneck Models (CBMs) map the inputs onto a set of interpretable concepts (``the bottleneck'') and use the concepts to make predictions. A concept bottleneck enhances interpretability since it can be investigated to understand what concepts the model \"sees\" in an input and which of these concepts are deemed important. However, CBMs are restrictive in practice as they require dense concept annotations in the training data to learn the bottleneck. Moreover, CBMs often do not match the accuracy of an unrestricted neural network, reducing the incentive to deploy them in practice. In this work, we address these limitations of CBMs by introducing Post-hoc Concept Bottleneck models (PCBMs). We show that we can turn any neural network into a PCBM without sacrificing model performance while still retaining the interpretability benefits. When concept annotations are not available on the training data, we show that PCBM can transfer concepts from other datasets or from natural language descriptions of concepts via multimodal models. A key benefit of PCBM is that it enables users to quickly debug and update the model to reduce spurious correlations and improve generalization to new distributions. PCBM allows for global model edits, which can be more efficient than previous works on local interventions that fix a specific prediction. Through a model-editing user study, we show that editing PCBMs via concept-level feedback can provide significant performance gains without using data from the target domain or model retraining.",
+      "year": 2022,
+      "authors": [
+        "Mert Yuksekgonul",
+        "Maggie Wang",
+        "James Zou"
+      ],
+      "url": "https://arxiv.org/abs/2205.15480",
+      "relevance": 40.0,
+      "core_matched": [
+        "concept bottleneck"
+      ],
+      "citations": 355,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2309.16042",
+      "title": "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods",
+      "abstract": "Mechanistic interpretability seeks to understand the internal mechanisms of machine learning models, where localization -- identifying the important model components -- is a key step. Activation patching, also known as causal tracing or interchange intervention, is a standard technique for this task (Vig et al., 2020), but the literature contains many variants with little consensus on the choice of hyperparameters or methodology. In this work, we systematically examine the impact of methodological details in activation patching, including evaluation metrics and corruption methods. In several settings of localization and circuit discovery in language models, we find that varying these hyperparameters could lead to disparate interpretability results. Backed by empirical observations, we give conceptual arguments for why certain metrics or methods may be preferred. Finally, we provide recommendations for the best practices of activation patching going forwards.",
+      "year": 2023,
+      "authors": [
+        "Fred Zhang",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2309.16042",
+      "relevance": 138.5,
+      "core_matched": [
+        "activation patching",
+        "causal tracing",
+        "circuit discovery",
+        "mechanistic interpretability"
+      ],
+      "citations": 329,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2301.04213",
+      "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+      "abstract": "Language models learn a great quantity of factual information during pretraining, and recent work localizes this information to specific model weights like mid-layer MLP weights. In this paper, we find that we can change how a fact is stored in a model by editing weights that are in a different location than where existing methods suggest that the fact is stored. This is surprising because we would expect that localizing facts to specific model parameters would tell us where to manipulate knowledge in models, and this assumption has motivated past work on model editing methods. Specifically, we show that localization conclusions from representation denoising (also known as Causal Tracing) do not provide any insight into which model MLP layer would be best to edit in order to override an existing stored fact with a new one. This finding raises questions about how past work relies on Causal Tracing to select which model layers to edit. Next, we consider several variants of the editing problem, including erasing and amplifying facts. For one of our editing problems, editing performance does relate to localization results from representation denoising, but we find that which layer we edit is a far better predictor of performance. Our results suggest, counterintuitively, that better mechanistic understanding of how pretrained language models work may not always translate to insights about how to best change their behavior. Our code is available at https://github.com/google/belief-localization",
+      "year": 2023,
+      "authors": [
+        "Peter Hase",
+        "Mohit Bansal",
+        "Been Kim",
+        "Asma Ghandeharioun"
+      ],
+      "url": "https://arxiv.org/abs/2301.04213",
+      "relevance": 20.0,
+      "core_matched": [
+        "causal tracing"
+      ],
+      "citations": 288,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2006.14032",
+      "title": "Compositional Explanations of Neurons",
+      "abstract": "We describe a procedure for explaining neurons in deep representations by identifying compositional logical concepts that closely approximate neuron behavior. Compared to prior work that uses atomic labels as explanations, analyzing neurons compositionally allows us to more precisely and expressively characterize their behavior. We use this procedure to answer several questions on interpretability in models for vision and natural language processing. First, we examine the kinds of abstractions learned by neurons. In image classification, we find that many neurons learn highly abstract but semantically coherent visual concepts, while other polysemantic neurons detect multiple unrelated features; in natural language inference (NLI), neurons learn shallow lexical heuristics from dataset biases. Second, we see whether compositional explanations give us insight into model performance: vision neurons that detect human-interpretable concepts are positively correlated with task performance, while NLI neurons that fire for shallow heuristics are negatively correlated with task performance. Finally, we show how compositional explanations provide an accessible way for end users to produce simple \"copy-paste\" adversarial examples that change model behavior in predictable ways.",
+      "year": 2020,
+      "authors": [
+        "Jesse Mu",
+        "Jacob Andreas"
+      ],
+      "url": "https://arxiv.org/abs/2006.14032",
+      "relevance": 20.0,
+      "core_matched": [
+        "polysemantic"
+      ],
+      "citations": 226,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2310.10348",
+      "title": "Attribution Patching Outperforms Automated Circuit Discovery",
+      "abstract": "Automated interpretability research has recently attracted attention as a potential research direction that could scale explanations of neural network behavior to large models. Existing automated circuit discovery work applies activation patching to identify subnetworks responsible for solving specific tasks (circuits). In this work, we show that a simple method based on attribution patching outperforms all existing methods while requiring just two forward passes and a backward pass. We apply a linear approximation to activation patching to estimate the importance of each edge in the computational subgraph. Using this approximation, we prune the least important edges of the network. We survey the performance and limitations of this method, finding that averaged over all tasks our method has greater AUC from circuit recovery than other methods.",
+      "year": 2023,
+      "authors": [
+        "Aaquib Syed",
+        "Can Rager",
+        "Arthur Conmy"
+      ],
+      "url": "https://arxiv.org/abs/2310.10348",
+      "relevance": 127.0,
+      "core_matched": [
+        "activation patching",
+        "attribution patching",
+        "circuit discovery"
+      ],
+      "citations": 212,
+      "venue": "BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP"
+    },
+    {
+      "arxiv_id": "2406.11944",
+      "title": "Transcoders Find Interpretable LLM Feature Circuits",
+      "abstract": "A key goal in mechanistic interpretability is circuit analysis: finding sparse subgraphs of models corresponding to specific behaviors or capabilities. However, MLP sublayers make fine-grained circuit analysis on transformer-based language models difficult. In particular, interpretable features -- such as those found by sparse autoencoders (SAEs) -- are typically linear combinations of extremely many neurons, each with its own nonlinearity to account for. Circuit analysis in this setting thus either yields intractably large circuits or fails to disentangle local and global behavior. To address this we explore transcoders, which seek to faithfully approximate a densely activating MLP layer with a wider, sparsely-activating MLP layer. We introduce a novel method for using transcoders to perform weights-based circuit analysis through MLP sublayers. The resulting circuits neatly factorize into input-dependent and input-invariant terms. We then successfully train transcoders on language models with 120M, 410M, and 1.4B parameters, and find them to perform at least on par with SAEs in terms of sparsity, faithfulness, and human-interpretability. Finally, we apply transcoders to reverse-engineer unknown circuits in the model, and we obtain novel insights regarding the \"greater-than circuit\" in GPT2-small. Our results suggest that transcoders can prove effective in decomposing model computations involving MLPs into interpretable circuits. Code is available at https://github.com/jacobdunefsky/transcoder_circuits/.",
+      "year": 2024,
+      "authors": [
+        "Jacob Dunefsky",
+        "Philippe Chlenski",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2406.11944",
+      "relevance": 115.9,
+      "core_matched": [
+        "SAEs",
+        "mechanistic interpretability",
+        "sparse autoencoders",
+        "transcoder"
+      ],
+      "citations": 209,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2304.05969",
+      "title": "Localizing Model Behavior with Path Patching",
+      "abstract": "Localizing behaviors of neural networks to a subset of the network's components or a subset of interactions between components is a natural first step towards analyzing network mechanisms and possible failure modes. Existing work is often qualitative and ad-hoc, and there is no consensus on the appropriate way to evaluate localization claims. We introduce path patching, a technique for expressing and quantitatively testing a natural class of hypotheses expressing that behaviors are localized to a set of paths. We refine an explanation of induction heads, characterize a behavior of GPT-2, and open source a framework for efficiently running similar experiments.",
+      "year": 2023,
+      "authors": [
+        "Nicholas Goldowsky-Dill",
+        "Chris MacLeod",
+        "Lucas Sato",
+        "Aryaman Arora"
+      ],
+      "url": "https://arxiv.org/abs/2304.05969",
+      "relevance": 40.5,
+      "core_matched": [
+        "induction heads",
+        "path patching"
+      ],
+      "citations": 199,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2409.05907",
+      "title": "Programming Refusal with Conditional Activation Steering",
+      "abstract": "LLMs have shown remarkable capabilities, but precisely controlling their response behavior remains challenging. Existing activation steering methods alter LLM behavior indiscriminately, limiting their practical applicability in settings where selective responses are essential, such as content moderation or domain-specific assistants. In this paper, we propose Conditional Activation Steering (CAST), which analyzes LLM activation patterns during inference to selectively apply or withhold activation steering based on the input context. Our method is based on the observation that different categories of prompts activate distinct patterns in the model's hidden states. Using CAST, one can systematically control LLM behavior with rules like \"if input is about hate speech or adult content, then refuse\" or \"if input is not about legal advice, then refuse.\" This allows for selective modification of responses to specific content while maintaining normal responses to other content, all without requiring weight optimization. We release an open-source implementation of our framework at github.com/IBM/activation-steering .",
+      "year": 2024,
+      "authors": [
+        "Bruce W. Lee",
+        "Inkit Padhi",
+        "Karthikeyan Natesan Ramamurthy",
+        "Erik Miehling",
+        "Pierre Dognin",
+        "Manish Nagireddy"
+      ],
+      "url": "https://arxiv.org/abs/2409.05907",
+      "relevance": 38.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 198,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2301.04709",
+      "title": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+      "abstract": "Causal abstraction provides a theoretical foundation for mechanistic interpretability, the field concerned with providing intelligible algorithms that are faithful simplifications of the known, but opaque low-level details of black box AI models. Our contributions are (1) generalizing the theory of causal abstraction from mechanism replacement (i.e., hard and soft interventions) to arbitrary mechanism transformation (i.e., functionals from old mechanisms to new mechanisms), (2) providing a flexible, yet precise formalization for the core concepts of polysemantic neurons, the linear representation hypothesis, modular features, and graded faithfulness, and (3) unifying a variety of mechanistic interpretability methods in the common language of causal abstraction, namely, activation and path patching, causal mediation analysis, causal scrubbing, causal tracing, circuit analysis, concept erasure, sparse autoencoders, differential binary masking, distributed alignment search, and steering.",
+      "year": 2023,
+      "authors": [
+        "Atticus Geiger",
+        "Duligur Ibeling",
+        "Amir Zur",
+        "Maheep Chaudhary",
+        "Sonakshi Chauhan",
+        "Jing Huang"
+      ],
+      "url": "https://arxiv.org/abs/2301.04709",
+      "relevance": 299.0,
+      "core_matched": [
+        "causal scrubbing",
+        "causal tracing",
+        "linear representation",
+        "mechanistic interpretability",
+        "path patching",
+        "polysemantic",
+        "sparse autoencoders"
+      ],
+      "citations": 196,
+      "venue": "Journal of machine learning research"
+    },
+    {
+      "arxiv_id": "2501.16496",
+      "title": "Open Problems in Mechanistic Interpretability",
+      "abstract": "Mechanistic interpretability aims to understand the computational mechanisms underlying neural networks' capabilities in order to accomplish concrete scientific and engineering goals. Progress in this field thus promises to provide greater assurance over AI system behavior and shed light on exciting scientific questions about the nature of intelligence. Despite recent progress toward these goals, there are many open problems in the field that require solutions before many scientific and practical benefits can be realized: Our methods require both conceptual and practical improvements to reveal deeper insights; we must figure out how best to apply our methods in pursuit of specific goals; and the field must grapple with socio-technical challenges that influence and are influenced by our work. This forward-facing review discusses the current frontier of mechanistic interpretability and the open problems that the field may benefit from prioritizing.",
+      "year": 2025,
+      "authors": [
+        "Lee Sharkey",
+        "Bilal Chughtai",
+        "Joshua Batson",
+        "Jack Lindsey",
+        "Jeff Wu",
+        "Lucius Bushnaq"
+      ],
+      "url": "https://arxiv.org/abs/2501.16496",
+      "relevance": 40.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 194,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2404.16014",
+      "title": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+      "abstract": "Recent work has found that sparse autoencoders (SAEs) are an effective technique for unsupervised discovery of interpretable features in language models' (LMs) activations, by finding sparse, linear reconstructions of LM activations. We introduce the Gated Sparse Autoencoder (Gated SAE), which achieves a Pareto improvement over training with prevailing methods. In SAEs, the L1 penalty used to encourage sparsity introduces many undesirable biases, such as shrinkage -- systematic underestimation of feature activations. The key insight of Gated SAEs is to separate the functionality of (a) determining which directions to use and (b) estimating the magnitudes of those directions: this enables us to apply the L1 penalty only to the former, limiting the scope of undesirable side effects. Through training SAEs on LMs of up to 7B parameters we find that, in typical hyper-parameter ranges, Gated SAEs solve shrinkage, are similarly interpretable, and require half as many firing features to achieve comparable reconstruction fidelity.",
+      "year": 2024,
+      "authors": [
+        "Senthooran Rajamanoharan",
+        "Arthur Conmy",
+        "Lewis Smith",
+        "Tom Lieberum",
+        "Vikrant Varma",
+        "János Kramár"
+      ],
+      "url": "https://arxiv.org/abs/2404.16014",
+      "relevance": 173.4,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "dictionary learning",
+        "sparse autoencoder",
+        "sparse autoencoders"
+      ],
+      "citations": 192,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2404.15255",
+      "title": "How to use and interpret activation patching",
+      "abstract": "Activation patching is a popular mechanistic interpretability technique, but has many subtleties regarding how it is applied and how one may interpret the results. We provide a summary of advice and best practices, based on our experience using this technique in practice. We include an overview of the different ways to apply activation patching and a discussion on how to interpret the results. We focus on what evidence patching experiments provide about circuits, and on the choice of metric and associated pitfalls.",
+      "year": 2024,
+      "authors": [
+        "Stefan Heimersheim",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2404.15255",
+      "relevance": 70.5,
+      "core_matched": [
+        "activation patching",
+        "mechanistic interpretability"
+      ],
+      "citations": 191,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2306.00802",
+      "title": "Birth of a Transformer: A Memory Viewpoint",
+      "abstract": "Large language models based on transformers have achieved great empirical successes. However, as they are deployed more widely, there is a growing need to better understand their internal mechanisms in order to make them more reliable. These models appear to store vast amounts of knowledge from their training data, and to adapt quickly to new information provided in their context or prompt. We study how transformers balance these two types of knowledge by considering a synthetic setup where tokens are generated from either global or context-specific bigram distributions. By a careful empirical analysis of the training process on a simplified two-layer transformer, we illustrate the fast learning of global bigrams and the slower development of an \"induction head\" mechanism for the in-context bigrams. We highlight the role of weight matrices as associative memories, provide theoretical insights on how gradients enable their learning during training, and study the role of data-distributional properties.",
+      "year": 2023,
+      "authors": [
+        "Alberto Bietti",
+        "Vivien Cabannes",
+        "Diane Bouchacourt",
+        "Herve Jegou",
+        "Leon Bottou"
+      ],
+      "url": "https://arxiv.org/abs/2306.00802",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction head"
+      ],
+      "citations": 178,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2409.14507",
+      "title": "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders",
+      "abstract": "Sparse Autoencoders (SAEs) aim to decompose the activation space of large language models (LLMs) into human-interpretable latent directions or features. As we increase the number of features in the SAE, hierarchical features tend to split into finer features (\"math\" may split into \"algebra\", \"geometry\", etc.), a phenomenon referred to as feature splitting. However, we show that sparse decomposition and splitting of hierarchical features is not robust. Specifically, we show that seemingly monosemantic features fail to fire where they should, and instead get \"absorbed\" into their children features. We coin this phenomenon feature absorption, and show that it is caused by optimizing for sparsity in SAEs whenever the underlying features form a hierarchy. We introduce a metric to detect absorption in SAEs, and validate our findings empirically on hundreds of LLM SAEs. Our investigation suggests that varying SAE sizes or sparsity is insufficient to solve this issue. We discuss the implications of feature absorption in SAEs and some potential approaches to solve the fundamental theoretical issues before SAEs can be used for interpreting LLMs robustly and at scale.",
+      "year": 2024,
+      "authors": [
+        "David Chanin",
+        "James Wilken-Smith",
+        "Tomáš Dulka",
+        "Hardik Bhatnagar",
+        "Satvik Golechha",
+        "Joseph Bloom"
+      ],
+      "url": "https://arxiv.org/abs/2409.14507",
+      "relevance": 112.3,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "monosemantic",
+        "sparse autoencoders"
+      ],
+      "citations": 154,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2410.12877",
+      "title": "Improving Instruction-Following in Language Models through Activation Steering",
+      "abstract": "The ability to follow instructions is crucial for numerous real-world applications of language models. In pursuit of deeper insights and more powerful capabilities, we derive instruction-specific vector representations from language models and use them to steer models accordingly. These vectors are computed as the difference in activations between inputs with and without instructions, enabling a modular approach to activation steering. We demonstrate how this method can enhance model adherence to constraints such as output format, length, and word inclusion, providing inference-time control over instruction following. Our experiments across four models demonstrate how we can use the activation vectors to guide models to follow constraints even without explicit instructions and to enhance performance when instructions are present. Additionally, we explore the compositionality of activation steering, successfully applying multiple instructions simultaneously. Finally, we demonstrate that steering vectors computed on instruction-tuned models can transfer to improve base models. Our findings demonstrate that activation steering offers a practical and scalable approach for fine-grained control in language generation. Our code and data are available at https://github.com/microsoft/llm-steer-instruct.",
+      "year": 2024,
+      "authors": [
+        "Alessandro Stolfo",
+        "Vidhisha Balachandran",
+        "Safoora Yousefi",
+        "Eric Horvitz",
+        "Besmira Nushi"
+      ],
+      "url": "https://arxiv.org/abs/2410.12877",
+      "relevance": 40.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 154,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2410.20526",
+      "title": "Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders",
+      "abstract": "Sparse Autoencoders (SAEs) have emerged as a powerful unsupervised method for extracting sparse representations from language models, yet scalable training remains a significant challenge. We introduce a suite of 256 SAEs, trained on each layer and sublayer of the Llama-3.1-8B-Base model, with 32K and 128K features. Modifications to a state-of-the-art SAE variant, Top-K SAEs, are evaluated across multiple dimensions. In particular, we assess the generalizability of SAEs trained on base models to longer contexts and fine-tuned models. Additionally, we analyze the geometry of learned SAE latents, confirming that \\emph{feature splitting} enables the discovery of new features. The Llama Scope SAE checkpoints are publicly available at~\\url{https://huggingface.co/fnlp/Llama-Scope}, alongside our scalable training, interpretation, and visualization tools at \\url{https://github.com/OpenMOSS/Language-Model-SAEs}. These contributions aim to advance the open-source Sparse Autoencoder ecosystem and support mechanistic interpretability research by reducing the need for redundant SAE training.",
+      "year": 2024,
+      "authors": [
+        "Zhengfu He",
+        "Wentao Shu",
+        "Xuyang Ge",
+        "Lingjie Chen",
+        "Junxuan Wang",
+        "Yunhua Zhou"
+      ],
+      "url": "https://arxiv.org/abs/2410.20526",
+      "relevance": 152.4,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "mechanistic interpretability",
+        "sparse autoencoder",
+        "sparse autoencoders"
+      ],
+      "citations": 148,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2406.01506",
+      "title": "The Geometry of Categorical and Hierarchical Concepts in Large Language Models",
+      "abstract": "The linear representation hypothesis is the informal idea that semantic concepts are encoded as linear directions in the representation spaces of large language models (LLMs). Previous work has shown how to make this notion precise for representing binary concepts that have natural contrasts (e.g., {male, female}) as directions in representation space. However, many natural concepts do not have natural contrasts (e.g., whether the output is about an animal). In this work, we show how to extend the formalization of the linear representation hypothesis to represent features (e.g., is_animal) as vectors. This allows us to immediately formalize the representation of categorical concepts as polytopes in the representation space. Further, we use the formalization to prove a relationship between the hierarchical structure of concepts and the geometry of their representations. We validate these theoretical results on the Gemma and LLaMA-3 large language models, estimating representations for 900+ hierarchically related concepts using data from WordNet.",
+      "year": 2024,
+      "authors": [
+        "Kiho Park",
+        "Yo Joong Choe",
+        "Yibo Jiang",
+        "Victor Veitch"
+      ],
+      "url": "https://arxiv.org/abs/2406.01506",
+      "relevance": 20.0,
+      "core_matched": [
+        "linear representation"
+      ],
+      "citations": 140,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2105.04289",
+      "title": "Do Concept Bottleneck Models Learn as Intended?",
+      "abstract": "Concept bottleneck models map from raw inputs to concepts, and then from concepts to targets. Such models aim to incorporate pre-specified, high-level concepts into the learning procedure, and have been motivated to meet three desiderata: interpretability, predictability, and intervenability. However, we find that concept bottleneck models struggle to meet these goals. Using post hoc interpretability methods, we demonstrate that concepts do not correspond to anything semantically meaningful in input space, thus calling into question the usefulness of concept bottleneck models in their current form.",
+      "year": 2021,
+      "authors": [
+        "Andrei Margeloiu",
+        "Matthew Ashman",
+        "Umang Bhatt",
+        "Yanzhi Chen",
+        "Mateja Jamnik",
+        "Adrian Weller"
+      ],
+      "url": "https://arxiv.org/abs/2105.04289",
+      "relevance": 26.0,
+      "core_matched": [
+        "concept bottleneck"
+      ],
+      "citations": 136,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2312.03002",
+      "title": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "abstract": "Transformer models exhibit in-context learning: the ability to accurately predict the response to a novel query based on illustrative examples in the input sequence. In-context learning contrasts with traditional in-weights learning of query-output relationships. What aspects of the training data distribution and architecture favor in-context vs in-weights learning? Recent work has shown that specific distributional properties inherent in language, such as burstiness, large dictionaries and skewed rank-frequency distributions, control the trade-off or simultaneous appearance of these two forms of learning. We first show that these results are recapitulated in a minimal attention-only network trained on a simplified dataset. In-context learning (ICL) is driven by the abrupt emergence of an induction head, which subsequently competes with in-weights learning. By identifying progress measures that precede in-context learning and targeted experiments, we construct a two-parameter model of an induction head which emulates the full data distributional dependencies displayed by the attention-based network. A phenomenological model of induction head formation traces its abrupt emergence to the sequential learning of three nested logits enabled by an intrinsic curriculum. We propose that the sharp transitions in attention-based networks arise due to a specific chain of multi-layer operations necessary to achieve ICL, which is implemented by nested nonlinearities sequentially learned during training.",
+      "year": 2023,
+      "authors": [
+        "Gautam Reddy"
+      ],
+      "url": "https://arxiv.org/abs/2312.03002",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction head"
+      ],
+      "citations": 131,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "1902.05522",
+      "title": "Superposition of many models into one",
+      "abstract": "We present a method for storing multiple models within a single set of parameters. Models can coexist in superposition and still be retrieved individually. In experiments with neural networks, we show that a surprisingly large number of models can be effectively stored within a single parameter instance. Furthermore, each of these models can undergo thousands of training steps without significantly interfering with other models within the superposition. This approach may be viewed as the online complement of compression: rather than reducing the size of a network after training, we make use of the unrealized capacity of a network during training.",
+      "year": 2019,
+      "authors": [
+        "Brian Cheung",
+        "Alex Terekhov",
+        "Yubei Chen",
+        "Pulkit Agrawal",
+        "Bruno Olshausen"
+      ],
+      "url": "https://arxiv.org/abs/1902.05522",
+      "relevance": 20.0,
+      "core_matched": [
+        "superposition"
+      ],
+      "citations": 130,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2411.14257",
+      "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+      "abstract": "Hallucinations in large language models are a widespread problem, yet the mechanisms behind whether models will hallucinate are poorly understood, limiting our ability to solve this problem. Using sparse autoencoders as an interpretability tool, we discover that a key part of these mechanisms is entity recognition, where the model detects if an entity is one it can recall facts about. Sparse autoencoders uncover meaningful directions in the representation space, these detect whether the model recognizes an entity, e.g. detecting it doesn't know about an athlete or a movie. This suggests that models can have self-knowledge: internal representations about their own capabilities. These directions are causally relevant: capable of steering the model to refuse to answer questions about known entities, or to hallucinate attributes of unknown entities when it would otherwise refuse. We demonstrate that despite the sparse autoencoders being trained on the base model, these directions have a causal effect on the chat model's refusal behavior, suggesting that chat finetuning has repurposed this existing mechanism. Furthermore, we provide an initial exploration into the mechanistic role of these directions in the model, finding that they disrupt the attention of downstream heads that typically move entity attributes to the final token.",
+      "year": 2024,
+      "authors": [
+        "Javier Ferrando",
+        "Oscar Obeso",
+        "Senthooran Rajamanoharan",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2411.14257",
+      "relevance": 47.0,
+      "core_matched": [
+        "internal representations",
+        "sparse autoencoders"
+      ],
+      "citations": 128,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2402.14735",
+      "title": "How Transformers Learn Causal Structure with Gradient Descent",
+      "abstract": "The incredible success of transformers on sequence modeling tasks can be largely attributed to the self-attention mechanism, which allows information to be transferred between different parts of a sequence. Self-attention allows transformers to encode causal structure which makes them particularly suitable for sequence modeling. However, the process by which transformers learn such causal structure via gradient-based training algorithms remains poorly understood. To better understand this process, we introduce an in-context learning task that requires learning latent causal structure. We prove that gradient descent on a simplified two-layer transformer learns to solve this task by encoding the latent causal graph in the first attention layer. The key insight of our proof is that the gradient of the attention matrix encodes the mutual information between tokens. As a consequence of the data processing inequality, the largest entries of this gradient correspond to edges in the latent causal graph. As a special case, when the sequences are generated from in-context Markov chains, we prove that transformers learn an induction head (Olsson et al., 2022). We confirm our theoretical findings by showing that transformers trained on our in-context learning task are able to recover a wide variety of causal structures.",
+      "year": 2024,
+      "authors": [
+        "Eshaan Nichani",
+        "Alex Damian",
+        "Jason D. Lee"
+      ],
+      "url": "https://arxiv.org/abs/2402.14735",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction head"
+      ],
+      "citations": 128,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2306.01574",
+      "title": "Probabilistic Concept Bottleneck Models",
+      "abstract": "Interpretable models are designed to make decisions in a human-interpretable manner. Representatively, Concept Bottleneck Models (CBM) follow a two-step process of concept prediction and class prediction based on the predicted concepts. CBM provides explanations with high-level concepts derived from concept predictions; thus, reliable concept predictions are important for trustworthiness. In this study, we address the ambiguity issue that can harm reliability. While the existence of a concept can often be ambiguous in the data, CBM predicts concepts deterministically without considering this ambiguity. To provide a reliable interpretation against this ambiguity, we propose Probabilistic Concept Bottleneck Models (ProbCBM). By leveraging probabilistic concept embeddings, ProbCBM models uncertainty in concept prediction and provides explanations based on the concept and its corresponding uncertainty. This uncertainty enhances the reliability of the explanations. Furthermore, as class uncertainty is derived from concept uncertainty in ProbCBM, we can explain class uncertainty by means of concept uncertainty. Code is publicly available at https://github.com/ejkim47/prob-cbm.",
+      "year": 2023,
+      "authors": [
+        "Eunji Kim",
+        "Dahuin Jung",
+        "Sangha Park",
+        "Siwon Kim",
+        "Sungroh Yoon"
+      ],
+      "url": "https://arxiv.org/abs/2306.01574",
+      "relevance": 43.8,
+      "core_matched": [
+        "CBM",
+        "concept bottleneck"
+      ],
+      "citations": 123,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2403.00745",
+      "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
+      "abstract": "Activation Patching is a method of directly computing causal attributions of behavior to model components. However, applying it exhaustively requires a sweep with cost scaling linearly in the number of model components, which can be prohibitively expensive for SoTA Large Language Models (LLMs). We investigate Attribution Patching (AtP), a fast gradient-based approximation to Activation Patching and find two classes of failure modes of AtP which lead to significant false negatives. We propose a variant of AtP called AtP*, with two changes to address these failure modes while retaining scalability. We present the first systematic study of AtP and alternative methods for faster activation patching and show that AtP significantly outperforms all other investigated methods, with AtP* providing further significant improvement. Finally, we provide a method to bound the probability of remaining false negatives of AtP* estimates.",
+      "year": 2024,
+      "authors": [
+        "János Kramár",
+        "Tom Lieberum",
+        "Rohin Shah",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2403.00745",
+      "relevance": 45.0,
+      "core_matched": [
+        "activation patching",
+        "attribution patching"
+      ],
+      "citations": 106,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2202.01459",
+      "title": "Concept Bottleneck Model with Additional Unsupervised Concepts",
+      "abstract": "With the increasing demands for accountability, interpretability is becoming an essential capability for real-world AI applications. However, most methods utilize post-hoc approaches rather than training the interpretable model. In this article, we propose a novel interpretable model based on the concept bottleneck model (CBM). CBM uses concept labels to train an intermediate layer as the additional visible layer. However, because the number of concept labels restricts the dimension of this layer, it is difficult to obtain high accuracy with a small number of labels. To address this issue, we integrate supervised concepts with unsupervised ones trained with self-explaining neural networks (SENNs). By seamlessly training these two types of concepts while reducing the amount of computation, we can obtain both supervised and unsupervised concepts simultaneously, even for large-sized images. We refer to the proposed model as the concept bottleneck model with additional unsupervised concepts (CBM-AUC). We experimentally confirmed that the proposed model outperformed CBM and SENN. We also visualized the saliency map of each concept and confirmed that it was consistent with the semantic meanings.",
+      "year": 2022,
+      "authors": [
+        "Yoshihide Sawada",
+        "Keigo Nakamura"
+      ],
+      "url": "https://arxiv.org/abs/2202.01459",
+      "relevance": 55.8,
+      "core_matched": [
+        "CBM",
+        "concept bottleneck"
+      ],
+      "citations": 106,
+      "venue": "IEEE Access"
+    },
+    {
+      "arxiv_id": "2411.11296",
+      "title": "Steering Language Model Refusal with Sparse Autoencoders",
+      "abstract": "Responsible deployment of language models requires mechanisms for refusing unsafe prompts while preserving model performance. While most approaches modify model weights through additional training, we explore an alternative: steering model activations at inference time via amplifying sparse autoencoder (SAE) features that mediate refusal. This work uncovers a fundamental tension between SAE steering-based safety improvements and general model capabilities. While feature steering successfully improves robustness against both single-turn and challenging multi-turn jailbreak attempts, we discover that this comes at a previously underexplored cost -- systematic degradation of performance across multiple benchmark tasks, even on safe inputs with no apparent connection to refusal behavior. This suggests that features mediating refusal may be more deeply entangled with general language model capabilities than previously understood. Our findings reveal important open questions about the nature of safety-relevant features in language models and the feasibility of isolating them for targeted intervention. While SAE-based steering shows promise as a flexible approach to enhancing language model safety, our results highlight the critical need to understand and address the mechanisms behind these capability tradeoffs before such techniques can be practically deployed.",
+      "year": 2024,
+      "authors": [
+        "Kyle O'Brien",
+        "David Majercak",
+        "Xavier Fernandes",
+        "Richard Edgar",
+        "Blake Bullwinkel",
+        "Jingya Chen"
+      ],
+      "url": "https://arxiv.org/abs/2411.11296",
+      "relevance": 113.4,
+      "core_matched": [
+        "SAE",
+        "feature steering",
+        "sparse autoencoder",
+        "sparse autoencoders"
+      ],
+      "citations": 92,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2404.07129",
+      "title": "What needs to go right for an induction head? A mechanistic study of in-context learning circuits and their formation",
+      "abstract": "In-context learning is a powerful emergent ability in transformer models. Prior work in mechanistic interpretability has identified a circuit element that may be critical for in-context learning -- the induction head (IH), which performs a match-and-copy operation. During training of large transformers on natural language data, IHs emerge around the same time as a notable phase change in the loss. Despite the robust evidence for IHs and this interesting coincidence with the phase change, relatively little is known about the diversity and emergence dynamics of IHs. Why is there more than one IH, and how are they dependent on each other? Why do IHs appear all of a sudden, and what are the subcircuits that enable them to emerge? We answer these questions by studying IH emergence dynamics in a controlled setting by training on synthetic data. In doing so, we develop and share a novel optogenetics-inspired causal framework for modifying activations throughout training. Using this framework, we delineate the diverse and additive nature of IHs. By clamping subsets of activations throughout training, we then identify three underlying subcircuits that interact to drive IH formation, yielding the phase change. Furthermore, these subcircuits shed light on data-dependent properties of formation, such as phase change timing, already showing the promise of this more in-depth understanding of subcircuits that need to \"go right\" for an induction head.",
+      "year": 2024,
+      "authors": [
+        "Aaditya K. Singh",
+        "Ted Moskovitz",
+        "Felix Hill",
+        "Stephanie C. Y. Chan",
+        "Andrew M. Saxe"
+      ],
+      "url": "https://arxiv.org/abs/2404.07129",
+      "relevance": 70.5,
+      "core_matched": [
+        "induction head",
+        "mechanistic interpretability"
+      ],
+      "citations": 92,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2307.09476",
+      "title": "Overthinking the Truth: Understanding how Language Models Process False Demonstrations",
+      "abstract": "Modern language models can imitate complex patterns through few-shot learning, enabling them to complete challenging tasks without fine-tuning. However, imitation can also lead models to reproduce inaccuracies or harmful content if present in the context. We study harmful imitation through the lens of a model's internal representations, and identify two related phenomena: \"overthinking\" and \"false induction heads\". The first phenomenon, overthinking, appears when we decode predictions from intermediate layers, given correct vs. incorrect few-shot demonstrations. At early layers, both demonstrations induce similar model behavior, but the behavior diverges sharply at some \"critical layer\", after which the accuracy given incorrect demonstrations progressively decreases. The second phenomenon, false induction heads, are a possible mechanistic cause of overthinking: these are heads in late layers that attend to and copy false information from previous demonstrations, and whose ablation reduces overthinking. Beyond scientific understanding, our results suggest that studying intermediate model computations could be a promising avenue for understanding and guarding against harmful model behaviors.",
+      "year": 2023,
+      "authors": [
+        "Danny Halawi",
+        "Jean-Stanislas Denain",
+        "Jacob Steinhardt"
+      ],
+      "url": "https://arxiv.org/abs/2307.09476",
+      "relevance": 42.0,
+      "core_matched": [
+        "induction heads",
+        "internal representations"
+      ],
+      "citations": 92,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2502.15603",
+      "title": "Do Multilingual LLMs Think In English?",
+      "abstract": "Large language models (LLMs) have multilingual capabilities and can solve tasks across various languages. However, we show that current LLMs make key decisions in a representation space closest to English, regardless of their input and output languages. Exploring the internal representations with a logit lens for sentences in French, German, Dutch, and Mandarin, we show that the LLM first emits representations close to English for semantically-loaded words before translating them into the target language. We further show that activation steering in these LLMs is more effective when the steering vectors are computed in English rather than in the language of the inputs and outputs. This suggests that multilingual LLMs perform key reasoning steps in a representation that is heavily shaped by English in a way that is not transparent to system users.",
+      "year": 2025,
+      "authors": [
+        "Lisa Schut",
+        "Yarin Gal",
+        "Sebastian Farquhar"
+      ],
+      "url": "https://arxiv.org/abs/2502.15603",
+      "relevance": 66.0,
+      "core_matched": [
+        "activation steering",
+        "internal representations",
+        "logit lens"
+      ],
+      "citations": 90,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2406.00034",
+      "title": "Adaptive Activation Steering: A Tuning-Free LLM Truthfulness Improvement Method for Diverse Hallucinations Categories",
+      "abstract": "Recent studies have indicated that Large Language Models (LLMs) harbor an inherent understanding of truthfulness, yet often fail to consistently express it and generate false statements. This gap between \"knowing\" and \"telling\" poses a challenge for ensuring the truthfulness of generated content. Inspired by recent work on the practice of encoding human-interpretable concepts linearly within large language models, we treat truthfulness as a specially linearly encoded concept within LLMs, and introduce Adaptive Activation Steering (ACT), a tuning-free method that adaptively shifts LLM's activations in the \"truthful\" direction during inference. ACT addresses diverse categories of hallucinations by utilizing diverse truthfulness-related steering vectors and adjusting the steering intensity adaptively. Applied as an add-on across various models, ACT significantly improves truthfulness in LLaMA ($\\uparrow$ 142%), LLaMA2 ($\\uparrow$ 24%), Alpaca ($\\uparrow$ 36%), Vicuna ($\\uparrow$ 28%), LLaMA2-Chat ($\\uparrow$ 19%), and LLaMA3($\\uparrow$ 34%). Furthermore, we verify ACT's scalability across larger models (13B, 33B, 65B), underscoring the adaptability of ACT to large-scale language models. Our code is available at https://github.com/tianlwang/ACT.",
+      "year": 2024,
+      "authors": [
+        "Tianlong Wang",
+        "Xianfeng Jiao",
+        "Yinghao Zhu",
+        "Zhongzhi Chen",
+        "Yifan He",
+        "Xu Chu"
+      ],
+      "url": "https://arxiv.org/abs/2406.00034",
+      "relevance": 40.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 88,
+      "venue": "The Web Conference"
+    },
+    {
+      "arxiv_id": "2312.17249",
+      "title": "Do Androids Know They're Only Dreaming of Electric Sheep?",
+      "abstract": "We design probes trained on the internal representations of a transformer language model to predict its hallucinatory behavior on three grounded generation tasks. To train the probes, we annotate for span-level hallucination on both sampled (organic) and manually edited (synthetic) reference outputs. Our probes are narrowly trained and we find that they are sensitive to their training domain: they generalize poorly from one task to another or from synthetic to organic hallucinations. However, on in-domain data, they can reliably detect hallucinations at many transformer layers, achieving 95% of their peak performance as early as layer 4. Here, probing proves accurate for evaluating hallucination, outperforming several contemporary baselines and even surpassing an expert human annotator in response-level detection F1. Similarly, on span-level labeling, probes are on par or better than the expert annotator on two out of three generation tasks. Overall, we find that probing is a feasible and efficient alternative to language model hallucination evaluation when model states are available.",
+      "year": 2023,
+      "authors": [
+        "Sky CH-Wang",
+        "Benjamin Van Durme",
+        "Jason Eisner",
+        "Chris Kedzie"
+      ],
+      "url": "https://arxiv.org/abs/2312.17249",
+      "relevance": 20.0,
+      "core_matched": [
+        "internal representations"
+      ],
+      "citations": 83,
+      "venue": "Annual Meeting of the Association for Computational Linguistics"
+    },
+    {
+      "arxiv_id": "2408.01432",
+      "title": "VLG-CBM: Training Concept Bottleneck Models with Vision-Language Guidance",
+      "abstract": "Concept Bottleneck Models (CBMs) provide interpretable prediction by introducing an intermediate Concept Bottleneck Layer (CBL), which encodes human-understandable concepts to explain models' decision. Recent works proposed to utilize Large Language Models and pre-trained Vision-Language Models to automate the training of CBMs, making it more scalable and automated. However, existing approaches still fall short in two aspects: First, the concepts predicted by CBL often mismatch the input image, raising doubts about the faithfulness of interpretation. Second, it has been shown that concept values encode unintended information: even a set of random concepts could achieve comparable test accuracy to state-of-the-art CBMs. To address these critical limitations, in this work, we propose a novel framework called Vision-Language-Guided Concept Bottleneck Model (VLG-CBM) to enable faithful interpretability with the benefits of boosted performance. Our method leverages off-the-shelf open-domain grounded object detectors to provide visually grounded concept annotation, which largely enhances the faithfulness of concept prediction while further improving the model performance. In addition, we propose a new metric called Number of Effective Concepts (NEC) to control the information leakage and provide better interpretability. Extensive evaluations across five standard benchmarks show that our method, VLG-CBM, outperforms existing methods by at least 4.27% and up to 51.09% on Accuracy at NEC=5 (denoted as ANEC-5), and by at least 0.45% and up to 29.78% on average accuracy (denoted as ANEC-avg), while preserving both faithfulness and interpretability of the learned concepts as demonstrated in extensive experiments.",
+      "year": 2024,
+      "authors": [
+        "Divyansh Srivastava",
+        "Ge Yan",
+        "Tsui-Wei Weng"
+      ],
+      "url": "https://arxiv.org/abs/2408.01432",
+      "relevance": 84.6,
+      "core_matched": [
+        "CBM",
+        "concept bottleneck"
+      ],
+      "citations": 81,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2503.05613",
+      "title": "A Survey on Sparse Autoencoders: Interpreting the Internal Mechanisms of Large Language Models",
+      "abstract": "Large Language Models (LLMs) have transformed natural language processing, yet their internal mechanisms remain largely opaque. Recently, mechanistic interpretability has attracted significant attention from the research community as a means to understand the inner workings of LLMs. Among various mechanistic interpretability approaches, Sparse Autoencoders (SAEs) have emerged as a promising method due to their ability to disentangle the complex, superimposed features within LLMs into more interpretable components. This paper presents a comprehensive survey of SAEs for interpreting and understanding the internal workings of LLMs. Our major contributions include: (1) exploring the technical framework of SAEs, covering basic architecture, design improvements, and effective training strategies; (2) examining different approaches to explaining SAE features, categorized into input-based and output-based explanation methods; (3) discussing evaluation methods for assessing SAE performance, covering both structural and functional metrics; and (4) investigating real-world applications of SAEs in understanding and manipulating LLM behaviors.",
+      "year": 2025,
+      "authors": [
+        "Dong Shu",
+        "Xuansheng Wu",
+        "Haiyan Zhao",
+        "Daking Rai",
+        "Ziyu Yao",
+        "Ninghao Liu"
+      ],
+      "url": "https://arxiv.org/abs/2503.05613",
+      "relevance": 124.3,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "mechanistic interpretability",
+        "sparse autoencoders"
+      ],
+      "citations": 78,
+      "venue": "Conference on Empirical Methods in Natural Language Processing"
+    },
+    {
+      "arxiv_id": "2403.03867",
+      "title": "On the Origins of Linear Representations in Large Language Models",
+      "abstract": "Recent works have argued that high-level semantic concepts are encoded \"linearly\" in the representation space of large language models. In this work, we study the origins of such linear representations. To that end, we introduce a simple latent variable model to abstract and formalize the concept dynamics of the next token prediction. We use this formalism to show that the next token prediction objective (softmax with cross-entropy) and the implicit bias of gradient descent together promote the linear representation of concepts. Experiments show that linear representations emerge when learning from data matching the latent variable model, confirming that this simple structure already suffices to yield linear representations. We additionally confirm some predictions of the theory using the LLaMA-2 large language model, giving evidence that the simplified model yields generalizable insights.",
+      "year": 2024,
+      "authors": [
+        "Yibo Jiang",
+        "Goutham Rajendran",
+        "Pradeep Ravikumar",
+        "Bryon Aragam",
+        "Victor Veitch"
+      ],
+      "url": "https://arxiv.org/abs/2403.03867",
+      "relevance": 20.0,
+      "core_matched": [
+        "linear representation"
+      ],
+      "citations": 77,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2212.09095",
+      "title": "Rethinking the Role of Scale for In-Context Learning: An Interpretability-based Case Study at 66 Billion Scale",
+      "abstract": "Language models have been shown to perform better with an increase in scale on a wide variety of tasks via the in-context learning paradigm. In this paper, we investigate the hypothesis that the ability of a large language model to in-context learn-perform a task is not uniformly spread across all of its underlying components. Using a 66 billion parameter language model (OPT-66B) across a diverse set of 14 downstream tasks, we find this is indeed the case: $\\sim$70% of attention heads and $\\sim$20% of feed forward networks can be removed with minimal decline in task performance. We find substantial overlap in the set of attention heads (un)important for in-context learning across tasks and number of in-context examples. We also address our hypothesis through a task-agnostic lens, finding that a small set of attention heads in OPT-66B score highly on their ability to perform primitive induction operations associated with in-context learning, namely, prefix matching and copying. These induction heads overlap with task-specific important heads, reinforcing arguments by Olsson et al. (arXiv:2209.11895) regarding induction head generality to more sophisticated behaviors associated with in-context learning. Overall, our study provides several insights that indicate large language models may be under-trained for in-context learning and opens up questions on how to pre-train language models to more effectively perform in-context learning.",
+      "year": 2022,
+      "authors": [
+        "Hritik Bansal",
+        "Karthik Gopalakrishnan",
+        "Saket Dingliwal",
+        "Sravan Bodapati",
+        "Katrin Kirchhoff",
+        "Dan Roth"
+      ],
+      "url": "https://arxiv.org/abs/2212.09095",
+      "relevance": 47.0,
+      "core_matched": [
+        "induction head",
+        "induction heads"
+      ],
+      "citations": 75,
+      "venue": "Annual Meeting of the Association for Computational Linguistics"
+    },
+    {
+      "arxiv_id": "2311.17030",
+      "title": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+      "abstract": "Mechanistic interpretability aims to understand model behaviors in terms of specific, interpretable features, often hypothesized to manifest as low-dimensional subspaces of activations. Specifically, recent studies have explored subspace interventions (such as activation patching) as a way to simultaneously manipulate model behavior and attribute the features behind it to given subspaces. In this work, we demonstrate that these two aims diverge, potentially leading to an illusory sense of interpretability. Counterintuitively, even if a subspace intervention makes the model's output behave as if the value of a feature was changed, this effect may be achieved by activating a dormant parallel pathway leveraging another subspace that is causally disconnected from model outputs. We demonstrate this phenomenon in a distilled mathematical example, in two real-world domains (the indirect object identification task and factual recall), and present evidence for its prevalence in practice. In the context of factual recall, we further show a link to rank-1 fact editing, providing a mechanistic explanation for previous work observing an inconsistency between fact editing performance and fact localization. However, this does not imply that activation patching of subspaces is intrinsically unfit for interpretability. To contextualize our findings, we also show what a success case looks like in a task (indirect object identification) where prior manual circuit analysis informs an understanding of the location of a feature. We explore the additional evidence needed to argue that a patched subspace is faithful.",
+      "year": 2023,
+      "authors": [
+        "Aleksandar Makelov",
+        "Georg Lange",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2311.17030",
+      "relevance": 70.5,
+      "core_matched": [
+        "activation patching",
+        "mechanistic interpretability"
+      ],
+      "citations": 73,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2209.09056",
+      "title": "Concept Embedding Models: Beyond the Accuracy-Explainability Trade-Off",
+      "abstract": "Deploying AI-powered systems requires trustworthy models supporting effective human interactions, going beyond raw prediction accuracy. Concept bottleneck models promote trustworthiness by conditioning classification tasks on an intermediate level of human-like concepts. This enables human interventions which can correct mispredicted concepts to improve the model's performance. However, existing concept bottleneck models are unable to find optimal compromises between high task accuracy, robust concept-based explanations, and effective interventions on concepts -- particularly in real-world conditions where complete and accurate concept supervisions are scarce. To address this, we propose Concept Embedding Models, a novel family of concept bottleneck models which goes beyond the current accuracy-vs-interpretability trade-off by learning interpretable high-dimensional concept representations. Our experiments demonstrate that Concept Embedding Models (1) attain better or competitive task accuracy w.r.t. standard neural models without concepts, (2) provide concept representations capturing meaningful semantics including and beyond their ground truth labels, (3) support test-time concept interventions whose effect in test accuracy surpasses that in standard concept bottleneck models, and (4) scale to real-world conditions where complete concept supervisions are scarce.",
+      "year": 2022,
+      "authors": [
+        "Mateo Espinosa Zarlenga",
+        "Pietro Barbiero",
+        "Gabriele Ciravegna",
+        "Giuseppe Marra",
+        "Francesco Giannini",
+        "Michelangelo Diligenti"
+      ],
+      "url": "https://arxiv.org/abs/2209.09056",
+      "relevance": 20.0,
+      "core_matched": [
+        "concept bottleneck"
+      ],
+      "citations": 72,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2312.03813",
+      "title": "Improving Activation Steering in Language Models with Mean-Centring",
+      "abstract": "Recent work in activation steering has demonstrated the potential to better control the outputs of Large Language Models (LLMs), but it involves finding steering vectors. This is difficult because engineers do not typically know how features are represented in these models. We seek to address this issue by applying the idea of mean-centring to steering vectors. We find that taking the average of activations associated with a target dataset, and then subtracting the mean of all training activations, results in effective steering vectors. We test this method on a variety of models on natural language tasks by steering away from generating toxic text, and steering the completion of a story towards a target genre. We also apply mean-centring to extract function vectors, more effectively triggering the execution of a range of natural language tasks by a significant margin (compared to previous baselines). This suggests that mean-centring can be used to easily improve the effectiveness of activation steering in a wide range of contexts.",
+      "year": 2023,
+      "authors": [
+        "Ole Jorgensen",
+        "Dylan Cope",
+        "Nandi Schoots",
+        "Murray Shanahan"
+      ],
+      "url": "https://arxiv.org/abs/2312.03813",
+      "relevance": 40.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 72,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2308.14179",
+      "title": "Towards Vision-Language Mechanistic Interpretability: A Causal Tracing Tool for BLIP",
+      "abstract": "Mechanistic interpretability seeks to understand the neural mechanisms that enable specific behaviors in Large Language Models (LLMs) by leveraging causality-based methods. While these approaches have identified neural circuits that copy spans of text, capture factual knowledge, and more, they remain unusable for multimodal models since adapting these tools to the vision-language domain requires considerable architectural changes. In this work, we adapt a unimodal causal tracing tool to BLIP to enable the study of the neural mechanisms underlying image-conditioned text generation. We demonstrate our approach on a visual question answering dataset, highlighting the causal relevance of later layer representations for all tokens. Furthermore, we release our BLIP causal tracing tool as open source to enable further experimentation in vision-language mechanistic interpretability by the community. Our code is available at https://github.com/vedantpalit/Towards-Vision-Language-Mechanistic-Interpretability.",
+      "year": 2023,
+      "authors": [
+        "Vedant Palit",
+        "Rohan Pandey",
+        "Aryaman Arora",
+        "Paul Pu Liang"
+      ],
+      "url": "https://arxiv.org/abs/2308.14179",
+      "relevance": 94.0,
+      "core_matched": [
+        "causal tracing",
+        "mechanistic interpretability"
+      ],
+      "citations": 70,
+      "venue": "2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)"
+    },
+    {
+      "arxiv_id": "2504.02821",
+      "title": "Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models",
+      "abstract": "Sparse Autoencoders (SAEs) have recently gained attention as a means to improve the interpretability and steerability of Large Language Models (LLMs), both of which are essential for AI safety. In this work, we extend the application of SAEs to Vision-Language Models (VLMs), such as CLIP, and introduce a comprehensive framework for evaluating monosemanticity at the neuron-level in visual representations. To ensure that our evaluation aligns with human perception, we propose a benchmark derived from a large-scale user study. Our experimental results reveal that SAEs trained on VLMs significantly enhance the monosemanticity of individual neurons, with sparsity and wide latents being the most influential factors. Further, we demonstrate that applying SAE interventions on CLIP's vision encoder directly steers multimodal LLM outputs (e.g., LLaVA), without any modifications to the underlying language model. These findings emphasize the practicality and efficacy of SAEs as an unsupervised tool for enhancing both interpretability and control of VLMs. Code and benchmark data are available at https://github.com/ExplainableML/sae-for-vlm.",
+      "year": 2025,
+      "authors": [
+        "Mateusz Pach",
+        "Shyamgopal Karthik",
+        "Quentin Bouniot",
+        "Serge Belongie",
+        "Zeynep Akata"
+      ],
+      "url": "https://arxiv.org/abs/2504.02821",
+      "relevance": 142.8,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "monosemantic",
+        "sparse autoencoders"
+      ],
+      "citations": 70,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2502.07557",
+      "title": "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation",
+      "abstract": "Despite the implementation of safety alignment strategies, large language models (LLMs) remain vulnerable to jailbreak attacks, which undermine these safety guardrails and pose significant security threats. Some defenses have been proposed to detect or mitigate jailbreaks, but they are unable to withstand the test of time due to an insufficient understanding of jailbreak mechanisms. In this work, we investigate the mechanisms behind jailbreaks based on the Linear Representation Hypothesis (LRH), which states that neural networks encode high-level concepts as subspaces in their hidden representations. We define the toxic semantics in harmful and jailbreak prompts as toxic concepts and describe the semantics in jailbreak prompts that manipulate LLMs to comply with unsafe requests as jailbreak concepts. Through concept extraction and analysis, we reveal that LLMs can recognize the toxic concepts in both harmful and jailbreak prompts. However, unlike harmful prompts, jailbreak prompts activate the jailbreak concepts and alter the LLM output from rejection to compliance. Building on our analysis, we propose a comprehensive jailbreak defense framework, JBShield, consisting of two key components: jailbreak detection JBShield-D and mitigation JBShield-M. JBShield-D identifies jailbreak prompts by determining whether the input activates both toxic and jailbreak concepts. When a jailbreak prompt is detected, JBShield-M adjusts the hidden representations of the target LLM by enhancing the toxic concept and weakening the jailbreak concept, ensuring LLMs produce safe content. Extensive experiments demonstrate the superior performance of JBShield, achieving an average detection accuracy of 0.95 and reducing the average attack success rate of various jailbreak attacks to 2% from 61% across distinct LLMs.",
+      "year": 2025,
+      "authors": [
+        "Shenyi Zhang",
+        "Yuchen Zhai",
+        "Keyan Guo",
+        "Hongxin Hu",
+        "Shengnan Guo",
+        "Zheng Fang"
+      ],
+      "url": "https://arxiv.org/abs/2502.07557",
+      "relevance": 20.0,
+      "core_matched": [
+        "linear representation"
+      ],
+      "citations": 67,
+      "venue": "USENIX Security Symposium"
+    },
+    {
+      "arxiv_id": "2502.14010",
+      "title": "Which Attention Heads Matter for In-Context Learning?",
+      "abstract": "Large language models (LLMs) exhibit impressive in-context learning (ICL) capability, enabling them to perform new tasks using only a few demonstrations in the prompt. Two different mechanisms have been proposed to explain ICL: induction heads that find and copy relevant tokens, and function vector (FV) heads whose activations compute a latent encoding of the ICL task. To better understand which of the two distinct mechanisms drives ICL, we study and compare induction heads and FV heads in 12 language models. Through detailed ablations, we discover that few-shot ICL performance depends primarily on FV heads, especially in larger models. In addition, we uncover that FV and induction heads are connected: many FV heads start as induction heads during training before transitioning to the FV mechanism. This leads us to speculate that induction facilitates learning the more complex FV mechanism that ultimately drives ICL.",
+      "year": 2025,
+      "authors": [
+        "Kayo Yin",
+        "Jacob Steinhardt"
+      ],
+      "url": "https://arxiv.org/abs/2502.14010",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction heads"
+      ],
+      "citations": 67,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2408.00113",
+      "title": "Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models",
+      "abstract": "What latent features are encoded in language model (LM) representations? Recent work on training sparse autoencoders (SAEs) to disentangle interpretable features in LM representations has shown significant promise. However, evaluating the quality of these SAEs is difficult because we lack a ground-truth collection of interpretable features that we expect good SAEs to recover. We thus propose to measure progress in interpretable dictionary learning by working in the setting of LMs trained on chess and Othello transcripts. These settings carry natural collections of interpretable features -- for example, \"there is a knight on F3\" -- which we leverage into $\\textit{supervised}$ metrics for SAE quality. To guide progress in interpretable dictionary learning, we introduce a new SAE training technique, $\\textit{p-annealing}$, which improves performance on prior unsupervised metrics as well as our new metrics.",
+      "year": 2024,
+      "authors": [
+        "Adam Karvonen",
+        "Benjamin Wright",
+        "Can Rager",
+        "Rico Angell",
+        "Jannik Brinkmann",
+        "Logan Smith"
+      ],
+      "url": "https://arxiv.org/abs/2408.00113",
+      "relevance": 118.3,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "dictionary learning",
+        "sparse autoencoders"
+      ],
+      "citations": 64,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2305.08746",
+      "title": "Seeing is Believing: Brain-Inspired Modular Training for Mechanistic Interpretability",
+      "abstract": "We introduce Brain-Inspired Modular Training (BIMT), a method for making neural networks more modular and interpretable. Inspired by brains, BIMT embeds neurons in a geometric space and augments the loss function with a cost proportional to the length of each neuron connection. We demonstrate that BIMT discovers useful modular neural networks for many simple tasks, revealing compositional structures in symbolic formulas, interpretable decision boundaries and features for classification, and mathematical structure in algorithmic datasets. The ability to directly see modules with the naked eye can complement current mechanistic interpretability strategies such as probes, interventions or staring at all weights.",
+      "year": 2023,
+      "authors": [
+        "Ziming Liu",
+        "Eric Gan",
+        "Max Tegmark"
+      ],
+      "url": "https://arxiv.org/abs/2305.08746",
+      "relevance": 40.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 63,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2503.00177",
+      "title": "Steering Large Language Model Activations in Sparse Spaces",
+      "abstract": "A key challenge in AI alignment is guiding large language models (LLMs) to follow desired behaviors at test time. Activation steering, which modifies internal model activations during inference, offers a potential solution. However, prior work in dense activation spaces struggles with superposition, wherein multiple features become entangled, limiting interpretability and precise control. In contrast, sparse representations provide an untapped opportunity for more interpretable behavior modulation. In this work, we introduce sparse activation steering (SAS), a method that leverages sparse autoencoders (SAEs) to steer LLM behavior in sparse spaces. By isolating behavior-specific features through a contrastive prompt-pairing approach, we define a set of features that can selectively reinforce or suppress behaviors. Experiments on Gemma 2 LLMs show that SAS vectors enable nuanced behavioral modulation and finer-grained control. Furthermore, scaling SAEs improves monosemanticity of SAS vectors, suggesting more reliable and interpretable interventions.",
+      "year": 2025,
+      "authors": [
+        "Reza Bayat",
+        "Ali Rahimi-Kalahroudi",
+        "Mohammad Pezeshki",
+        "Sarath Chandar",
+        "Pascal Vincent"
+      ],
+      "url": "https://arxiv.org/abs/2503.00177",
+      "relevance": 115.9,
+      "core_matched": [
+        "SAEs",
+        "activation steering",
+        "sparse autoencoders",
+        "superposition"
+      ],
+      "citations": 62,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2402.14328",
+      "title": "Understanding and Patching Compositional Reasoning in LLMs",
+      "abstract": "LLMs have marked a revolutonary shift, yet they falter when faced with compositional reasoning tasks. Our research embarks on a quest to uncover the root causes of compositional reasoning failures of LLMs, uncovering that most of them stem from the improperly generated or leveraged implicit reasoning results. Inspired by our empirical findings, we resort to Logit Lens and an intervention experiment to dissect the inner hidden states of LLMs. This deep dive reveals that implicit reasoning results indeed surface within middle layers and play a causative role in shaping the final explicit reasoning results. Our exploration further locates multi-head self-attention (MHSA) modules within these layers, which emerge as the linchpins in accurate generation and leveraing of implicit reasoning results. Grounded on the above findings, we develop CREME, a lightweight method to patch errors in compositional reasoning via editing the located MHSA modules. Our empirical evidence stands testament to CREME's effectiveness, paving the way for autonomously and continuously enhancing compositional reasoning capabilities in language models.",
+      "year": 2024,
+      "authors": [
+        "Zhaoyi Li",
+        "Gangwei Jiang",
+        "Hong Xie",
+        "Linqi Song",
+        "Defu Lian",
+        "Ying Wei"
+      ],
+      "url": "https://arxiv.org/abs/2402.14328",
+      "relevance": 20.0,
+      "core_matched": [
+        "logit lens"
+      ],
+      "citations": 62,
+      "venue": "Annual Meeting of the Association for Computational Linguistics"
+    },
+    {
+      "arxiv_id": "2410.19278",
+      "title": "Applying sparse autoencoders to unlearn knowledge in language models",
+      "abstract": "We investigate whether sparse autoencoders (SAEs) can be used to remove knowledge from language models. We use the biology subset of the Weapons of Mass Destruction Proxy dataset and test on the gemma-2b-it and gemma-2-2b-it language models. We demonstrate that individual interpretable biology-related SAE features can be used to unlearn a subset of WMDP-Bio questions with minimal side-effects in domains other than biology. Our results suggest that negative scaling of feature activations is necessary and that zero ablating features is ineffective. We find that intervening using multiple SAE features simultaneously can unlearn multiple different topics, but with similar or larger unwanted side-effects than the existing Representation Misdirection for Unlearning technique. Current SAE quality or intervention techniques would need to improve to make SAE-based unlearning comparable to the existing fine-tuning based techniques.",
+      "year": 2024,
+      "authors": [
+        "Eoin Farrell",
+        "Yeu-Tong Lau",
+        "Arthur Conmy"
+      ],
+      "url": "https://arxiv.org/abs/2410.19278",
+      "relevance": 88.2,
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "sparse autoencoders"
+      ],
+      "citations": 60,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2404.08978",
+      "title": "Incremental Residual Concept Bottleneck Models",
+      "abstract": "Concept Bottleneck Models (CBMs) map the black-box visual representations extracted by deep neural networks onto a set of interpretable concepts and use the concepts to make predictions, enhancing the transparency of the decision-making process. Multimodal pre-trained models can match visual representations with textual concept embeddings, allowing for obtaining the interpretable concept bottleneck without the expertise concept annotations. Recent research has focused on the concept bank establishment and the high-quality concept selection. However, it is challenging to construct a comprehensive concept bank through humans or large language models, which severely limits the performance of CBMs. In this work, we propose the Incremental Residual Concept Bottleneck Model (Res-CBM) to address the challenge of concept completeness. Specifically, the residual concept bottleneck model employs a set of optimizable vectors to complete missing concepts, then the incremental concept discovery module converts the complemented vectors with unclear meanings into potential concepts in the candidate concept bank. Our approach can be applied to any user-defined concept bank, as a post-hoc processing method to enhance the performance of any CBMs. Furthermore, to measure the descriptive efficiency of CBMs, the Concept Utilization Efficiency (CUE) metric is proposed. Experiments show that the Res-CBM outperforms the current state-of-the-art methods in terms of both accuracy and efficiency and achieves comparable performance to black-box models across multiple datasets.",
+      "year": 2024,
+      "authors": [
+        "Chenming Shang",
+        "Shiji Zhou",
+        "Hengyuan Zhang",
+        "Xinzhe Ni",
+        "Yujiu Yang",
+        "Yuwang Wang"
+      ],
+      "url": "https://arxiv.org/abs/2404.08978",
+      "relevance": 57.8,
+      "core_matched": [
+        "CBM",
+        "concept bottleneck"
+      ],
+      "citations": 59,
+      "venue": "Computer Vision and Pattern Recognition"
+    },
+    {
+      "arxiv_id": "2306.01128",
+      "title": "Learning Transformer Programs",
+      "abstract": "Recent research in mechanistic interpretability has attempted to reverse-engineer Transformer models by carefully inspecting network weights and activations. However, these approaches require considerable manual effort and still fall short of providing complete, faithful descriptions of the underlying algorithms. In this work, we introduce a procedure for training Transformers that are mechanistically interpretable by design. We build on RASP [Weiss et al., 2021], a programming language that can be compiled into Transformer weights. Instead of compiling human-written programs into Transformers, we design a modified Transformer that can be trained using gradient-based optimization and then automatically converted into a discrete, human-readable program. We refer to these models as Transformer Programs. To validate our approach, we learn Transformer Programs for a variety of problems, including an in-context learning task, a suite of algorithmic problems (e.g. sorting, recognizing Dyck languages), and NLP tasks including named entity recognition and text classification. The Transformer Programs can automatically find reasonable solutions, performing on par with standard Transformers of comparable size; and, more importantly, they are easy to interpret. To demonstrate these advantages, we convert Transformers into Python programs and use off-the-shelf code analysis tools to debug model errors and identify the \"circuits\" used to solve different sub-problems. We hope that Transformer Programs open a new path toward the goal of intrinsically interpretable machine learning.",
+      "year": 2023,
+      "authors": [
+        "Dan Friedman",
+        "Alexander Wettig",
+        "Danqi Chen"
+      ],
+      "url": "https://arxiv.org/abs/2306.01128",
+      "relevance": 20.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 58,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2410.09087",
+      "title": "Mechanistic?",
+      "abstract": "The rise of the term \"mechanistic interpretability\" has accompanied increasing interest in understanding neural models -- particularly language models. However, this jargon has also led to a fair amount of confusion. So, what does it mean to be \"mechanistic\"? We describe four uses of the term in interpretability research. The most narrow technical definition requires a claim of causality, while a broader technical definition allows for any exploration of a model's internals. However, the term also has a narrow cultural definition describing a cultural movement. To understand this semantic drift, we present a history of the NLP interpretability community and the formation of the separate, parallel \"mechanistic\" interpretability community. Finally, we discuss the broad cultural definition -- encompassing the entire field of interpretability -- and why the traditional NLP interpretability community has come to embrace it. We argue that the polysemy of \"mechanistic\" is the product of a critical divide within the interpretability community.",
+      "year": 2024,
+      "authors": [
+        "Naomi Saphra",
+        "Sarah Wiegreffe"
+      ],
+      "url": "https://arxiv.org/abs/2410.09087",
+      "relevance": 20.0,
+      "core_matched": [
+        "mechanistic interpretability"
+      ],
+      "citations": 57,
+      "venue": "BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP"
+    },
+    {
+      "arxiv_id": "2412.12359",
+      "title": "LLaVA Steering: Visual Instruction Tuning with 500x Fewer Parameters through Modality Linear Representation-Steering",
+      "abstract": "Multimodal Large Language Models (MLLMs) have significantly advanced visual tasks by integrating visual representations into large language models (LLMs). The textual modality, inherited from LLMs, equips MLLMs with abilities like instruction following and in-context learning. In contrast, the visual modality enhances performance in downstream tasks by leveraging rich semantic content, spatial information, and grounding capabilities. These intrinsic modalities work synergistically across various visual tasks. Our research initially reveals a persistent imbalance between these modalities, with text often dominating output generation during visual instruction tuning. This imbalance occurs when using both full fine-tuning and parameter-efficient fine-tuning (PEFT) methods. We then found that re-balancing these modalities can significantly reduce the number of trainable parameters required, inspiring a direction for further optimizing visual instruction tuning. We introduce Modality Linear Representation-Steering (MoReS) to achieve the goal. MoReS effectively re-balances the intrinsic modalities throughout the model, where the key idea is to steer visual representations through linear transformations in the visual subspace across each model layer. To validate our solution, we composed LLaVA Steering, a suite of models integrated with the proposed MoReS method. Evaluation results show that the composed LLaVA Steering models require, on average, 500 times fewer trainable parameters than LoRA needs while still achieving comparable performance across three visual benchmarks and eight visual question-answering tasks. Last, we present the LLaVA Steering Factory, an in-house developed platform that enables researchers to quickly customize various MLLMs with component-based architecture for seamlessly integrating state-of-the-art models, and evaluate their intrinsic modality imbalance.",
+      "year": 2024,
+      "authors": [
+        "Jinhe Bi",
+        "Yujun Wang",
+        "Haokun Chen",
+        "Xun Xiao",
+        "Artur Hecker",
+        "Volker Tresp"
+      ],
+      "url": "https://arxiv.org/abs/2412.12359",
+      "relevance": 40.0,
+      "core_matched": [
+        "linear representation"
+      ],
+      "citations": 57,
+      "venue": "Annual Meeting of the Association for Computational Linguistics"
+    },
+    {
+      "arxiv_id": "2508.02087",
+      "title": "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models",
+      "abstract": "Large Language Models (LLMs) often exhibit sycophantic behavior, agreeing with user-stated opinions even when those contradict factual knowledge. While prior work has documented this tendency, the internal mechanisms that enable such behavior remain poorly understood. In this paper, we provide a mechanistic account of how sycophancy arises within LLMs. We first systematically study how user opinions induce sycophancy across different model families. We find that simple opinion statements reliably induce sycophancy, whereas user expertise framing has a negligible impact. Through logit-lens analysis and causal activation patching, we identify a two-stage emergence of sycophancy: (1) a late-layer output preference shift and (2) deeper representational divergence. We also verify that user authority fails to influence behavior because models do not encode it internally. In addition, we examine how grammatical perspective affects sycophantic behavior, finding that first-person prompts (``I believe...'') consistently induce higher sycophancy rates than third-person framings (``They believe...'') by creating stronger representational perturbations in deeper layers. These findings highlight that sycophancy is not a surface-level artifact but emerges from a structural override of learned knowledge in deeper layers, with implications for alignment and truthful AI systems.",
+      "year": 2025,
+      "authors": [
+        "Keyu Wang",
+        "Jin Li",
+        "Shu Yang",
+        "Zhuoran Zhang",
+        "Di Wang"
+      ],
+      "url": "https://arxiv.org/abs/2508.02087",
+      "relevance": 47.0,
+      "core_matched": [
+        "activation patching",
+        "logit lens"
+      ],
+      "citations": 55,
+      "venue": "AAAI Conference on Artificial Intelligence"
+    },
+    {
+      "arxiv_id": "2411.16721",
+      "title": "Steering Away from Harm: An Adaptive Approach to Defending Vision Language Model Against Jailbreaks",
+      "abstract": "Vision Language Models (VLMs) can produce unintended and harmful content when exposed to adversarial attacks, particularly because their vision capabilities create new vulnerabilities. Existing defenses, such as input preprocessing, adversarial training, and response evaluation-based methods, are often impractical for real-world deployment due to their high costs. To address this challenge, we propose ASTRA, an efficient and effective defense by adaptively steering models away from adversarial feature directions to resist VLM attacks. Our key procedures involve finding transferable steering vectors representing the direction of harmful response and applying adaptive activation steering to remove these directions at inference time. To create effective steering vectors, we randomly ablate the visual tokens from the adversarial images and identify those most strongly associated with jailbreaks. These tokens are then used to construct steering vectors. During inference, we perform the adaptive steering method that involves the projection between the steering vectors and calibrated activation, resulting in little performance drops on benign inputs while strongly avoiding harmful outputs under adversarial inputs. Extensive experiments across multiple models and baselines demonstrate our state-of-the-art performance and high efficiency in mitigating jailbreak risks. Additionally, ASTRA exhibits good transferability, defending against unseen attacks (i.e., structured-based attack, perturbation-based attack with project gradient descent variants, and text-only attack). Our code is available at \\url{https://github.com/ASTRAL-Group/ASTRA}.",
+      "year": 2024,
+      "authors": [
+        "Han Wang",
+        "Gang Wang",
+        "Huan Zhang"
+      ],
+      "url": "https://arxiv.org/abs/2411.16721",
+      "relevance": 20.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 55,
+      "venue": "Computer Vision and Pattern Recognition"
+    },
+    {
+      "arxiv_id": "2406.19272",
+      "title": "Stochastic Concept Bottleneck Models",
+      "abstract": "Concept Bottleneck Models (CBMs) have emerged as a promising interpretable method whose final prediction is based on intermediate, human-understandable concepts rather than the raw input. Through time-consuming manual interventions, a user can correct wrongly predicted concept values to enhance the model's downstream performance. We propose Stochastic Concept Bottleneck Models (SCBMs), a novel approach that models concept dependencies. In SCBMs, a single-concept intervention affects all correlated concepts, thereby improving intervention effectiveness. Unlike previous approaches that model the concept relations via an autoregressive structure, we introduce an explicit, distributional parameterization that allows SCBMs to retain the CBMs' efficient training and inference procedure. Additionally, we leverage the parameterization to derive an effective intervention strategy based on the confidence region. We show empirically on synthetic tabular and natural image datasets that our approach improves intervention effectiveness significantly. Notably, we showcase the versatility and usability of SCBMs by examining a setting with CLIP-inferred concepts, alleviating the need for manual concept annotations.",
+      "year": 2024,
+      "authors": [
+        "Moritz Vandenhirtz",
+        "Sonia Laguna",
+        "Ričards Marcinkevičs",
+        "Julia E. Vogt"
+      ],
+      "url": "https://arxiv.org/abs/2406.19272",
+      "relevance": 26.0,
+      "core_matched": [
+        "concept bottleneck"
+      ],
+      "citations": 53,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2310.03789",
+      "title": "Grokking as a First Order Phase Transition in Two Layer Networks",
+      "abstract": "A key property of deep neural networks (DNNs) is their ability to learn new features during training. This intriguing aspect of deep learning stands out most clearly in recently reported Grokking phenomena. While mainly reflected as a sudden increase in test accuracy, Grokking is also believed to be a beyond lazy-learning/Gaussian Process (GP) phenomenon involving feature learning. Here we apply a recent development in the theory of feature learning, the adaptive kernel approach, to two teacher-student models with cubic-polynomial and modular addition teachers. We provide analytical predictions on feature learning and Grokking properties of these models and demonstrate a mapping between Grokking and the theory of phase transitions. We show that after Grokking, the state of the DNN is analogous to the mixed phase following a first-order phase transition. In this mixed phase, the DNN generates useful internal representations of the teacher that are sharply distinct from those before the transition.",
+      "year": 2023,
+      "authors": [
+        "Noa Rubin",
+        "Inbar Seroussi",
+        "Zohar Ringel"
+      ],
+      "url": "https://arxiv.org/abs/2310.03789",
+      "relevance": 20.0,
+      "core_matched": [
+        "internal representations"
+      ],
+      "citations": 53,
+      "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2406.17759",
+      "title": "Interpreting Attention Layer Outputs with Sparse Autoencoders",
+      "abstract": "Decomposing model activations into interpretable components is a key open problem in mechanistic interpretability. Sparse autoencoders (SAEs) are a popular method for decomposing the internal activations of trained transformers into sparse, interpretable features, and have been applied to MLP layers and the residual stream. In this work we train SAEs on attention layer outputs and show that also here SAEs find a sparse, interpretable decomposition. We demonstrate this on transformers from several model families and up to 2B parameters. We perform a qualitative study of the features computed by attention layers, and find multiple families: long-range context, short-range context and induction features. We qualitatively study the role of every head in GPT-2 Small, and estimate that at least 90% of the heads are polysemantic, i.e. have multiple unrelated roles. Further, we show that Sparse Autoencoders are a useful tool that enable researchers to explain model behavior in greater detail than prior work. For example, we explore the mystery of why models have so many seemingly redundant induction heads, use SAEs to motivate the hypothesis that some are long-prefix whereas others are short-prefix, and confirm this with more rigorous analysis. We use our SAEs to analyze the computation performed by the Indirect Object Identification circuit (Wang et al.), validating that the SAEs find causally meaningful intermediate variables, and deepening our understanding of the semantics of the circuit. We open-source the trained SAEs and a tool for exploring arbitrary prompts through the lens of Attention Output SAEs.",
+      "year": 2024,
+      "authors": [
+        "Connor Kissane",
+        "Robert Krzyzanowski",
+        "Joseph Isaac Bloom",
+        "Arthur Conmy",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2406.17759",
+      "relevance": 220.0,
+      "core_matched": [
+        "SAEs",
+        "induction heads",
+        "mechanistic interpretability",
+        "polysemantic",
+        "residual stream",
+        "sparse autoencoders"
+      ],
+      "citations": 51,
+      "venue": "arXiv.org"
+    },
+    {
+      "arxiv_id": "2310.17230",
+      "title": "Codebook Features: Sparse and Discrete Interpretability for Neural Networks",
+      "abstract": "Understanding neural networks is challenging in part because of the dense, continuous nature of their hidden states. We explore whether we can train neural networks to have hidden states that are sparse, discrete, and more interpretable by quantizing their continuous features into what we call codebook features. Codebook features are produced by finetuning neural networks with vector quantization bottlenecks at each layer, producing a network whose hidden features are the sum of a small number of discrete vector codes chosen from a larger codebook. Surprisingly, we find that neural networks can operate under this extreme bottleneck with only modest degradation in performance. This sparse, discrete bottleneck also provides an intuitive way of controlling neural network behavior: first, find codes that activate when the desired behavior is present, then activate those same codes during generation to elicit that behavior. We validate our approach by training codebook Transformers on several different datasets. First, we explore a finite state machine dataset with far more hidden states than neurons. In this setting, our approach overcomes the superposition problem by assigning states to distinct codes, and we find that we can make the neural network behave as if it is in a different state by activating the code for that state. Second, we train Transformer language models with up to 410M parameters on two natural language datasets. We identify codes in these models representing diverse, disentangled concepts (ranging from negative emotions to months of the year) and find that we can guide the model to generate different topics by activating the appropriate codes during inference. Overall, codebook features appear to be a promising unit of analysis and control for neural networks and interpretability. Our codebase and models are open-sourced at https://github.com/taufeeque9/codebook-features.",
+      "year": 2023,
+      "authors": [
+        "Alex Tamkin",
+        "Mohammad Taufeeque",
+        "Noah D. Goodman"
+      ],
+      "url": "https://arxiv.org/abs/2310.17230",
+      "relevance": 20.0,
+      "core_matched": [
+        "superposition"
+      ],
+      "citations": 51,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
+      "arxiv_id": "2407.07011",
+      "title": "Induction Heads as an Essential Mechanism for Pattern Matching in In-context Learning",
+      "abstract": "Large language models (LLMs) have shown a remarkable ability to learn and perform complex tasks through in-context learning (ICL). However, a comprehensive understanding of its internal mechanisms is still lacking. This paper explores the role of induction heads in a few-shot ICL setting. We analyse two state-of-the-art models, Llama-3-8B and InternLM2-20B on abstract pattern recognition and NLP tasks. Our results show that even a minimal ablation of induction heads leads to ICL performance decreases of up to ~32% for abstract pattern recognition tasks, bringing the performance close to random. For NLP tasks, this ablation substantially decreases the model's ability to benefit from examples, bringing few-shot ICL performance close to that of zero-shot prompts. We further use attention knockout to disable specific induction patterns, and present fine-grained evidence for the role that the induction mechanism plays in ICL.",
+      "year": 2024,
+      "authors": [
+        "Joy Crosbie",
+        "Ekaterina Shutova"
+      ],
+      "url": "https://arxiv.org/abs/2407.07011",
+      "relevance": 32.0,
+      "core_matched": [
+        "induction heads"
+      ],
+      "citations": 50,
+      "venue": "arXiv.org"
+    }
+  ],
+  "served": [
+    "improvingdictionarylearningwithgatedsparseautoencoders"
+  ],
+  "min_citations": 50,
+  "cycle": 1
+}

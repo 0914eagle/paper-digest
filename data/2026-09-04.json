@@ -1,14 +1,39 @@
 {
   "date": "2026-09-04",
-  "generated_at": "2026-09-04T12:07:44",
+  "generated_at": "2026-09-04T15:59:17",
   "stats": {
-    "collected_raw": 1317,
-    "unique": 1165,
+    "collected_raw": 1329,
+    "unique": 1180,
     "already_seen": 0,
     "hf_target_day": "2026-09-03",
     "conference_pool": 712,
-    "interest_pool": 13,
-    "total_to_summarize": 53
+    "interest_pool": 23,
+    "total_to_summarize": 57
+  },
+  "classic": {
+    "arxiv_id": "2404.16014",
+    "title": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+    "abstract": "Recent work has found that sparse autoencoders (SAEs) are an effective technique for unsupervised discovery of interpretable features in language models' (LMs) activations, by finding sparse, linear reconstructions of LM activations. We introduce the Gated Sparse Autoencoder (Gated SAE), which achieves a Pareto improvement over training with prevailing methods. In SAEs, the L1 penalty used to encourage sparsity introduces many undesirable biases, such as shrinkage -- systematic underestimation of feature activations. The key insight of Gated SAEs is to separate the functionality of (a) determining which directions to use and (b) estimating the magnitudes of those directions: this enables us to apply the L1 penalty only to the former, limiting the scope of undesirable side effects. Through training SAEs on LMs of up to 7B parameters we find that, in typical hyper-parameter ranges, Gated SAEs solve shrinkage, are similarly interpretable, and require half as many firing features to achieve comparable reconstruction fidelity.",
+    "year": 2024,
+    "authors": [
+      "Senthooran Rajamanoharan",
+      "Arthur Conmy",
+      "Lewis Smith",
+      "Tom Lieberum",
+      "Vikrant Varma",
+      "János Kramár"
+    ],
+    "url": "https://arxiv.org/abs/2404.16014",
+    "relevance": 173.4,
+    "core_matched": [
+      "SAE",
+      "SAEs",
+      "dictionary learning",
+      "sparse autoencoder",
+      "sparse autoencoders"
+    ],
+    "citations": 192,
+    "venue": "arXiv.org"
   },
   "hf_daily": [
     {
@@ -26,13 +51,12 @@
       ],
       "arxiv_id": "2609.02749",
       "url": "https://arxiv.org/abs/2609.02749",
-      "hf_upvotes": 500,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CL",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02749",
+      "hf_upvotes": 506,
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02749",
       "score": 9.0,
       "core_score": 0.0,
       "matched": [],
@@ -53,7 +77,7 @@
       ],
       "arxiv_id": "2609.01437",
       "url": "https://arxiv.org/abs/2609.01437",
-      "hf_upvotes": 226,
+      "hf_upvotes": 229,
       "hf_date": "2026-09-03",
       "source": "hf_daily",
       "venue": null,
@@ -79,7 +103,7 @@
       ],
       "arxiv_id": "2608.31111",
       "url": "https://arxiv.org/abs/2608.31111",
-      "hf_upvotes": 205,
+      "hf_upvotes": 207,
       "hf_date": "2026-09-03",
       "source": "hf_daily",
       "venue": null,
@@ -105,13 +129,12 @@
       ],
       "arxiv_id": "2609.02886",
       "url": "https://arxiv.org/abs/2609.02886",
-      "hf_upvotes": 133,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CV",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02886",
+      "hf_upvotes": 134,
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02886",
       "score": 10.5,
       "core_score": 0.0,
       "matched": [
@@ -132,13 +155,12 @@
       ],
       "arxiv_id": "2609.02783",
       "url": "https://arxiv.org/abs/2609.02783",
-      "hf_upvotes": 111,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CL",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02783",
+      "hf_upvotes": 112,
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02783",
       "score": 9.0,
       "core_score": 0.0,
       "matched": [],
@@ -181,14 +203,13 @@
       ],
       "arxiv_id": "2609.02737",
       "url": "https://arxiv.org/abs/2609.02737",
-      "hf_upvotes": 54,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.LG",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02737",
+      "hf_upvotes": 55,
       "hf_date": "2026-09-03",
-      "score": 10.3,
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02737",
+      "score": 10.5,
       "core_score": 0.0,
       "matched": [
         "chain-of-thought",
@@ -210,18 +231,44 @@
       ],
       "arxiv_id": "2609.01147",
       "url": "https://arxiv.org/abs/2609.01147",
-      "hf_upvotes": 30,
+      "hf_upvotes": 31,
       "hf_date": "2026-09-03",
       "source": "hf_daily",
       "venue": null,
       "year": null,
       "key": "2609.01147",
-      "score": 6.5,
+      "score": 6.6,
       "core_score": 0.0,
       "matched": [
         "alignment",
         "image-text",
         "pretraining"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "WHALE: A Simple Recipe for Joint Harness-Weight Optimization",
+      "abstract": "Agent performance depends jointly on the model parameters and the executable harness code that manages context and control flow. Optimizing either component in isolation can leave the system bottlenecked by its frozen counterpart: weight updates can change which harness is effective, while harness updates can change which model capabilities are exposed. Existing joint-adaptation methods optimize weights and textual prompts but leave the broader harness fixed. We propose Weight-Harness Alternating LEarning (WHALE), a simple recipe that alternates two phases: updating the model under the current harness, then searching for a better harness under the updated model. We instantiate these two phases with online rejection-sampling fine-tuning and Meta-Harness, respectively. When to switch is a key design choice: to separate real improvements from noise without over-optimizing against a changing counterpart, WHALE uses either fixed phase durations or an adaptive patience rule over training signals. Using Qwen3.5-2B/4B agents across three domains (search question answering, mathematical reasoning, and chess puzzles), WHALE outperforms weight-only, harness-only, and Fast-Slow Training by 4.15-24.38 percentage points in best mean@8 accuracy. Either component can be the bottleneck: harness search matches peak weight-only accuracy with far fewer rollouts in SearchQA, but improves math accuracy only after a weight update. Small interleaved updates also outperform stagewise weight-then-harness optimization in accuracy and rollout cost. The code is available at https://github.com/krafton-ai/WHALE.",
+      "authors": [
+        "Haechan Kim",
+        "Yoonho Lee",
+        "Gisang Lee",
+        "Chelsea Finn",
+        "Kangwook Lee"
+      ],
+      "arxiv_id": "2609.00196",
+      "url": "https://arxiv.org/abs/2609.00196",
+      "hf_upvotes": 29,
+      "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.00196",
+      "score": 5.8,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning",
+        "reasoning"
       ],
       "core_matched": []
     },
@@ -251,32 +298,6 @@
       "matched": [
         "language models",
         "large language models"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "WHALE: A Simple Recipe for Joint Harness-Weight Optimization",
-      "abstract": "Agent performance depends jointly on the model parameters and the executable harness code that manages context and control flow. Optimizing either component in isolation can leave the system bottlenecked by its frozen counterpart: weight updates can change which harness is effective, while harness updates can change which model capabilities are exposed. Existing joint-adaptation methods optimize weights and textual prompts but leave the broader harness fixed. We propose Weight-Harness Alternating LEarning (WHALE), a simple recipe that alternates two phases: updating the model under the current harness, then searching for a better harness under the updated model. We instantiate these two phases with online rejection-sampling fine-tuning and Meta-Harness, respectively. When to switch is a key design choice: to separate real improvements from noise without over-optimizing against a changing counterpart, WHALE uses either fixed phase durations or an adaptive patience rule over training signals. Using Qwen3.5-2B/4B agents across three domains (search question answering, mathematical reasoning, and chess puzzles), WHALE outperforms weight-only, harness-only, and Fast-Slow Training by 4.15-24.38 percentage points in best mean@8 accuracy. Either component can be the bottleneck: harness search matches peak weight-only accuracy with far fewer rollouts in SearchQA, but improves math accuracy only after a weight update. Small interleaved updates also outperform stagewise weight-then-harness optimization in accuracy and rollout cost. The code is available at https://github.com/krafton-ai/WHALE.",
-      "authors": [
-        "Haechan Kim",
-        "Yoonho Lee",
-        "Gisang Lee",
-        "Chelsea Finn",
-        "Kangwook Lee"
-      ],
-      "arxiv_id": "2609.00196",
-      "url": "https://arxiv.org/abs/2609.00196",
-      "hf_upvotes": 26,
-      "hf_date": "2026-09-03",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2609.00196",
-      "score": 5.4,
-      "core_score": 0.0,
-      "matched": [
-        "fine-tuning",
-        "reasoning"
       ],
       "core_matched": []
     },
@@ -312,19 +333,18 @@
       "title": "NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference",
       "abstract": "Multimodal models often build on architectures designed for generative vision-language modeling, typically combining separately pretrained vision encoders with causal language models. Visual document retrievers such as ColPali repurpose these models as encoders, carrying over the parameter and compute overhead of a VLM for a non-generative task. We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and raw image patches in a single bidirectional Transformer encoder. Both models are pretrained from scratch with a masked discrete-diffusion text objective, conditioned on visible image patches for multimodal examples. Both support a 16,384-token context, enough to encode up to two standard 4K UHD images. To demonstrate its downstream capabilities, we fine-tune NeoMME with jointly trained dense and late-interaction heads. On the ViDoRe v3 benchmark, the resulting NeoMME-Retriever 260M outperforms all evaluated models strictly below 800M parameters with 0.523 nDCG@10, while NeoMME-Retriever 800M reaches 0.556. At a matched 2048x2048 image input size on an NVIDIA L40S, NeoMME-260M encodes pages with about 2x the throughput of ColModernVBERT. Hierarchical token pooling and asymmetric quantization compress late-interaction multimodal document embeddings by 255x while preserving over 95% of baseline nDCG@10. We contribute NeoMME to Hugging Face Transformers and release the pretrained backbone and retrieval-compatible checkpoints under Apache 2.0 at https://hf.co/collections/Hcompany/neomme.",
       "authors": [
-        "Aur\\'elien Lac",
+        "Aurélien Lac",
         "Tony Wu"
       ],
       "arxiv_id": "2609.01657",
       "url": "https://arxiv.org/abs/2609.01657",
-      "hf_upvotes": 22,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.AI",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01657",
+      "hf_upvotes": 23,
       "hf_date": "2026-09-03",
-      "score": 9.1,
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01657",
+      "score": 9.2,
       "core_score": 0.0,
       "matched": [
         "fine-tuning",
@@ -339,7 +359,7 @@
     },
     {
       "title": "ZipTok3D: High-Fidelity 3D Tokenization with Compact Token Prefixes",
-      "abstract": "Compact token sequences are essential for efficient 3D generation. However, existing 3D tokenizers typically organize latent representations either over spatial regions or as fixed-size sets of global tokens, both suffering sharp reconstruction degradation when compressed to extremely low token budgets. In this paper, we present ZipTok3D, a 3D tokenizer designed for high-fidelity reconstruction from extremely short token sequences. Its key idea is to organize object geometry into progressively informative global-token prefixes and unfold these compact representations through iterative decoding. Specifically, nested dropout randomly truncates the latent sequence after encoding during training and requires each retained prefix to reconstruct the complete object, thereby prioritizing essential geometric information in the leading tokens. The decoder then repeatedly applies a parameter-shared Transformer block to recover fine-grained geometry from each prefix without a separate generative sampling stage. With the same token dimension, ZipTok3D achieves reconstruction quality comparable to the 32-token COD-VAE baseline using only one token on ShapeNet and four on TRELLIS, yielding $32\\times$ and $8\\times$ shorter token sequences, respectively.",
+      "abstract": "Compact token sequences are essential for efficient 3D generation. However, existing 3D tokenizers typically organize latent representations either over spatial regions or as fixed-size sets of global tokens, both suffering sharp reconstruction degradation when compressed to extremely low token budgets. In this paper, we present ZipTok3D, a 3D tokenizer designed for high-fidelity reconstruction from extremely short token sequences. Its key idea is to organize object geometry into progressively informative global-token prefixes and unfold these compact representations through iterative decoding. Specifically, nested dropout randomly truncates the latent sequence after encoding during training and requires each retained prefix to reconstruct the complete object, thereby prioritizing essential geometric information in the leading tokens. The decoder then repeatedly applies a parameter-shared Transformer block to recover fine-grained geometry from each prefix without a separate generative sampling stage. With the same token dimension, ZipTok3D achieves reconstruction quality comparable to the 32-token COD-VAE baseline using only one token on ShapeNet and four on TRELLIS, yielding 32times and 8times shorter token sequences, respectively.",
       "authors": [
         "Mingda Lin",
         "Weijie Wang",
@@ -353,12 +373,11 @@
       "arxiv_id": "2609.01740",
       "url": "https://arxiv.org/abs/2609.01740",
       "hf_upvotes": 22,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CV",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01740",
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01740",
       "score": 4.0,
       "core_score": 0.0,
       "matched": [
@@ -414,12 +433,11 @@
       "arxiv_id": "2609.02817",
       "url": "https://arxiv.org/abs/2609.02817",
       "hf_upvotes": 15,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.LG",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02817",
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02817",
       "score": 4.5,
       "core_score": 0.0,
       "matched": [
@@ -472,16 +490,45 @@
       ],
       "arxiv_id": "2609.02812",
       "url": "https://arxiv.org/abs/2609.02812",
-      "hf_upvotes": 10,
+      "hf_upvotes": 11,
       "hf_date": "2026-09-03",
       "source": "hf_daily",
       "venue": null,
       "year": null,
       "key": "2609.02812",
-      "score": 3.0,
+      "score": 3.1,
       "core_score": 0.0,
       "matched": [
         "attribution"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "abstract": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set.",
+      "authors": [
+        "Aleksander Ficek",
+        "Sean Narenthiran",
+        "Mehrzad Samadi",
+        "Somshubra Majumdar",
+        "Boris Ginsburg"
+      ],
+      "arxiv_id": "2609.02849",
+      "url": "https://arxiv.org/abs/2609.02849",
+      "hf_upvotes": 9,
+      "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02849",
+      "score": 5.8,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning",
+        "language model",
+        "language models",
+        "large language model",
+        "reasoning"
       ],
       "core_matched": []
     },
@@ -528,45 +575,14 @@
       "arxiv_id": "2609.01925",
       "url": "https://arxiv.org/abs/2609.01925",
       "hf_upvotes": 8,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.LG",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01925",
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01925",
       "score": 1.2,
       "core_score": 0.0,
       "matched": [],
-      "core_matched": []
-    },
-    {
-      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
-      "abstract": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set.",
-      "authors": [
-        "Aleksander Ficek",
-        "Sean Narenthiran",
-        "Mehrzad Samadi",
-        "Somshubra Majumdar",
-        "Boris Ginsburg"
-      ],
-      "arxiv_id": "2609.02849",
-      "url": "https://arxiv.org/abs/2609.02849",
-      "hf_upvotes": 8,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.LG",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02849",
-      "hf_date": "2026-09-03",
-      "score": 5.7,
-      "core_score": 0.0,
-      "matched": [
-        "fine-tuning",
-        "language model",
-        "language models",
-        "large language model",
-        "reasoning"
-      ],
       "core_matched": []
     },
     {
@@ -579,13 +595,13 @@
       ],
       "arxiv_id": "2608.30949",
       "url": "https://arxiv.org/abs/2608.30949",
-      "hf_upvotes": 7,
+      "hf_upvotes": 8,
       "hf_date": "2026-09-03",
       "source": "hf_daily",
       "venue": null,
       "year": null,
       "key": "2608.30949",
-      "score": 2.5,
+      "score": 2.7,
       "core_score": 0.0,
       "matched": [
         "multi-modal",
@@ -604,12 +620,11 @@
       "arxiv_id": "2609.02272",
       "url": "https://arxiv.org/abs/2609.02272",
       "hf_upvotes": 6,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CL",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02272",
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02272",
       "score": 3.9,
       "core_score": 0.0,
       "matched": [
@@ -627,12 +642,11 @@
       "arxiv_id": "2609.01865",
       "url": "https://arxiv.org/abs/2609.01865",
       "hf_upvotes": 6,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CL",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01865",
       "hf_date": "2026-09-03",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01865",
       "score": 0.9,
       "core_score": 0.0,
       "matched": [],
@@ -694,30 +708,6 @@
       "core_matched": []
     },
     {
-      "title": "Kirin: Animal Motion Generation from In-the-Wild Video",
-      "abstract": "Understanding animal motion is fundamental to modeling animal behavior and biomechanics, yet progress in this area lags far behind human motion research due to the scarcity of high-quality motion data. While human motion can be captured in controlled environments, it is impractical for most animal species, resulting in small, domain-limited datasets that restrict downstream applications such as animation. To address this challenge, we introduce Kirin, a framework that reconstructs motion from video, learns motion priors at scale, and generates realistic motion that can be directly applied to animated assets. Using large collections of in-the-wild animal videos, we reconstruct 3D motion sequences and pair them with captions to create AiM3D, the first large-scale dataset offering aligned video-text-motion tuples for quadruped animals. Building on this dataset, we develop a visual-guided motion generation model that conditions on both text and image to guide the generation of realistic motion across diverse animal species. Finally, by leveraging an off-the-shelf image-to-3D model, we automatically rig and animate 3D meshes using generated motion, producing ready-to-render animated animals. Together, our dataset and framework establish a new foundation for large-scale, text and image conditioned animal motion generation and animation. Project page: https://kirin-ani.github.io/.",
-      "authors": [
-        "Brian Nlong Zhao",
-        "Zhuoyang Pan",
-        "James M. Rehg",
-        "Jiajun Wu",
-        "Shangzhe Wu"
-      ],
-      "arxiv_id": "2609.01823",
-      "url": "https://arxiv.org/abs/2609.01823",
-      "hf_upvotes": 3,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CV",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01823",
-      "hf_date": "2026-09-03",
-      "score": 0.4,
-      "core_score": 0.0,
-      "matched": [],
-      "core_matched": []
-    },
-    {
       "title": "Autoregressive Mosaics: Probing 2D Spatial Reasoning in Text-Only Language Models",
       "abstract": "Large language models (LLMs) trained only on text and code can sometimes generate programs that draw recognizable images. However, it is unclear whether this reflects an internal representation of 2D spatial layout or simply the ability to translate spatial descriptions into code. We introduce Autoregressive Mosaics (AM-Bench), a benchmark that separates these factors: First, a translation task gives a model a fully specified geometry of a picture in words as a prompt and asks for the code that produces it. Second, a layout task requires the model to compose an image from an underspecified prompt. Across eight open-weight text-and-code-only models, all models reliably translate specified geometry into code, but their open-ended layout performance differs substantially, indicating that these differences are not explained by code-generation ability alone. An output-medium ablation further shows that the interface or medium of expression that the model uses matters: replacing procedural code with raw SVG improves layout scores across all models. Finally, probing model activations shows that a coarse layout plan is present before generation, but reflects only the layout implied by the prompt. During generation, models track the evolving geometric state instead of executing an initially fixed plan. Overall, these results show that 2D spatial performance in text-only LLMs depends on both the model and the output medium, and is not explained by code-generation ability alone.",
       "authors": [
@@ -748,6 +738,29 @@
       ]
     },
     {
+      "title": "Kirin: Animal Motion Generation from In-the-Wild Video",
+      "abstract": "Understanding animal motion is fundamental to modeling animal behavior and biomechanics, yet progress in this area lags far behind human motion research due to the scarcity of high-quality motion data. While human motion can be captured in controlled environments, it is impractical for most animal species, resulting in small, domain-limited datasets that restrict downstream applications such as animation. To address this challenge, we introduce Kirin, a framework that reconstructs motion from video, learns motion priors at scale, and generates realistic motion that can be directly applied to animated assets. Using large collections of in-the-wild animal videos, we reconstruct 3D motion sequences and pair them with captions to create AiM3D, the first large-scale dataset offering aligned video-text-motion tuples for quadruped animals. Building on this dataset, we develop a visual-guided motion generation model that conditions on both text and image to guide the generation of realistic motion across diverse animal species. Finally, by leveraging an off-the-shelf image-to-3D model, we automatically rig and animate 3D meshes using generated motion, producing ready-to-render animated animals. Together, our dataset and framework establish a new foundation for large-scale, text and image conditioned animal motion generation and animation. Project page: https://kirin-ani.github.io/.",
+      "authors": [
+        "Brian Nlong Zhao",
+        "Zhuoyang Pan",
+        "James M. Rehg",
+        "Jiajun Wu",
+        "Shangzhe Wu"
+      ],
+      "arxiv_id": "2609.01823",
+      "url": "https://arxiv.org/abs/2609.01823",
+      "hf_upvotes": 3,
+      "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01823",
+      "score": 0.4,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
       "title": "FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos",
       "abstract": "We present FoldingAgent, an agentic framework for inferring explicit parametric folding programs directly from origami demonstration videos. Our framework leverages the reasoning power of a pre-trained Vision-Language Model (VLM) equipped with a suite of specialized tools that enable the agent to simulate geometric transitions, verify physical plausibility, retrieve and compare visual content, and evaluate its own predictions. To translate visual content into folding programs, we define a parametric space that consists of the paper's geometry and a set of parametric folding actions. Unlike models that predict static crease patterns, our agent operates sequentially and possesses the ability to re-plan its actions, effectively mitigating the compounding errors inherent in multi-step folding. Our approach takes a step toward closing the gap between human origami knowledge, which is primarily shared through unstructured visual demonstrations, and computational methods, which typically rely on structured, parametric representations such as a crease pattern or an executable parametric plan. We evaluate our approach on PurelandFold, a newly curated benchmark of diverse Pureland origami videos with ground-truth geometry and action labels. Our results demonstrate that by combining VLM reasoning with a set of specialized tools and physical simulation, we can successfully transform unstructured visual demonstrations into executable, physically plausible folding procedures.",
       "authors": [
@@ -775,36 +788,6 @@
       "core_matched": []
     },
     {
-      "title": "Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens",
-      "abstract": "A language model's prediction of its next token develops across layers, and lens methods track this process by decoding intermediate hidden states into tokens. But a lens reading reflects both the hidden state and the readout (the unembedding matrix) used to decode it. Many lenses are fit on a corpus, and we show that two lenses differing only in their fitting corpus can report different tokens for the same hidden states. We call this dependence corpus conditionality. To examine readout structure independently of the fitting corpus, we introduce Sparse Readout Prism (SRP), which decomposes the readout using only its weights and expresses any token logit or logit difference as a sum of contributions from sparse readout features. This reveals readout features as a new unit of analysis for lens readings, exposing structure that token identities can obscure and enabling comparisons across tokens, contexts, layers, and lenses. Replacing the original readout with SRP's sparse approximation reconstructs 8.9-17.3 percentage points more of the tested logit differences than the strongest of six baselines built on geometric relations among readout rows. Ablating features shifts logit differences in proportion to their SRP contributions. Although token readings vary with the fitting corpus, the dominant readout feature remains stable. Because SRP uses no corpus in its construction, it provides a control independent of the fitting corpus for lens analyses.",
-      "authors": [
-        "Matteo He",
-        "William F. Shen",
-        "Xinchi Qiu",
-        "Nicholas D. Lane"
-      ],
-      "arxiv_id": "2609.01936",
-      "url": "https://arxiv.org/abs/2609.01936",
-      "hf_upvotes": 2,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.LG",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.01936",
-      "hf_date": "2026-09-03",
-      "score": 35.3,
-      "core_score": 20.0,
-      "matched": [
-        "hidden state",
-        "hidden states",
-        "language model",
-        "logit lens"
-      ],
-      "core_matched": [
-        "logit lens"
-      ]
-    },
-    {
       "title": "Debias-SparseGPT: Bias-Aware Pruning for Large Language Models",
       "abstract": "Model compression techniques such as pruning and quantization facilitate the efficient deployment and acceleration of Large Language Models (LLMs). However, recent studies show that weight sparsification methods, such as SparseGPT, can amplify existing biases in models, with outputs varying significantly depending on persona cues in the prompt. In this paper, we introduce Debias-SparseGPT, a post-training pruning method incorporating representational debiasing using a second-order term defined over demographically contrasting inputs. We perform empirical validation of our method over a wide range of generative LLMs. Across models and sparsity regimes (25%, 50%, and structured 2:4 sparsity), Debias-SparseGPT consistently reduces pruning-induced bias compared to SparseGPT while preserving model perplexity and zero-shot accuracy. Under the most restrictive 2:4 structured sparsity pattern, which most aggressively degrades model quality, augmenting the calibration set with long-context, content-rich examples further improves both downstream performance and fairness. Overall, Debias-SparseGPT advances the bias-performance trade-off while preserving the computational efficiency of sparse models.",
       "authors": [
@@ -816,12 +799,11 @@
       "arxiv_id": "2609.02496",
       "url": "https://arxiv.org/abs/2609.02496",
       "hf_upvotes": 2,
-      "source": "arxiv_new+hf_daily",
-      "primary_cat": "cs.CL",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02496",
       "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02496",
       "score": 3.3,
       "core_score": 0.0,
       "matched": [
@@ -829,6 +811,35 @@
         "large language models"
       ],
       "core_matched": []
+    },
+    {
+      "title": "Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens",
+      "abstract": "A language model's prediction of its next token develops across layers, and lens methods track this process by decoding intermediate hidden states into tokens. But a lens reading reflects both the hidden state and the readout (the unembedding matrix) used to decode it. Many lenses are fit on a corpus, and we show that two lenses differing only in their fitting corpus can report different tokens for the same hidden states. We call this dependence corpus conditionality. To examine readout structure independently of the fitting corpus, we introduce Sparse Readout Prism (SRP), which decomposes the readout using only its weights and expresses any token logit or logit difference as a sum of contributions from sparse readout features. This reveals readout features as a new unit of analysis for lens readings, exposing structure that token identities can obscure and enabling comparisons across tokens, contexts, layers, and lenses. Replacing the original readout with SRP's sparse approximation reconstructs 8.9-17.3 percentage points more of the tested logit differences than the strongest of six baselines built on geometric relations among readout rows. Ablating features shifts logit differences in proportion to their SRP contributions. Although token readings vary with the fitting corpus, the dominant readout feature remains stable. Because SRP uses no corpus in its construction, it provides a control independent of the fitting corpus for lens analyses.",
+      "authors": [
+        "Matteo He",
+        "William F. Shen",
+        "Xinchi Qiu",
+        "Nicholas D. Lane"
+      ],
+      "arxiv_id": "2609.01936",
+      "url": "https://arxiv.org/abs/2609.01936",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-03",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01936",
+      "score": 35.3,
+      "core_score": 20.0,
+      "matched": [
+        "hidden state",
+        "hidden states",
+        "language model",
+        "logit lens"
+      ],
+      "core_matched": [
+        "logit lens"
+      ]
     },
     {
       "title": "Ignorance or Incompetence? Constructing Knowledge-Gated, Verifiable Tasks for LLM Agents",
@@ -981,27 +992,60 @@
   ],
   "conference": [
     {
-      "title": "Flextron: Many-in-One Flexible Large Language Model",
-      "abstract": "Training modern LLMs is extremely resource intensive, and customizing them for various deployment scenarios characterized by limited compute and memory resources through repeated training is impractical. In this paper, we introduce Flextron, a network architecture and post-training model optimization framework supporting flexible model deployment. The Flextron architecture utilizes a nested elastic structure to rapidly adapt to specific user-defined latency and accuracy targets during inference with no additional fine-tuning required. It is also input-adaptive, and can automatically route tokens through its sub-networks for improved performance and efficiency. We present a sample-efficient training method and associated routing algorithms for systematically transforming an existing trained LLM into a Flextron model. We evaluate Flextron on the GPT-3 and LLama-2 family of LLMs, and demonstrate superior performance over multiple end-to-end trained variants and other state-of-the-art elastic networks, all with a single pretraining run that consumes a mere 7.63% tokens compared to original pretraining.",
+      "title": "Scaling and evaluating sparse autoencoders",
+      "abstract": "Sparse autoencoders provide a promising unsupervised approach for extracting interpretable features from a language model by reconstructing activations from a sparse bottleneck layer. Since language models learn many concepts, autoencoders need to be very large to recover all relevant features. However, studying the properties of autoencoder scaling is difficult due to the need to balance reconstruction and sparsity objectives and the presence of dead latents. We propose using k-sparse autoencoders [Makhzani and Frey, 2013] to directly control sparsity, simplifying tuning and improving the reconstruction-sparsity frontier. Additionally, we find modifications that result in few dead latents, even at the largest scales we tried. Using these techniques, we find clean scaling laws with respect to autoencoder size and sparsity. We also introduce several new metrics for evaluating feature quality based on the recovery of hypothesized features, the explainability of activation patterns, and the sparsity of downstream effects. These metrics all generally improve with autoencoder size. To demonstrate the scalability of our approach, we train a 16 million latent autoencoder on GPT-4 activations for 40 billion tokens. We release training code and autoencoders for open-source models, as well as a visualizer.",
       "authors": [],
       "arxiv_id": null,
-      "url": "https://icml.cc/virtual/2024/oral/35561",
+      "url": "https://iclr.cc/virtual/2025/oral/31752",
       "hf_upvotes": 0,
       "source": "conference",
-      "venue": "ICML 2024",
+      "venue": "ICLR 2025",
       "presentation": "oral",
-      "year": "2024",
+      "year": "2025",
       "_is_conf": true,
-      "key": "flextronmanyinoneflexiblelargelanguagemodel",
-      "score": 4.5,
-      "core_score": 0.0,
+      "key": "scalingandevaluatingsparseautoencoders",
+      "score": 40.0,
+      "core_score": 20.0,
       "matched": [
-        "fine-tuning",
+        "activation",
+        "activations",
+        "explainability",
+        "interpretable",
         "language model",
-        "large language model",
-        "pretraining"
+        "language models",
+        "sparse autoencoders"
       ],
-      "core_matched": []
+      "core_matched": [
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+      "abstract": "Hallucinations in large language models are a widespread problem, yet the mechanisms behind whether models will hallucinate are poorly understood, limiting our ability to solve this problem. Using sparse autoencoders as an interpretability tool, we discover that a key part of these mechanisms is entity recognition, where the model detects if an entity is one it can recall facts about. Sparse autoencoders uncover meaningful directions in the representation space, these detect whether the model recognizes an entity, e.g. detecting it doesn't know about an athlete or a movie. This shows that models can have self-knowledge: internal representations about their own capabilities. These directions are causally relevant: capable of steering the model to refuse to answer questions about known entities, or to hallucinate attributes of unknown entities when it would otherwise refuse. We demonstrate that despite the sparse autoencoders being trained on the base model, these directions have a causal effect on the chat model's refusal behavior, suggesting that chat finetuning has repurposed this existing mechanism. Furthermore, we provide an initial exploration into the mechanistic role of these directions in the model, finding that they disrupt the attention of downstream heads that typically move entity attributes to the final token.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31832",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "doiknowthisentityknowledgeawarenessandhallucinationsinlanguagemodels",
+      "score": 47.0,
+      "core_score": 20.0,
+      "matched": [
+        "internal representations",
+        "interpretability",
+        "language models",
+        "large language models",
+        "mechanistic",
+        "sparse autoencoders"
+      ],
+      "core_matched": [
+        "internal representations",
+        "sparse autoencoders"
+      ]
     },
     {
       "title": "On the Role of Attention Heads in Large Language Model Safety",
@@ -1033,6 +1077,123 @@
       "core_matched": [
         "mechanistic interpretability"
       ]
+    },
+    {
+      "title": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+      "abstract": "We introduce methods for discovering and applying **sparse feature circuits**. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms in neural networks. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31874",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "sparsefeaturecircuitsdiscoveringandeditinginterpretablecausalgraphsinlanguagemodels",
+      "score": 70.5,
+      "core_score": 30.0,
+      "matched": [
+        "attention heads",
+        "circuits",
+        "interpretability",
+        "interpretable",
+        "language model",
+        "language models",
+        "polysemantic",
+        "sparse feature"
+      ],
+      "core_matched": [
+        "polysemantic",
+        "sparse feature"
+      ]
+    },
+    {
+      "title": "Cross-Entropy Is All You Need To Invert the Data Generating Process",
+      "abstract": "Supervised learning has become a cornerstone of modern machine learning, yet a comprehensive theory explaining its effectiveness remains elusive. Empirical phenomena, such as neural analogy-making and the linear representation hypothesis, suggest that supervised models can learn interpretable factors of variation in a linear fashion. Recent advances in self-supervised learning, particularly nonlinear Independent Component Analysis, have shown that these methods can recover latent structures by inverting the data generating process. We extend these identifiability results to parametric instance discrimination, then show how insights transfer to the ubiquitous setting of supervised learning with cross-entropy minimization. We prove that even in standard classification tasks, models learn representations of ground-truth factors of variation up to a linear transformation under a certain DGP. We corroborate our theoretical contribution with a series of empirical studies. First, using simulated data matching our theoretical assumptions, we demonstrate successful disentanglement of latent factors. Second, we show that on DisLib, a widely-used disentanglement benchmark, simple classification tasks recover latent structures up to linear transformations. Finally, we reveal that models trained on ImageNet encode representations that permit linear decoding of proxy factors of variation.Together, our theoretical findings and experiments offer a compelling explanation for recent observations of linear representations, such as superposition in neural networks. This work takes a significant step toward a cohesive theory that accounts for the unreasonable effectiveness of supervised learning.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31797",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "crossentropyisallyouneedtoinvertthedatageneratingprocess",
+      "score": 33.0,
+      "core_score": 20.0,
+      "matched": [
+        "interpretable",
+        "linear representation",
+        "superposition"
+      ],
+      "core_matched": [
+        "linear representation",
+        "superposition"
+      ]
+    },
+    {
+      "title": "Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability",
+      "abstract": "Use of machine learning to perform database operations, such as indexing, cardinality estimation, and sorting, is shown to provide substantial performance benefits. However, when datasets change and data distribution shifts, empirical results also show performance degradation for learned models, possibly to worse than non-learned alternatives. This, together with a lack of theoretical understanding of learned methods undermines their practical applicability, since there are no guarantees on how well the models will perform after deployment. In this paper, we present the first known theoretical characterization of the performance of learned models in dynamic datasets, for the aforementioned operations. Our results show novel theoretical characteristics achievable by learned models and provide bounds on the performance of the models that characterize their advantages over non-learned methods, showing why and when learned models can outperform the alternatives. Our analysis develops the *distribution learnability* framework and novel theoretical tools which build the foundation for the analysis of learned database operations in the future.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35465",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "theoreticalanalysisoflearneddatabaseoperationsunderdistributionshiftthroughdistributionlea",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Fine-Tuning Language Models with Just Forward Passes",
+      "abstract": "Fine-tuning language models (LMs) has yielded success on diverse downstream tasks, but as LMs grow in size, backpropagation requires a prohibitively large amount of memory. Zeroth-order (ZO) methods can in principle estimate gradients using only two forward passes but are theorized to be catastrophically slow for optimizing large models. In this work, we propose a memory-efficient zerothorder optimizer (MeZO), adapting the classical ZO-SGD method to operate in-place, thereby fine-tuning LMs with the same memory footprint as inference. For example, with a single A100 80GB GPU, MeZO can train a 30-billion parameter model, whereas fine-tuning with backpropagation can train only a 2.7B LM with the same budget. We conduct comprehensive experiments across model types (masked and autoregressive LMs), model scales (up to 66B), and downstream tasks (classification, multiple-choice, and generation). Our results demonstrate that (1) MeZO significantly outperforms in-context learning and linear probing; (2) MeZO achieves comparable performance to fine-tuning with backpropagation across multiple tasks, with up to 12× memory reduction and up to 2× GPU-hour reduction in our implementation; (3) MeZO is compatible with both full-parameter and parameter-efficient tuning techniques such as LoRA and prefix tuning; (4) MeZO can effectively optimize non-differentiable objectives (e.g., maximizing accuracy or F1). We support our empirical findings with theoretical insights, highlighting how adequate pre-training and task prompts enable MeZO to fine-tune huge models, despite classical ZO analyses suggesting otherwise.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://neurips.cc/virtual/2023/oral/73844",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "NEURIPS 2023",
+      "presentation": "oral",
+      "year": "2023",
+      "_is_conf": true,
+      "key": "finetuninglanguagemodelswithjustforwardpasses",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "fine-tuning",
+        "in-context learning",
+        "language models",
+        "linear probing",
+        "probing"
+      ],
+      "core_matched": [
+        "linear probing"
+      ]
+    },
+    {
+      "title": "Inferring the Long-Term Causal Effects of Long-Term Treatments from Short-Term Experiments",
+      "abstract": "We study inference on the long-term causal effect of a continual exposure to a novel intervention, which we term a long-term treatment, based on an experiment involving only short-term observations. Key examples include the long-term health effects of regularly-taken medicine or of environmental hazards and the long-term effects on users of changes to an online platform. This stands in contrast to short-term treatments or \"shocks,\" whose long-term effect can reasonably be mediated by short-term observations, enabling the use of surrogate methods. Long-term treatments by definition have direct effects on long-term outcomes via continual exposure, so surrogacy conditions cannot reasonably hold. We connect the problem with offline reinforcement learning, leveraging doubly-robust estimators to estimate long-term causal effects for long-term treatments and construct confidence intervals.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35474",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "inferringthelongtermcausaleffectsoflongtermtreatmentsfromshorttermexperiments",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
     },
     {
       "title": "Linear Representations of Political Perspective Emerge in Large Language Models",
@@ -1068,247 +1229,161 @@
       ]
     },
     {
-      "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
-      "abstract": "Hallucinations in large language models are a widespread problem, yet the mechanisms behind whether models will hallucinate are poorly understood, limiting our ability to solve this problem. Using sparse autoencoders as an interpretability tool, we discover that a key part of these mechanisms is entity recognition, where the model detects if an entity is one it can recall facts about. Sparse autoencoders uncover meaningful directions in the representation space, these detect whether the model recognizes an entity, e.g. detecting it doesn't know about an athlete or a movie. This shows that models can have self-knowledge: internal representations about their own capabilities. These directions are causally relevant: capable of steering the model to refuse to answer questions about known entities, or to hallucinate attributes of unknown entities when it would otherwise refuse. We demonstrate that despite the sparse autoencoders being trained on the base model, these directions have a causal effect on the chat model's refusal behavior, suggesting that chat finetuning has repurposed this existing mechanism. Furthermore, we provide an initial exploration into the mechanistic role of these directions in the model, finding that they disrupt the attention of downstream heads that typically move entity attributes to the final token.",
+      "title": "On the Hölder Stability of Multiset and Graph Neural Networks",
+      "abstract": "Extensive research efforts have been put into characterizing and constructing maximally separating multiset and graph neural networks. However, recent empirical evidence suggests the notion of separation itself doesn't capture several interesting phenomena. On the one hand, the quality of this separation may be very weak, to the extent that the embeddings of \"separable\" objects might even be considered identical when using fixed finite precision. On the other hand, architectures which aren't capable of separation in theory, somehow achieve separation when taking the network to be wide enough.In this work, we address both of these issues, by proposing a novel pair-wise separation quality analysis framework which is based on an adaptation of Lipschitz and Hölder stability to parametric functions. The proposed framework, which we name Hölder in expectation, allows for separation quality analysis, without restricting the analysis to embeddings that can separate all the input space simultaneously. We prove that common sum-based models are lower-Hölder in expectation, with an exponent that decays rapidly with the network's depth . Our analysis leads to adversarial examples of graphs which can be separated by three 1-WL iterations, but cannot be separated in practice by standard maximally powerful Message Passing Neural Networks (MPNNs). To remedy this, we propose two novel MPNNs with improved separation quality, one of which is lower Lipschitz in expectation. We show these MPNNs can easily classify our adversarial examples, and compare favorably with standard MPNNs on standard graph learning tasks.",
       "authors": [],
       "arxiv_id": null,
-      "url": "https://iclr.cc/virtual/2025/oral/31832",
+      "url": "https://iclr.cc/virtual/2025/oral/31856",
       "hf_upvotes": 0,
       "source": "conference",
       "venue": "ICLR 2025",
       "presentation": "oral",
       "year": "2025",
       "_is_conf": true,
-      "key": "doiknowthisentityknowledgeawarenessandhallucinationsinlanguagemodels",
-      "score": 47.0,
-      "core_score": 20.0,
-      "matched": [
-        "internal representations",
-        "interpretability",
-        "language models",
-        "large language models",
-        "mechanistic",
-        "sparse autoencoders"
-      ],
-      "core_matched": [
-        "internal representations",
-        "sparse autoencoders"
-      ]
-    },
-    {
-      "title": "Privacy Auditing with One (1) Training Run",
-      "abstract": "We propose a scheme for auditing differentially private machine learning systems with a single training run. This exploits the parallelism of being able to add or remove multiple training examples independently. We analyze this using the connection between differential privacy and statistical generalization, which avoids the cost of group privacy. Our auditing scheme requires minimal assumptions about the algorithm and can be applied in the black-box or white-box setting. We demonstrate the effectiveness of our framework by applying it to DP-SGD, where we can achieve meaningful empirical privacy lower bounds by training only one model. In contrast, standard methods would require training hundreds of models.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://neurips.cc/virtual/2023/oral/73837",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "NEURIPS 2023",
-      "presentation": "oral",
-      "year": "2023",
-      "_is_conf": true,
-      "key": "privacyauditingwithone1trainingrun",
-      "score": 3.0,
+      "key": "onthehlderstabilityofmultisetandgraphneuralnetworks",
+      "score": 0.0,
       "core_score": 0.0,
-      "matched": [
-        "black-box",
-        "white-box"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "Cross-Entropy Is All You Need To Invert the Data Generating Process",
-      "abstract": "Supervised learning has become a cornerstone of modern machine learning, yet a comprehensive theory explaining its effectiveness remains elusive. Empirical phenomena, such as neural analogy-making and the linear representation hypothesis, suggest that supervised models can learn interpretable factors of variation in a linear fashion. Recent advances in self-supervised learning, particularly nonlinear Independent Component Analysis, have shown that these methods can recover latent structures by inverting the data generating process. We extend these identifiability results to parametric instance discrimination, then show how insights transfer to the ubiquitous setting of supervised learning with cross-entropy minimization. We prove that even in standard classification tasks, models learn representations of ground-truth factors of variation up to a linear transformation under a certain DGP. We corroborate our theoretical contribution with a series of empirical studies. First, using simulated data matching our theoretical assumptions, we demonstrate successful disentanglement of latent factors. Second, we show that on DisLib, a widely-used disentanglement benchmark, simple classification tasks recover latent structures up to linear transformations. Finally, we reveal that models trained on ImageNet encode representations that permit linear decoding of proxy factors of variation.Together, our theoretical findings and experiments offer a compelling explanation for recent observations of linear representations, such as superposition in neural networks. This work takes a significant step toward a cohesive theory that accounts for the unreasonable effectiveness of supervised learning.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://iclr.cc/virtual/2025/oral/31797",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "ICLR 2025",
-      "presentation": "oral",
-      "year": "2025",
-      "_is_conf": true,
-      "key": "crossentropyisallyouneedtoinvertthedatageneratingprocess",
-      "score": 33.0,
-      "core_score": 20.0,
-      "matched": [
-        "interpretable",
-        "linear representation",
-        "superposition"
-      ],
-      "core_matched": [
-        "linear representation",
-        "superposition"
-      ]
-    },
-    {
-      "title": "Scaling and evaluating sparse autoencoders",
-      "abstract": "Sparse autoencoders provide a promising unsupervised approach for extracting interpretable features from a language model by reconstructing activations from a sparse bottleneck layer. Since language models learn many concepts, autoencoders need to be very large to recover all relevant features. However, studying the properties of autoencoder scaling is difficult due to the need to balance reconstruction and sparsity objectives and the presence of dead latents. We propose using k-sparse autoencoders [Makhzani and Frey, 2013] to directly control sparsity, simplifying tuning and improving the reconstruction-sparsity frontier. Additionally, we find modifications that result in few dead latents, even at the largest scales we tried. Using these techniques, we find clean scaling laws with respect to autoencoder size and sparsity. We also introduce several new metrics for evaluating feature quality based on the recovery of hypothesized features, the explainability of activation patterns, and the sparsity of downstream effects. These metrics all generally improve with autoencoder size. To demonstrate the scalability of our approach, we train a 16 million latent autoencoder on GPT-4 activations for 40 billion tokens. We release training code and autoencoders for open-source models, as well as a visualizer.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://iclr.cc/virtual/2025/oral/31752",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "ICLR 2025",
-      "presentation": "oral",
-      "year": "2025",
-      "_is_conf": true,
-      "key": "scalingandevaluatingsparseautoencoders",
-      "score": 40.0,
-      "core_score": 20.0,
-      "matched": [
-        "activation",
-        "activations",
-        "explainability",
-        "interpretable",
-        "language model",
-        "language models",
-        "sparse autoencoders"
-      ],
-      "core_matched": [
-        "sparse autoencoders"
-      ]
-    },
-    {
-      "title": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
-      "abstract": "We introduce methods for discovering and applying **sparse feature circuits**. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms in neural networks. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://iclr.cc/virtual/2025/oral/31874",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "ICLR 2025",
-      "presentation": "oral",
-      "year": "2025",
-      "_is_conf": true,
-      "key": "sparsefeaturecircuitsdiscoveringandeditinginterpretablecausalgraphsinlanguagemodels",
-      "score": 70.5,
-      "core_score": 30.0,
-      "matched": [
-        "attention heads",
-        "circuits",
-        "interpretability",
-        "interpretable",
-        "language model",
-        "language models",
-        "polysemantic",
-        "sparse feature"
-      ],
-      "core_matched": [
-        "polysemantic",
-        "sparse feature"
-      ]
-    },
-    {
-      "title": "Geometry-aware RL for Manipulation of Varying Shapes and Deformable Objects",
-      "abstract": "Manipulating objects with varying geometries and deformable objects is a major challenge in robotics. Tasks such as insertion with different objects or cloth hanging require precise control and effective modelling of complex dynamics. In this work, we frame this problem through the lens of a heterogeneous graph that comprises smaller sub-graphs, such as actuators and objects, accompanied by different edge types describing their interactions. This graph representation serves as a unified structure for both rigid and deformable objects tasks, and can be extended further to tasks comprising multiple actuators. To evaluate this setup, we present a novel and challenging reinforcement learning benchmark, including rigid insertion of diverse objects, as well as rope and cloth manipulation with multiple end-effectors. These tasks present a large search space, as both the initial and target configurations are uniformly sampled in 3D space. To address this issue, we propose a novel graph-based policy model, dubbed Heterogeneous Equivariant Policy (HEPi), utilizing $SE(3)$ equivariant message passing networks as the main backbone to exploit the geometric symmetry. In addition, by modeling explicit heterogeneity, HEPi can outperform Transformer-based and non-heterogeneous equivariant policies in terms of average returns, sample efficiency, and generalization to unseen objects. Our project page is available at https://thobotics.github.io/hepi.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://iclr.cc/virtual/2025/oral/31913",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "ICLR 2025",
-      "presentation": "oral",
-      "year": "2025",
-      "_is_conf": true,
-      "key": "geometryawarerlformanipulationofvaryingshapesanddeformableobjects",
-      "score": 0.8,
-      "core_score": 0.0,
-      "matched": [
-        "transformer"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "LLM Evaluators Recognize and Favor Their Own Generations",
-      "abstract": "Self-evaluation using large language models (LLMs) has proven valuable not only in benchmarking but also methods like reward modeling, constitutional AI, and self-refinement. But new biases are introduced due to the same LLM acting as both the evaluator and the evaluatee. One such bias is self-preference, where an LLM evaluator scores its own outputs higher than others’ while human annotators consider them of equal quality. But do LLMs actually recognize their own outputs when they give those texts higher scores, or is it just a coincidence? In this paper, we investigate if self-recognition capability contributes to self-preference. We discover that, out of the box, LLMs such as GPT-4 and Llama 2 have non-trivial accuracy at distinguishing themselves from other LLMs and humans. By finetuning LLMs, we discover a linear correlation between self-recognition capability and the strength of self-preference bias; using controlled experiments, we show that the causal explanation resists straightforward confounders. We discuss how self-recognition can interfere with unbiased evaluations and AI safety more generally.",
-      "authors": [],
-      "arxiv_id": null,
-      "url": "https://neurips.cc/virtual/2024/oral/97998",
-      "hf_upvotes": 0,
-      "source": "conference",
-      "venue": "NEURIPS 2024",
-      "presentation": "oral",
-      "year": "2024",
-      "_is_conf": true,
-      "key": "llmevaluatorsrecognizeandfavortheirowngenerations",
-      "score": 1.5,
-      "core_score": 0.0,
-      "matched": [
-        "language models",
-        "large language models"
-      ],
+      "matched": [],
       "core_matched": []
     }
   ],
   "interest": [
     {
-      "title": "GAPS: Dimension-Level Gates for Conditional Activation Steering",
-      "abstract": "Activation steering suppresses undesired behaviors in language models by adding a steering vector to the hidden state during generation. Recent conditional methods such as CAST and DSAS improve the behavior-capability trade-off by deciding when to intervene, but once active, they apply the full dense vector to all hidden dimensions, regardless of whether a neuron carries concept information or already lies in the desired regime. We introduce dimension-level conditioning as a complementary axis of selectivity that also decides which neurons to intervene on. Our method, GAPS (Gated Activation steering via Posterior and Separability), combines two training-free gates: a static separability gate that restricts steering to neurons with statistically reliable concept information (via AUROC), and a dynamic posterior gate that steers a neuron only when its current activation is better explained by the undesired concept under a Gaussian model. The gates add O(D) overhead per token, and they plug into existing conditional methods. On toxicity mitigation (RealToxicityPrompts) and concept removal (OneSeC) with Gemma-3 (4B) and Qwen-3 (1.7B), GAPS consistently matches or improves the Pareto front of its token-level counterparts; under a fixed capability budget, DSAS+GAPS reduces Gemma-3's toxicity rate from 6.52% to 0.48%, versus 3.52% for DSAS alone. Ablations attribute most of the gain to the posterior gate.",
+      "title": "EraseSAE: Surgical Concept Erasure in Text-to-Video Diffusion Models via Sparse Autoencoders",
+      "abstract": "Recent advances in text-to-video (T2V) diffusion models have demonstrated remarkable generative capabilities, yet their reliance on loosely curated training data raises pressing safety and copyright concerns. Concept erasure offers a principled remedy by removing unwanted semantics from pretrained models while preserving remaining concepts. However, existing approaches typically operate at a coarse granularity misaligned with the fine-grained, distributed nature of concept representations, leading to incomplete removal or degraded generation quality. We argue that surgical erasure fundamentally requires intervention at the level of monosemantic features, where each unit encodes a single interpretable concept. To this end, we propose EraseSAE, a novel framework that leverages sparse autoencoders to achieve surgical concept erasure in DiT-based T2V diffusion models via a principled decompose-attribute-erase pipeline. We first introduce the Partitioned Convolutional Sparse Autoencoder, which decomposes dense spatiotemporal activations into disentangled, interpretable sparse features while preserving spatiotemporal coherence. A contrastive attribution mechanism then contrasts activations from paired prompts to isolate concept-specific feature kernels. At inference, timestep-resolved spatiotemporal masks derived from the identified kernels confine erasure to regions where the target concept is active, leaving unrelated content intact. Extensive experiments across diverse diffusion models and concept erasure tasks demonstrate that EraseSAE achieves precise and robust concept removal with minimal quality degradation, substantially outperforming state-of-the-art methods. The code is available at https://github.com/HiDream-ai/EraseSAE.",
       "authors": [
-        "Moghis Fereidouni",
-        "Muhammad Umair Haider",
-        "Hassan Sajjad",
-        "A. B. Siddique"
+        "Xinghao Wang",
+        "Dong Li",
+        "Wei Yu",
+        "Yingwei Pan",
+        "Tao Gong",
+        "Qi Chu",
+        "Nenghai Yu",
+        "Ting Yao"
       ],
-      "arxiv_id": "2609.01878",
-      "url": "https://arxiv.org/abs/2609.01878",
+      "arxiv_id": "2609.03629",
+      "url": "https://arxiv.org/abs/2609.03629",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.03629",
+      "score": 86.0,
+      "core_score": 40.0,
+      "matched": [
+        "activations",
+        "attribution",
+        "interpretable",
+        "monosemantic",
+        "sparse autoencoder",
+        "sparse autoencoders"
+      ],
+      "core_matched": [
+        "monosemantic",
+        "sparse autoencoder",
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "Lost in Reordering: Structural Sensitivity of Multilingual LLMs under Semantics-Preserving Perturbations",
+      "abstract": "Large Language Models (LLMs) demonstrate strong multilingual reasoning performance, yet their robustness to semantics-preserving structural variation remains underexplored, particularly for relatively free word-order languages. We investigate the structural sensitivity of multilingual LLMs using two linguistically grounded perturbation settings in Hindi and Malayalam: constrained constituent reordering and active-passive voice transformation. We introduce a benchmark dataset IndicReStruct, with two variants, GSM8K-Reordered and GSM8K-Voice, constructed from GSM8K while preserving semantic meaning. Across six state-of-the-art LLMs and multiple prompting strategies, we observe consistent and significant degradation in mathematical reasoning performance under structurally perturbed inputs. To further understand these failures, we perform qualitative error analysis and mechanistic interpretability experiments using residual-stream activation patching. Our analyses show that reasoning failures frequently arise from disruptions in entity-quantity alignment and that intermediate transformer layers contribute most strongly toward reasoning restoration. Overall, our findings suggest that current multilingual LLMs remain highly sensitive to surface syntactic realization and lack robust compositional invariance under structurally different but semantically equivalent inputs.",
+      "authors": [
+        "Karthika Nhayakkat",
+        "Rajat Verma",
+        "Maharaj Brahma",
+        "Vetcha Gnana Mahesh",
+        "Maunendra Sankar Desarkar",
+        "Ganesh Ramakrishnan",
+        "Rohit Saluja"
+      ],
+      "arxiv_id": "2609.03511",
+      "url": "https://arxiv.org/abs/2609.03511",
       "hf_upvotes": 0,
       "source": "arxiv_new",
       "primary_cat": "cs.CL",
       "venue": null,
       "year": "2026",
-      "key": "2609.01878",
-      "score": 61.5,
+      "key": "2609.03511",
+      "score": 81.0,
       "core_score": 30.0,
       "matched": [
         "activation",
-        "activation steering",
-        "hidden state",
+        "activation patching",
+        "alignment",
+        "interpretability",
         "language models",
-        "steering vector"
+        "large language models",
+        "mechanistic",
+        "mechanistic interpretability",
+        "reasoning",
+        "residual stream",
+        "transformer"
       ],
       "core_matched": [
-        "activation steering",
-        "steering vector"
+        "activation patching",
+        "mechanistic interpretability",
+        "residual stream"
       ]
     },
     {
-      "title": "Interpretable Symptom Vectors for Depression in a Large Language Model",
-      "abstract": "Patients with depression present with diverse symptom profiles, yet clinical practice routinely reduces this variation to a single severity score. Large language models (LLMs) can potentially capture various symptoms and their severity from patient speech. However, how depressive symptoms are represented inside LLMs remains poorly understood, limiting clinical trust. To examine whether internal model activations match clinician judgment, we analyzed the residual stream of Gemma-3-27B-PT using mechanistic interpretability techniques. Recording activations across symptom descriptions drawn from validated clinical instruments, we found that symptom groups geometrically separated the most at layer 21 across multiple distance metrics. Using Semantic Projection, we then projected held-out naturalistic text onto Symptom Vectors constructed from these instruments. The resulting per-symptom coefficients preserved clinician-annotated rank ordering across mood, somatic, and suicidality axes. Furthermore, a single depression vector in Layer 21 separates held-out depressive from non-depressive text (AUC = 0.789), which can be used as an emotional valence gate that restricts symptom projection to depressive speech. These results reveal a decorrelated, clinician-aligned symptom signal readable directly from internal activations, offering a mechanistic foundation for interpretable depression-assessment tools.",
+      "title": "ObserverBench: Testing Mechanistic Estimates for Intervention and Control",
+      "abstract": "Mechanistic interpretability is increasingly used to guide interventions such as activation steering, circuit removal, and safety monitoring. Yet an internal estimate that is accurate on average can still choose a poor action. We present ObserverBench, a benchmark framework for testing whether an internal estimator---an observer---is adequate for the intervention, control, or safety task it directs. Each task fixes the model, information boundary, allowed actions, decision rule, held-out cases, and loss. The benchmark reports estimation accuracy separately from the loss caused by the chosen action. Theory and experiments show why both are needed. In closed-loop control, observer errors matter at the starting point and along directions the allowed intervention can reach. On circuit-intervention tasks in GPT-2-small and Qwen2.5-7B, pairwise observers predict unseen effects more accurately without always choosing better actions; observers trained on action loss choose lower-loss actions. In safety triage, a score that perfectly separates violations can allocate a fixed intervention budget poorly when violations have different costs. Across Qwen2.5-7B, Gemma-2-9B-it, and prospectively frozen Qwen3.5-9B APPS tasks, AUROC can rank monitors differently from deployment loss, and the best information source changes across models. Sparse SAE readouts also trail their layer-matched dense controls on the reported Qwen panels, under disclosed activation-density or checkpoint mismatches. ObserverBench provides fixed task contracts, runnable baselines, and table-based submissions for evaluating interpretability methods through the actions they enable.",
       "authors": [
-        "Fangyi Zhu",
-        "Ajay Subramanian",
-        "Allison Constant",
-        "Camille Wang",
-        "Ravish Gupta",
-        "Corey J. Keller"
+        "Vijay Erramilli"
       ],
-      "arxiv_id": "2609.01832",
-      "url": "https://arxiv.org/abs/2609.01832",
+      "arxiv_id": "2609.03026",
+      "url": "https://arxiv.org/abs/2609.03026",
       "hf_upvotes": 0,
       "source": "arxiv_new",
       "primary_cat": "cs.LG",
       "venue": null,
       "year": "2026",
-      "key": "2609.01832",
-      "score": 47.0,
-      "core_score": 20.0,
+      "key": "2609.03026",
+      "score": 75.6,
+      "core_score": 28.0,
       "matched": [
-        "activations",
+        "SAE",
+        "activation",
+        "activation steering",
+        "circuit",
         "interpretability",
-        "interpretable",
-        "language model",
-        "language models",
-        "large language model",
-        "large language models",
         "mechanistic",
-        "mechanistic interpretability",
-        "residual stream"
+        "mechanistic interpretability"
       ],
       "core_matched": [
-        "mechanistic interpretability",
-        "residual stream"
+        "SAE",
+        "activation steering",
+        "mechanistic interpretability"
+      ]
+    },
+    {
+      "title": "The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA",
+      "abstract": "Continuous chain-of-thought models compress reasoning into latent tokens. Matrix-valued variants, which route each latent token through a d x d matrix bottleneck, introduce rank as a single-sample structural observable on the latent matrix Z. If matrix latents carry parallel reasoning paths via superposition, rank should track them, and truncating Z to low rank should hurt accuracy on tasks whose solutions plausibly require multiple components. Across four training regimes of a matrix-CODI model (three on ProsQA, one on GSM8K-Aug below the learning threshold), the rank-k projection ablation curve is flat to within 0.6 percentage points. A three-seed replication yields 81.0 +/- 2.0 percentage points accuracy while the final effective rank of Z spans {4, 12, 13}; the loss does not reward any particular rank. To test whether rank-blindness arises from the flatten-then-project readout alone, we trained four readouts: a bilinear reparametrization, a bilinear-plus-GELU readout nonlinear in Z, an SVD-augmented readout feeding singular values through an MLP, and a quadratic readout in Z Z^T. All four rank-k curves remain flat (Spearman p-values 0.63, 0.14, 0.82, 0.46). The flat curves persist for readouts nonlinear in Z. A linear probe on Z underperforms a raw pretrained hidden state at target prediction (AUC 0.673 vs. 0.846). A negative control on vanilla GPT-2 SFT (no matrix bottleneck, no Z, three seeds, n=500) reproduces a flat rank-k curve under the same intervention paradigm with pooled-mean range 0.20pp, and a random-h sensitivity floor lands at the same accuracy: the rank-k ablation alone conflates rank-blindness with position-irrelevance.",
+      "authors": [
+        "Samuel Larson (Pebble ML)"
+      ],
+      "arxiv_id": "2609.03090",
+      "url": "https://arxiv.org/abs/2609.03090",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.03090",
+      "score": 45.0,
+      "core_score": 20.0,
+      "matched": [
+        "chain-of-thought",
+        "hidden state",
+        "linear probe",
+        "probe",
+        "reasoning",
+        "superposition"
+      ],
+      "core_matched": [
+        "linear probe",
+        "superposition"
       ]
     },
     {
@@ -1320,13 +1395,13 @@
       ],
       "arxiv_id": "2609.04098",
       "url": "https://arxiv.org/abs/2609.04098",
-      "hf_upvotes": 47,
+      "hf_upvotes": 50,
       "hf_date": "2026-09-04",
-      "source": "hf_daily",
+      "source": "arxiv_new+hf_daily",
       "venue": null,
       "year": null,
       "key": "2609.04098",
-      "score": 27.1,
+      "score": 27.5,
       "core_score": 10.0,
       "matched": [
         "activation",
@@ -1338,159 +1413,305 @@
       ]
     },
     {
-      "title": "Hearing the Whispers: Black-Box Membership Inference Attacks on Finetuned TTS Models",
-      "abstract": "Text-to-Speech (TTS) foundation models are increasingly fine-tuned on private datasets to synthesize highly personalized voices, introducing severe privacy risks by exposing both biometric identities and sensitive speech content. Existing black-box membership inference attacks (MIAs) follow a two-stage pipeline of query generation and representation engineering, both of which face unique challenges when adapted to TTS. For query generation, dual conditioning on synthesis text and reference speech creates a large and underexplored query design space with no established criterion for identifying an effective query. For representation engineering, the multi-level speech characteristics and temporal variability of speech make low-level representations and direct comparisons inadequate for capturing membership signals. To address these challenges, we present the first black-box MIA framework explicitly tailored to TTS models at both the speaker and record levels. For query generation, we characterize the feasible query space and establish two criteria, scorable extent and memorization elicitation, for evaluating five representative queries, identifying recitation as the strongest. For representation engineering, we obtain multi-level speech representations from embedding models and temporally align the generated and target audio for fine-grained comparison. Evaluations across three state-of-the-art TTS models (CosyVoice2, F5-TTS, and XTTS-v2) fine-tuned on two benchmark datasets (VCTK and British Dialect) reveal severe privacy leakage: speaker-level AUC remains above 0.80 and approaches 1.0 in the strongest settings, while record-level AUC ranges from 0.80 to 0.90 and remains effective even in challenging scenarios where both members and non-members are of the same speakers. We further identify speech characteristics associated with disproportionate vulnerability to memorization.",
+      "title": "Large Language Models in Resolving Contextual Knowledge Conflicts",
+      "abstract": "Most prior works focused on conflicts between an LLM's internal parametric knowledge and externally provided context. In contrast, we investigate how LLMs handle conflicts that arise within contextual knowledge itself. We introduce a taxonomy of six types of contextual conflicts (factual, inferential, temporal, granularity, perspective, and ambiguity) and contribute a comprehensive dataset ContextConflict for this setting. The dataset contains 5,781 samples, covers both reasoning and summarization tasks, and includes both explicit contradictions and implicit conflicts that require multi-step reasoning. Experiments on nine LLMs show that current models still fall short in resolving contextual knowledge conflicts. We further provide mechanistic interpretability insights into how LLMs process such conflicts, revealing their latent awareness of conflicts and the representational geometry underlying conflict processing. In addition, our analysis uncovers a consistent model bias towards earlier evidence, and this positional preference serves as a key obstacle to effective conflict resolution. Motivated by these findings, we further propose a simple training-free, label-free steering method that steers activations to encourage a more comprehensive incorporation of evidences for better conflict resolution. On our dataset, the method consistently improves accuracy on reasoning tasks and generates higher-quality, more balanced summaries for summarization tasks.",
       "authors": [
-        "Kunlin Cai",
-        "Kaiyuan Zhang",
-        "Zihang Xiang",
-        "Jinghuai Zhang",
-        "Abeer Alwan",
-        "Fnu Suya",
-        "Yuan Tian"
+        "Xinye Yang",
+        "Zhenyang Liu",
+        "Ruisi Li",
+        "Yuanyuan Lei"
       ],
-      "arxiv_id": "2609.01723",
-      "url": "https://arxiv.org/abs/2609.01723",
+      "arxiv_id": "2609.03148",
+      "url": "https://arxiv.org/abs/2609.03148",
       "hf_upvotes": 0,
       "source": "arxiv_new",
-      "primary_cat": "cs.LG",
+      "primary_cat": "cs.CL",
       "venue": null,
       "year": "2026",
-      "key": "2609.01723",
+      "key": "2609.03148",
       "score": 20.0,
       "core_score": 10.0,
       "matched": [
-        "black-box",
-        "memorization",
-        "representation engineering"
-      ],
-      "core_matched": [
-        "representation engineering"
-      ]
-    },
-    {
-      "title": "ASCII Attack: Recontextualising Harmful Requests as Artistic Critique in Large Language Models",
-      "abstract": "Safety alignment trains large language models to refuse harmful requests stated plainly, but that training is applied mostly to surface form. Requests that only recontextualise the same operational content, changing how the model reads it, are therefore only weakly covered. The ASCII Attack is one such recontextualisation. It is single-turn and black-box: one message, with no access to model internals. It embeds a fully legible harmful request in ASCIl-art characters, presents it as artwork, and asks for feedback. Unlike ArtPrompt, it hides nothing: the request stays readable. The reply is written as artistic critique and can contain operational detail that a plain request would have been refused for. Every framed prompt is paired with a direct-question control, so the contrast is isolated from topic, model and decoding variation. The contrast identifies a bundled surface, not one isolated channel. Across eleven models and eight harm topics, a harm-aware classifier judges 62% of framed prompts harmful against 42% of controls. On the most susceptible model the framed prompt succeeds 93% of the time. A single query matches or exceeds published single-query attacks under four of five harm judges. The effect tracks the model more than the topic and does not diminish with scale. At least one judge dissents from the panel majority on nearly two-thirds of framed rows, which is itself a measurement-validity finding. That pattern is consistent with mismatched generalisation.",
-      "authors": [
-        "Da Cheng Gu",
-        "Yifei Dong",
-        "Xinghao Yang",
-        "Yongshun Gong",
-        "Wei Liu"
-      ],
-      "arxiv_id": "2609.02215",
-      "url": "https://arxiv.org/abs/2609.02215",
-      "hf_upvotes": 0,
-      "source": "arxiv_new",
-      "primary_cat": "cs.AI",
-      "venue": null,
-      "year": "2026",
-      "key": "2609.02215",
-      "score": 20.0,
-      "core_score": 10.0,
-      "matched": [
-        "alignment",
-        "black-box",
+        "activations",
+        "interpretability",
         "language models",
         "large language models",
-        "model internals"
+        "mechanistic",
+        "mechanistic interpretability",
+        "reasoning"
       ],
       "core_matched": [
-        "model internals"
+        "mechanistic interpretability"
       ]
     },
     {
-      "title": "Characterizing Text Branch Sensitivity in Medical Vision-Language Segmentation via Evidence Decoupling",
-      "abstract": "Pretrained vision-language models (VLMs) have shown promising performance in medical image segmentation by incorporating clinical text. However, it remains unclear how much textual information actually contributes to pixel-level predictions. In this work, we systematically investigate the role of text in multimodal medical image segmentation. We first analyze several commonly used fusion strategies and find that segmentation performance is largely insensitive to the choice of fusion module. To further understand modality interactions, we propose an Evidence Decoupling Decoder (EDD) based on evidential deep learning and deep supervision. EDD serves as an internal representation analysis tool that decomposes image evidence and text-modulated evidence throughout the decoding process while maintaining competitive segmentation performance. Experimental results show that the sensitivity to text perturbation varies substantially across datasets. On BUSI and BTMRI, removing text causes catastrophic performance drops, indicating strong model reliance on textual input. On ISIC and Kvasir-SEG, text exerts relatively marginal influence. We further find that text affects predictions mainly through global semantic modulation rather than independent spatial localization, and that the specific semantic components driving text sensitivity differ across datasets. These findings provide a deeper understanding of modality interaction in multimodal medical image segmentation and offer practical insights for future model design.",
+      "title": "How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models",
+      "abstract": "Language models encounter typos, corrupted text, altered words, and disrupted token order, yet robustness is usually evaluated only through output behavior. We study how six naturalistic and synthetic input perturbations propagate through decoder-only language models at three levels: output behavior, hidden-state geometry, and attention-head function. We evaluate behavioral effects across four GPT-2 and two Qwen2.5 checkpoints by analyzing layerwise geometry using centered kernel alignment and intrinsic dimension, and examine attention-head responses in GPT-2. Perturbation types produce distinguishable metric profiles that are not fully captured by output measures and are only partly consistent across the tested checkpoints. Copying scores are especially associated with activation-patching recovery under token substitution and shuffling. Gradient-guided HotFlip perturbations also cause stronger behavioral and representational disruption than rate-matched random token substitutions in GPT-2; their behavioral effects are consistent across all six tested checkpoints. Our results show that robustness claims based on a single behavioral or representational metric can be misleading, and motivate multi-level evaluation of how perturbations alter language-model computation.",
       "authors": [
-        "Ziquan Liu",
-        "Zhewei Zhu",
-        "Xuyang Shi"
+        "Dun Li Chan",
+        "Emily Liu",
+        "Niyathi Allu",
+        "Christian Hoang"
       ],
-      "arxiv_id": "2609.02663",
-      "url": "https://arxiv.org/abs/2609.02663",
+      "arxiv_id": "2609.03322",
+      "url": "https://arxiv.org/abs/2609.03322",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.03322",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "activation",
+        "activation patching",
+        "alignment",
+        "attention head",
+        "hidden state",
+        "language model",
+        "language models",
+        "large language models"
+      ],
+      "core_matched": [
+        "activation patching"
+      ]
+    },
+    {
+      "title": "A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities",
+      "abstract": "Coreference resolution is an important task in contextual reasoning. In this paper, we investigate the mechanism for representing and retrieving singular and plural entities for plural reference. We use a combination of mechanistic interpretability and attention pattern analysis to study the process in which LLMs predict a pronoun to refer back to previously mentioned entities. Using a range of causal intervention techniques, we find a set of attention heads that are responsible for (1) representing coreference information in the input, (2) identifying entities that form a plural reference, (3) transferring the information to the component that is responsible for selecting the antecedents and predicting the pronoun. We also find that LLMs align with humans in preference for plural pronoun. Specifically, entities in a plural construction are more likely to be referred to as a plural entity if they are ontologically similar and are linked by the conjunction \"and\".",
+      "authors": [
+        "Anh Danh",
+        "Rick Nouwen",
+        "Massimo Poesio"
+      ],
+      "arxiv_id": "2609.03687",
+      "url": "https://arxiv.org/abs/2609.03687",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.03687",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "attention heads",
+        "attention pattern",
+        "circuit",
+        "interpretability",
+        "mechanistic",
+        "mechanistic interpretability",
+        "reasoning"
+      ],
+      "core_matched": [
+        "mechanistic interpretability"
+      ]
+    },
+    {
+      "title": "Solving the Needle-in-a-Haystack Problem in Mammography Vision-Language Model with Differentiable Subset Sampling",
+      "abstract": "There is growing interest in adopting CLIP-style vision--language model (VLM) pretraining for mammography. However, models that directly employ the standard CLIP architecture and training objective exhibit limited zero-shot performance in clinically important tasks such as cancer, finding-type, and BI-RADS predictions. We argue that this underwhelming performance is due to neglecting two characteristics of mammography data: (1) its high-res nature, and (2) homogeneity of radiology reports, largely driven by a predominance of negative/benign findings on examinations. We propose TopKSigLIP, a VLM designed to address these two limitations through a novel architecture and learning objectives. Instead of downscaling high-res mammography images to satisfy GPU memory constraints, TopKSigLIP introduces TopK-Patch module that learns to sample a sparse set of high-res patches likely to contain lesions, sidestepping the resolution--batch size tradeoff of VLM training. The sampled patch locations additionally serve as a built-in localization tool. To address report homogeneity, we replace the contrastive loss, which falsely repels semantically similar pairs, with a Sup-sigmoid loss. Sup-sigmoid loss extends the sigmoid loss from SigLIP with soft labels derived from structured data. TopKSigLIP outperforms existing open-source mammography and general medical VLMs on both internal and external benchmarks on density assessment, BI-RADS classification, finding subtyping, and cancer prediction under zero-shot evaluation. TopKSigLIP remains competitive under linear probing despite using a significantly smaller vision encoder and smaller training batches than baselines. The TopK-Patch module additionally achieves superior lesion localization over post-hoc Grad-CAM. Code and weights are made public:https://github.com/Youngseok0001/TopKSigLIP.",
+      "authors": [
+        "Young Seok Jeon",
+        "Beatrice Brown-Mulry",
+        "Rohan Satya Isaac",
+        "Anjana Dissanayaka",
+        "Theo Dapamede",
+        "Mohammadreza Chavoshi",
+        "Judy Gichoya",
+        "Hari Trivedi"
+      ],
+      "arxiv_id": "2609.03085",
+      "url": "https://arxiv.org/abs/2609.03085",
       "hf_upvotes": 0,
       "source": "arxiv_new",
       "primary_cat": "cs.CV",
       "venue": null,
       "year": "2026",
-      "key": "2609.02663",
+      "key": "2609.03085",
       "score": 20.0,
       "core_score": 10.0,
       "matched": [
-        "internal representation",
-        "language models",
-        "multimodal",
-        "representation analysis",
+        "language model",
+        "linear probing",
+        "pretraining",
+        "probing",
         "vision language",
         "vision-language"
       ],
       "core_matched": [
-        "internal representation"
+        "linear probing"
       ]
     },
     {
-      "title": "The Diagnosis a Reporter Leaves Unspoken: Surfacing Frozen Tumor Features for Brain-Tumor MRI Reporting",
-      "abstract": "A capable brain-MRI report generator can still be, in effect, diagnostically silent. When a multi-chain chain-of-thought (CoT) reporter built on a medical Mistral-7B backbone is evaluated on held-out cohorts, it names most meningiomas and almost all metastases \"glioma\" (diagnosis recall 0.44/0.07). Yet the answer is not absent from the model: a supervised linear probe applied to its frozen segmentation features recovers the three tumour cohorts at 0.82 macro-F$_1$ (5-fold cross-validation; chance $\\approx$0.33). We introduce NeuroFusion, an assistive reporter that surfaces this latent signal rather than overriding it: discriminative field-classifier heads over per-lesion features condition a fast, single-pass draft-then-review decoder on their committed outputs. Built on the identical Mistral backbone, this restores the diagnosis (meningioma 0.92, metastasis 0.75) and wins 8 of 9 prose-content comparisons across three held-out cohorts (RaTEScore, RadGraph-F$_1$, GREEN; Holm-corrected paired BCa), with no significant loss on the ninth, at 5-6x lower latency ($\\approx$80 vs. 457 s/case). A controlled negative result sharpens the mechanism: a learned diagnosis pin that overrides the decoder instead of merely informing it collapses out-of-distribution metastasis recall to 0.03. Grammar-constrained decoding keeps 92.3% of records schema-valid, making every sentence entailment-checkable (7.5% contradicted vs. 36.8% for the direct baseline). In a blinded nine-case pilot, two board-certified neurologists independently rated NeuroFusion highest in every tumour type, the only system with zero critical errors, and gave it the top-rated sign-off in eight of nine cases (six outright, two ties).",
+      "title": "Beyond Small Patches: Black-Box Detection and Purification of Diverse Backdoor Triggers",
+      "abstract": "Deep neural networks (DNNs) are increasingly deployed in real-world vision systems, yet their predictions can be covertly manipulated by backdoor attacks, in which malicious triggers cause targeted misclassification while preserving high clean accuracy. Existing defenses often rely on model internals, training data, or clean validation samples, making them difficult to deploy when only black-box access to a trained model is available. We propose TRIM (Trigger Removal by Identifying Manipulated Regions), a deployment-oriented black-box defense that detects and selectively removes backdoor triggers at inference time without requiring model internals, training data, or clean samples. The key insight behind TRIM is to identify image regions that are responsible for anomalous model behavior and purify only those regions while preserving benign content. TRIM innovates via three key components: (i) region-based segmentation with deep feature representations, (ii) adaptive trigger discovery through inpainting and diffusion-based reconstruction to isolate regions responsible for misclassification---without assumptions about trigger type, shape, or location, and (iii) selective region purification that cleans poisoned regions while retaining benign content. To support practical deployment, TRIM further caches feature embeddings of previously identified triggers, enabling efficient recognition and avoiding redundant detection and purification. Extensive experiments across diverse datasets and backdoor types, including blended, sparse, varying-size, and multiple triggers, show that TRIM consistently outperforms existing black-box defenses, reducing attack success rates (ASR) to as low as 1.16% while preserving clean accuracy of up to 87.87%. These results demonstrate that effective backdoor mitigation is possible at inference time even when the defender has no access to any auxiliary data.",
       "authors": [
-        "Khawaja Murad ul Hassan",
-        "Ruqiyya Adil",
-        "Adil Qayyum",
-        "Rida Hassan",
-        "Asad Mansoor Khan",
-        "Muhammad Usman Akram",
-        "Mehran Ebrahimi"
+        "Ahmed Abdelnaby",
+        "Mohamed Elmahallawy"
       ],
-      "arxiv_id": "2609.02411",
-      "url": "https://arxiv.org/abs/2609.02411",
+      "arxiv_id": "2609.03139",
+      "url": "https://arxiv.org/abs/2609.03139",
       "hf_upvotes": 0,
       "source": "arxiv_new",
       "primary_cat": "cs.CV",
       "venue": null,
       "year": "2026",
-      "key": "2609.02411",
-      "score": 19.0,
+      "key": "2609.03139",
+      "score": 20.0,
       "core_score": 10.0,
       "matched": [
-        "chain-of-thought",
-        "linear probe",
-        "probe"
+        "black-box",
+        "model internals"
       ],
       "core_matched": [
-        "linear probe"
+        "model internals"
       ]
     }
   ],
   "conference_dive": [],
   "also_ran": [
     {
-      "title": "What Is Worth Representing? Representational Empowerment for Continual Model Construction",
-      "score": 10.0,
-      "url": "https://arxiv.org/abs/2609.02322",
+      "title": "The Head Complexity of Boolean Functions in Single-Layer Attention",
+      "score": 19.0,
+      "url": "https://arxiv.org/abs/2609.04046",
       "matched": [
-        "internal representations"
+        "attention heads",
+        "induction head",
+        "transformer"
       ]
     },
     {
-      "title": "SPADE: SPaT Attack Detection from the Connected Vehicle's Perspective",
-      "score": 10.0,
-      "url": "https://arxiv.org/abs/2609.02741",
+      "title": "Kernel Reboot: Breaking the Boundaries of Neural Tangent Kernels for Neural Fields",
+      "score": 16.0,
+      "url": "https://arxiv.org/abs/2609.03117",
       "matched": [
-        "SAE",
-        "multi-modal"
+        "feature learning",
+        "linear representation"
       ]
     },
     {
-      "title": "IDEEA: training-free Input-Dependent stEEring via Activation cluster matching",
-      "score": 8.2,
-      "url": "https://arxiv.org/abs/2609.02089",
+      "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+      "score": 13.5,
+      "url": "https://arxiv.org/abs/2609.03430",
       "matched": [
-        "activation",
-        "activations",
         "attention head",
-        "fine-tuning",
+        "attention heads",
+        "language models",
+        "large language models",
+        "reasoning"
+      ]
+    },
+    {
+      "title": "Zero-Shot Novel Depth Synthesis Using 3D Foundation Models Scene Representations",
+      "score": 13.0,
+      "url": "https://arxiv.org/abs/2609.04174",
+      "matched": [
+        "internal representations",
+        "transformers"
+      ]
+    },
+    {
+      "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+      "score": 12.0,
+      "url": "https://arxiv.org/abs/2609.03796",
+      "matched": [
+        "image-text",
+        "language model",
+        "transformer",
+        "vision language",
+        "vision-language"
+      ]
+    },
+    {
+      "title": "Privacy-Preserving Heterogeneous Multi-LLM Federated Inference for Cognitive Diagnosis",
+      "score": 10.0,
+      "url": "https://arxiv.org/abs/2609.02947",
+      "matched": [
+        "model internals"
+      ]
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+      "score": 9.8,
+      "url": "https://arxiv.org/abs/2609.04172",
+      "matched": [
+        "alignment",
         "language models",
         "large language models"
+      ]
+    },
+    {
+      "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+      "score": 9.8,
+      "url": "https://arxiv.org/abs/2609.04194",
+      "matched": [
+        "chain-of-thought",
+        "chain-of-thought faithfulness",
+        "faithfulness",
+        "fine-tuning",
+        "interpretability",
+        "reasoning"
+      ]
+    },
+    {
+      "title": "CulturalMenuBench: Probing the Knowledge-Application Gap in Multimodal Culinary Reasoning",
+      "score": 9.2,
+      "url": "https://arxiv.org/abs/2609.03526",
+      "matched": [
+        "attribution",
+        "language models",
+        "multimodal",
+        "probe",
+        "probing",
+        "reasoning"
+      ]
+    },
+    {
+      "title": "Witnesses Explain Anomalies",
+      "score": 9.0,
+      "url": "https://arxiv.org/abs/2609.03826",
+      "matched": [
+        "attribution",
+        "explainable",
+        "faithful",
+        "interpretability",
+        "interpretable",
+        "probe"
+      ]
+    },
+    {
+      "title": "LatentPress: Context Compression Beyond Text and Vision",
+      "score": 8.4,
+      "url": "https://arxiv.org/abs/2609.01507",
+      "matched": [
+        "language model"
+      ]
+    },
+    {
+      "title": "Typological Feature Prediction with Large Language Models: An In-Context Learning Approach",
+      "score": 8.2,
+      "url": "https://arxiv.org/abs/2609.03775",
+      "matched": [
+        "explainable",
+        "in-context learning",
+        "interpretable",
+        "language models",
+        "large language models",
+        "reasoning"
+      ]
+    },
+    {
+      "title": "Lngram v2: Latent N-Gram Memory with Interpretable Discrete Representations",
+      "score": 8.0,
+      "url": "https://arxiv.org/abs/2609.03426",
+      "matched": [
+        "activation",
+        "hidden states",
+        "interpretable",
+        "language models",
+        "transformers",
+        "vision language"
       ]
     }
   ]

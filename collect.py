@@ -678,7 +678,23 @@ def main():
     dive_fresh = [p for p in unique.values()
                   if p.get("_is_dive") and p["key"] not in seen_before]
 
-    total_to_summarize = len(hf_all) + len(conf_picks) + len(interest_picks)
+    # ── 갈래 4. 오늘의 정전 한 편 (state/classics.json 캐시에서, 네트워크 미사용)
+    classic = None
+    try:
+        import subprocess
+        r = subprocess.run([sys.executable, os.path.join(ROOT, "classics.py"),
+                            "--date", args.date],
+                           capture_output=True, timeout=60)
+        if r.returncode == 0 and r.stdout.strip():
+            classic = json.loads(r.stdout.decode())
+            log("  오늘의 정전: [%d회 인용] %s"
+                % (classic["citations"], classic["title"][:56]))
+    except Exception as e:
+        log("  정전 선정 건너뜀 (%s) — classics.py --refresh 가 필요할 수 있음"
+            % type(e).__name__)
+
+    total_to_summarize = (len(hf_all) + len(conf_picks) + len(interest_picks)
+                          + (1 if classic else 0))
 
     payload = {
         "date": args.date,
@@ -692,6 +708,7 @@ def main():
             "interest_pool": len(interest_pool),
             "total_to_summarize": total_to_summarize,
         },
+        "classic": classic,
         "hf_daily": hf_all,
         "conference": conf_picks,
         "interest": interest_picks,
@@ -718,8 +735,9 @@ def main():
     log("")
     log("수집 %d → 고유 %d (기존 %d편 스킵)"
         % (st["collected_raw"], st["unique"], st["already_seen"]))
-    log("요약 대상 %d편 = HF %s 전량 %d + 학회 oral %d(풀 %d) + 관심분야 %d(풀 %d)"
-        % (st["total_to_summarize"], st["hf_target_day"], len(payload["hf_daily"]),
+    log("요약 대상 %d편 = 정전 %d + HF %s 전량 %d + 학회 oral %d(풀 %d) + 관심분야 %d(풀 %d)"
+        % (st["total_to_summarize"], 1 if payload.get("classic") else 0,
+           st["hf_target_day"], len(payload["hf_daily"]),
            len(payload["conference"]), st["conference_pool"],
            len(payload["interest"]), st["interest_pool"]))
     log("→ %s" % out_path)
