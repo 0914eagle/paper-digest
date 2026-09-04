@@ -61,7 +61,11 @@ border-radius:9px;background:var(--card);color:var(--fg);margin:6px 0 4px}
 .count{color:var(--dim);font-size:13px;margin:8px 0}
 .toc{background:var(--card);border:1px solid var(--line);border-radius:10px;
 padding:12px 18px;margin:18px 0;font-size:14px}
-.toc ul{margin:6px 0;padding-left:20px}
+.toc ul{margin:6px 0 14px;padding-left:20px}
+.toc summary{cursor:pointer;user-select:none}
+.toc li{margin:3px 0;font-size:13.5px}
+.toc .cnt{color:var(--dim);font-size:12px}
+.toc>div{margin-top:12px}
 """
 
 INLINE = [
@@ -161,6 +165,23 @@ def md_to_html(md):
     return "\n".join(out)
 
 
+def build_toc(toc):
+    """53편짜리 페이지는 27000px가 넘는다. 목차 없이는 훑을 수가 없다."""
+    blocks = [(sec, items) for sec, items in toc if items]
+    if not blocks:
+        return ""
+    parts = ['<details class=toc open><summary><strong>목차</strong></summary>']
+    for sec, items in blocks:
+        parts.append("<div><strong>%s</strong> <span class=cnt>%d편</span><ul>"
+                     % (html.escape(sec), len(items)))
+        for anchor, label in items:
+            parts.append('<li><a href="#%s">%s</a></li>'
+                         % (html.escape(anchor, True), html.escape(label)))
+        parts.append("</ul></div>")
+    parts.append("</details>")
+    return "".join(parts)
+
+
 def page(title, body, back=True):
     nav = '<div class="nav"><a class="back" href="index.html">← 전체 목록</a></div>' if back else ""
     return ("<!doctype html><html lang=ko><head><meta charset=utf-8>"
@@ -209,10 +230,12 @@ def main():
         # 목차 + 검색 인덱스용으로 논문 제목(### N. 제목)을 뽑는다
         section = ""
         papers = []
+        toc = []          # [(섹션명, [(앵커, 제목), ...]), ...]
         for line in md.split("\n"):
             hm = re.match(r"^##\s+(.*)$", line)
             if hm:
                 section = hm.group(1).strip()
+                toc.append((section, []))
             pm = re.match(r"^###\s+(\d+\.\s+.*)$", line)
             if pm:
                 heading = pm.group(1).strip()
@@ -222,6 +245,8 @@ def main():
                 kws = kw_by_title.get(norm(t), [])
                 index.append({"d": date, "t": t, "s": section, "a": anchor,
                               "k": " ".join(kws)})
+                if toc:
+                    toc[-1][1].append((anchor, "%d. %s" % (len(papers), t)))
 
         first = ""
         fm = re.search(r"^\s*1\.\s+\*\*(.+?)\*\*", md, re.M)
@@ -229,6 +254,13 @@ def main():
             first = fm.group(1)
 
         body = md_to_html(md)
+        toc_html = build_toc(toc)
+        if toc_html:
+            # 머리말 직후, 첫 구분선 앞에 넣는다
+            if "<hr>" in body:
+                body = body.replace("<hr>", toc_html + "<hr>", 1)
+            else:
+                body += toc_html
         with open(os.path.join(SITE, "%s.html" % date), "w", encoding="utf-8") as f:
             f.write(page("%s 논문 다이제스트" % date, body))
         entries.append({"date": date, "n": len(papers), "first": first})
