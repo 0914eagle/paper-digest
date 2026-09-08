@@ -1,5 +1,5 @@
 {
-  "built": "2026-09-04",
+  "built": "2026-09-07",
   "papers": [
     {
       "arxiv_id": "2309.08600",
@@ -21,7 +21,7 @@
         "sparse autoencoders",
         "superposition"
       ],
-      "citations": 1527,
+      "citations": 1533,
       "venue": "International Conference on Learning Representations"
     },
     {
@@ -42,7 +42,7 @@
       "core_matched": [
         "concept bottleneck"
       ],
-      "citations": 1473,
+      "citations": 1475,
       "venue": "International Conference on Machine Learning"
     },
     {
@@ -62,7 +62,7 @@
       "core_matched": [
         "mechanistic interpretability"
       ],
-      "citations": 1250,
+      "citations": 1257,
       "venue": "International Conference on Learning Representations"
     },
     {
@@ -103,7 +103,7 @@
         "mechanistic interpretability",
         "superposition"
       ],
-      "citations": 1009,
+      "citations": 1011,
       "venue": "arXiv.org"
     },
     {
@@ -124,7 +124,7 @@
       "core_matched": [
         "induction heads"
       ],
-      "citations": 1006,
+      "citations": 1009,
       "venue": "arXiv.org"
     },
     {
@@ -169,7 +169,7 @@
         "residual stream",
         "sparse autoencoders"
       ],
-      "citations": 763,
+      "citations": 765,
       "venue": "arXiv.org"
     },
     {
@@ -191,7 +191,7 @@
         "logit lens",
         "tuned lens"
       ],
-      "citations": 586,
+      "citations": 587,
       "venue": "arXiv.org"
     },
     {
@@ -229,7 +229,7 @@
       "core_matched": [
         "mechanistic interpretability"
       ],
-      "citations": 517,
+      "citations": 522,
       "venue": "Trans. Mach. Learn. Res."
     },
     {
@@ -251,7 +251,7 @@
         "polysemantic",
         "sparse feature"
       ],
-      "citations": 434,
+      "citations": 435,
       "venue": "International Conference on Learning Representations"
     },
     {
@@ -289,7 +289,7 @@
         "circuit discovery",
         "mechanistic interpretability"
       ],
-      "citations": 329,
+      "citations": 331,
       "venue": "International Conference on Learning Representations"
     },
     {
@@ -308,7 +308,7 @@
       "core_matched": [
         "causal tracing"
       ],
-      "citations": 288,
+      "citations": 289,
       "venue": "Neural Information Processing Systems"
     },
     {
@@ -345,7 +345,7 @@
         "attribution patching",
         "circuit discovery"
       ],
-      "citations": 212,
+      "citations": 214,
       "venue": "BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP"
     },
     {
@@ -366,28 +366,8 @@
         "sparse autoencoders",
         "transcoder"
       ],
-      "citations": 209,
+      "citations": 210,
       "venue": "Neural Information Processing Systems"
-    },
-    {
-      "arxiv_id": "2304.05969",
-      "title": "Localizing Model Behavior with Path Patching",
-      "abstract": "Localizing behaviors of neural networks to a subset of the network's components or a subset of interactions between components is a natural first step towards analyzing network mechanisms and possible failure modes. Existing work is often qualitative and ad-hoc, and there is no consensus on the appropriate way to evaluate localization claims. We introduce path patching, a technique for expressing and quantitatively testing a natural class of hypotheses expressing that behaviors are localized to a set of paths. We refine an explanation of induction heads, characterize a behavior of GPT-2, and open source a framework for efficiently running similar experiments.",
-      "year": 2023,
-      "authors": [
-        "Nicholas Goldowsky-Dill",
-        "Chris MacLeod",
-        "Lucas Sato",
-        "Aryaman Arora"
-      ],
-      "url": "https://arxiv.org/abs/2304.05969",
-      "relevance": 40.5,
-      "core_matched": [
-        "induction heads",
-        "path patching"
-      ],
-      "citations": 199,
-      "venue": "arXiv.org"
     },
     {
       "arxiv_id": "2409.05907",
@@ -407,8 +387,28 @@
       "core_matched": [
         "activation steering"
       ],
-      "citations": 198,
+      "citations": 202,
       "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2304.05969",
+      "title": "Localizing Model Behavior with Path Patching",
+      "abstract": "Localizing behaviors of neural networks to a subset of the network's components or a subset of interactions between components is a natural first step towards analyzing network mechanisms and possible failure modes. Existing work is often qualitative and ad-hoc, and there is no consensus on the appropriate way to evaluate localization claims. We introduce path patching, a technique for expressing and quantitatively testing a natural class of hypotheses expressing that behaviors are localized to a set of paths. We refine an explanation of induction heads, characterize a behavior of GPT-2, and open source a framework for efficiently running similar experiments.",
+      "year": 2023,
+      "authors": [
+        "Nicholas Goldowsky-Dill",
+        "Chris MacLeod",
+        "Lucas Sato",
+        "Aryaman Arora"
+      ],
+      "url": "https://arxiv.org/abs/2304.05969",
+      "relevance": 40.5,
+      "core_matched": [
+        "induction heads",
+        "path patching"
+      ],
+      "citations": 201,
+      "venue": "arXiv.org"
     },
     {
       "arxiv_id": "2301.04709",
@@ -459,6 +459,24 @@
       "venue": "arXiv.org"
     },
     {
+      "arxiv_id": "2404.15255",
+      "title": "How to use and interpret activation patching",
+      "abstract": "Activation patching is a popular mechanistic interpretability technique, but has many subtleties regarding how it is applied and how one may interpret the results. We provide a summary of advice and best practices, based on our experience using this technique in practice. We include an overview of the different ways to apply activation patching and a discussion on how to interpret the results. We focus on what evidence patching experiments provide about circuits, and on the choice of metric and associated pitfalls.",
+      "year": 2024,
+      "authors": [
+        "Stefan Heimersheim",
+        "Neel Nanda"
+      ],
+      "url": "https://arxiv.org/abs/2404.15255",
+      "relevance": 70.5,
+      "core_matched": [
+        "activation patching",
+        "mechanistic interpretability"
+      ],
+      "citations": 193,
+      "venue": "arXiv.org"
+    },
+    {
       "arxiv_id": "2404.16014",
       "title": "Improving Dictionary Learning with Gated Sparse Autoencoders",
       "abstract": "Recent work has found that sparse autoencoders (SAEs) are an effective technique for unsupervised discovery of interpretable features in language models' (LMs) activations, by finding sparse, linear reconstructions of LM activations. We introduce the Gated Sparse Autoencoder (Gated SAE), which achieves a Pareto improvement over training with prevailing methods. In SAEs, the L1 penalty used to encourage sparsity introduces many undesirable biases, such as shrinkage -- systematic underestimation of feature activations. The key insight of Gated SAEs is to separate the functionality of (a) determining which directions to use and (b) estimating the magnitudes of those directions: this enables us to apply the L1 penalty only to the former, limiting the scope of undesirable side effects. Through training SAEs on LMs of up to 7B parameters we find that, in typical hyper-parameter ranges, Gated SAEs solve shrinkage, are similarly interpretable, and require half as many firing features to achieve comparable reconstruction fidelity.",
@@ -484,24 +502,6 @@
       "venue": "arXiv.org"
     },
     {
-      "arxiv_id": "2404.15255",
-      "title": "How to use and interpret activation patching",
-      "abstract": "Activation patching is a popular mechanistic interpretability technique, but has many subtleties regarding how it is applied and how one may interpret the results. We provide a summary of advice and best practices, based on our experience using this technique in practice. We include an overview of the different ways to apply activation patching and a discussion on how to interpret the results. We focus on what evidence patching experiments provide about circuits, and on the choice of metric and associated pitfalls.",
-      "year": 2024,
-      "authors": [
-        "Stefan Heimersheim",
-        "Neel Nanda"
-      ],
-      "url": "https://arxiv.org/abs/2404.15255",
-      "relevance": 70.5,
-      "core_matched": [
-        "activation patching",
-        "mechanistic interpretability"
-      ],
-      "citations": 191,
-      "venue": "arXiv.org"
-    },
-    {
       "arxiv_id": "2306.00802",
       "title": "Birth of a Transformer: A Memory Viewpoint",
       "abstract": "Large language models based on transformers have achieved great empirical successes. However, as they are deployed more widely, there is a growing need to better understand their internal mechanisms in order to make them more reliable. These models appear to store vast amounts of knowledge from their training data, and to adapt quickly to new information provided in their context or prompt. We study how transformers balance these two types of knowledge by considering a synthetic setup where tokens are generated from either global or context-specific bigram distributions. By a careful empirical analysis of the training process on a simplified two-layer transformer, we illustrate the fast learning of global bigrams and the slower development of an \"induction head\" mechanism for the in-context bigrams. We highlight the role of weight matrices as associative memories, provide theoretical insights on how gradients enable their learning during training, and study the role of data-distributional properties.",
@@ -520,6 +520,26 @@
       ],
       "citations": 178,
       "venue": "Neural Information Processing Systems"
+    },
+    {
+      "arxiv_id": "2410.12877",
+      "title": "Improving Instruction-Following in Language Models through Activation Steering",
+      "abstract": "The ability to follow instructions is crucial for numerous real-world applications of language models. In pursuit of deeper insights and more powerful capabilities, we derive instruction-specific vector representations from language models and use them to steer models accordingly. These vectors are computed as the difference in activations between inputs with and without instructions, enabling a modular approach to activation steering. We demonstrate how this method can enhance model adherence to constraints such as output format, length, and word inclusion, providing inference-time control over instruction following. Our experiments across four models demonstrate how we can use the activation vectors to guide models to follow constraints even without explicit instructions and to enhance performance when instructions are present. Additionally, we explore the compositionality of activation steering, successfully applying multiple instructions simultaneously. Finally, we demonstrate that steering vectors computed on instruction-tuned models can transfer to improve base models. Our findings demonstrate that activation steering offers a practical and scalable approach for fine-grained control in language generation. Our code and data are available at https://github.com/microsoft/llm-steer-instruct.",
+      "year": 2024,
+      "authors": [
+        "Alessandro Stolfo",
+        "Vidhisha Balachandran",
+        "Safoora Yousefi",
+        "Eric Horvitz",
+        "Besmira Nushi"
+      ],
+      "url": "https://arxiv.org/abs/2410.12877",
+      "relevance": 40.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 156,
+      "venue": "International Conference on Learning Representations"
     },
     {
       "arxiv_id": "2409.14507",
@@ -544,26 +564,6 @@
       ],
       "citations": 154,
       "venue": "Neural Information Processing Systems"
-    },
-    {
-      "arxiv_id": "2410.12877",
-      "title": "Improving Instruction-Following in Language Models through Activation Steering",
-      "abstract": "The ability to follow instructions is crucial for numerous real-world applications of language models. In pursuit of deeper insights and more powerful capabilities, we derive instruction-specific vector representations from language models and use them to steer models accordingly. These vectors are computed as the difference in activations between inputs with and without instructions, enabling a modular approach to activation steering. We demonstrate how this method can enhance model adherence to constraints such as output format, length, and word inclusion, providing inference-time control over instruction following. Our experiments across four models demonstrate how we can use the activation vectors to guide models to follow constraints even without explicit instructions and to enhance performance when instructions are present. Additionally, we explore the compositionality of activation steering, successfully applying multiple instructions simultaneously. Finally, we demonstrate that steering vectors computed on instruction-tuned models can transfer to improve base models. Our findings demonstrate that activation steering offers a practical and scalable approach for fine-grained control in language generation. Our code and data are available at https://github.com/microsoft/llm-steer-instruct.",
-      "year": 2024,
-      "authors": [
-        "Alessandro Stolfo",
-        "Vidhisha Balachandran",
-        "Safoora Yousefi",
-        "Eric Horvitz",
-        "Besmira Nushi"
-      ],
-      "url": "https://arxiv.org/abs/2410.12877",
-      "relevance": 40.0,
-      "core_matched": [
-        "activation steering"
-      ],
-      "citations": 154,
-      "venue": "International Conference on Learning Representations"
     },
     {
       "arxiv_id": "2410.20526",
@@ -606,7 +606,7 @@
       "core_matched": [
         "linear representation"
       ],
-      "citations": 140,
+      "citations": 141,
       "venue": "International Conference on Learning Representations"
     },
     {
@@ -667,6 +667,24 @@
       "venue": "Neural Information Processing Systems"
     },
     {
+      "arxiv_id": "2402.14735",
+      "title": "How Transformers Learn Causal Structure with Gradient Descent",
+      "abstract": "The incredible success of transformers on sequence modeling tasks can be largely attributed to the self-attention mechanism, which allows information to be transferred between different parts of a sequence. Self-attention allows transformers to encode causal structure which makes them particularly suitable for sequence modeling. However, the process by which transformers learn such causal structure via gradient-based training algorithms remains poorly understood. To better understand this process, we introduce an in-context learning task that requires learning latent causal structure. We prove that gradient descent on a simplified two-layer transformer learns to solve this task by encoding the latent causal graph in the first attention layer. The key insight of our proof is that the gradient of the attention matrix encodes the mutual information between tokens. As a consequence of the data processing inequality, the largest entries of this gradient correspond to edges in the latent causal graph. As a special case, when the sequences are generated from in-context Markov chains, we prove that transformers learn an induction head (Olsson et al., 2022). We confirm our theoretical findings by showing that transformers trained on our in-context learning task are able to recover a wide variety of causal structures.",
+      "year": 2024,
+      "authors": [
+        "Eshaan Nichani",
+        "Alex Damian",
+        "Jason D. Lee"
+      ],
+      "url": "https://arxiv.org/abs/2402.14735",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction head"
+      ],
+      "citations": 129,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
       "arxiv_id": "2411.14257",
       "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
       "abstract": "Hallucinations in large language models are a widespread problem, yet the mechanisms behind whether models will hallucinate are poorly understood, limiting our ability to solve this problem. Using sparse autoencoders as an interpretability tool, we discover that a key part of these mechanisms is entity recognition, where the model detects if an entity is one it can recall facts about. Sparse autoencoders uncover meaningful directions in the representation space, these detect whether the model recognizes an entity, e.g. detecting it doesn't know about an athlete or a movie. This suggests that models can have self-knowledge: internal representations about their own capabilities. These directions are causally relevant: capable of steering the model to refuse to answer questions about known entities, or to hallucinate attributes of unknown entities when it would otherwise refuse. We demonstrate that despite the sparse autoencoders being trained on the base model, these directions have a causal effect on the chat model's refusal behavior, suggesting that chat finetuning has repurposed this existing mechanism. Furthermore, we provide an initial exploration into the mechanistic role of these directions in the model, finding that they disrupt the attention of downstream heads that typically move entity attributes to the final token.",
@@ -685,24 +703,6 @@
       ],
       "citations": 128,
       "venue": "International Conference on Learning Representations"
-    },
-    {
-      "arxiv_id": "2402.14735",
-      "title": "How Transformers Learn Causal Structure with Gradient Descent",
-      "abstract": "The incredible success of transformers on sequence modeling tasks can be largely attributed to the self-attention mechanism, which allows information to be transferred between different parts of a sequence. Self-attention allows transformers to encode causal structure which makes them particularly suitable for sequence modeling. However, the process by which transformers learn such causal structure via gradient-based training algorithms remains poorly understood. To better understand this process, we introduce an in-context learning task that requires learning latent causal structure. We prove that gradient descent on a simplified two-layer transformer learns to solve this task by encoding the latent causal graph in the first attention layer. The key insight of our proof is that the gradient of the attention matrix encodes the mutual information between tokens. As a consequence of the data processing inequality, the largest entries of this gradient correspond to edges in the latent causal graph. As a special case, when the sequences are generated from in-context Markov chains, we prove that transformers learn an induction head (Olsson et al., 2022). We confirm our theoretical findings by showing that transformers trained on our in-context learning task are able to recover a wide variety of causal structures.",
-      "year": 2024,
-      "authors": [
-        "Eshaan Nichani",
-        "Alex Damian",
-        "Jason D. Lee"
-      ],
-      "url": "https://arxiv.org/abs/2402.14735",
-      "relevance": 20.0,
-      "core_matched": [
-        "induction head"
-      ],
-      "citations": 128,
-      "venue": "International Conference on Machine Learning"
     },
     {
       "arxiv_id": "2306.01574",
@@ -726,6 +726,24 @@
       "venue": "International Conference on Machine Learning"
     },
     {
+      "arxiv_id": "2202.01459",
+      "title": "Concept Bottleneck Model with Additional Unsupervised Concepts",
+      "abstract": "With the increasing demands for accountability, interpretability is becoming an essential capability for real-world AI applications. However, most methods utilize post-hoc approaches rather than training the interpretable model. In this article, we propose a novel interpretable model based on the concept bottleneck model (CBM). CBM uses concept labels to train an intermediate layer as the additional visible layer. However, because the number of concept labels restricts the dimension of this layer, it is difficult to obtain high accuracy with a small number of labels. To address this issue, we integrate supervised concepts with unsupervised ones trained with self-explaining neural networks (SENNs). By seamlessly training these two types of concepts while reducing the amount of computation, we can obtain both supervised and unsupervised concepts simultaneously, even for large-sized images. We refer to the proposed model as the concept bottleneck model with additional unsupervised concepts (CBM-AUC). We experimentally confirmed that the proposed model outperformed CBM and SENN. We also visualized the saliency map of each concept and confirmed that it was consistent with the semantic meanings.",
+      "year": 2022,
+      "authors": [
+        "Yoshihide Sawada",
+        "Keigo Nakamura"
+      ],
+      "url": "https://arxiv.org/abs/2202.01459",
+      "relevance": 55.8,
+      "core_matched": [
+        "CBM",
+        "concept bottleneck"
+      ],
+      "citations": 107,
+      "venue": "IEEE Access"
+    },
+    {
       "arxiv_id": "2403.00745",
       "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
       "abstract": "Activation Patching is a method of directly computing causal attributions of behavior to model components. However, applying it exhaustively requires a sweep with cost scaling linearly in the number of model components, which can be prohibitively expensive for SoTA Large Language Models (LLMs). We investigate Attribution Patching (AtP), a fast gradient-based approximation to Activation Patching and find two classes of failure modes of AtP which lead to significant false negatives. We propose a variant of AtP called AtP*, with two changes to address these failure modes while retaining scalability. We present the first systematic study of AtP and alternative methods for faster activation patching and show that AtP significantly outperforms all other investigated methods, with AtP* providing further significant improvement. Finally, we provide a method to bound the probability of remaining false negatives of AtP* estimates.",
@@ -746,22 +764,24 @@
       "venue": "arXiv.org"
     },
     {
-      "arxiv_id": "2202.01459",
-      "title": "Concept Bottleneck Model with Additional Unsupervised Concepts",
-      "abstract": "With the increasing demands for accountability, interpretability is becoming an essential capability for real-world AI applications. However, most methods utilize post-hoc approaches rather than training the interpretable model. In this article, we propose a novel interpretable model based on the concept bottleneck model (CBM). CBM uses concept labels to train an intermediate layer as the additional visible layer. However, because the number of concept labels restricts the dimension of this layer, it is difficult to obtain high accuracy with a small number of labels. To address this issue, we integrate supervised concepts with unsupervised ones trained with self-explaining neural networks (SENNs). By seamlessly training these two types of concepts while reducing the amount of computation, we can obtain both supervised and unsupervised concepts simultaneously, even for large-sized images. We refer to the proposed model as the concept bottleneck model with additional unsupervised concepts (CBM-AUC). We experimentally confirmed that the proposed model outperformed CBM and SENN. We also visualized the saliency map of each concept and confirmed that it was consistent with the semantic meanings.",
-      "year": 2022,
+      "arxiv_id": "2502.15603",
+      "title": "Do Multilingual LLMs Think In English?",
+      "abstract": "Large language models (LLMs) have multilingual capabilities and can solve tasks across various languages. However, we show that current LLMs make key decisions in a representation space closest to English, regardless of their input and output languages. Exploring the internal representations with a logit lens for sentences in French, German, Dutch, and Mandarin, we show that the LLM first emits representations close to English for semantically-loaded words before translating them into the target language. We further show that activation steering in these LLMs is more effective when the steering vectors are computed in English rather than in the language of the inputs and outputs. This suggests that multilingual LLMs perform key reasoning steps in a representation that is heavily shaped by English in a way that is not transparent to system users.",
+      "year": 2025,
       "authors": [
-        "Yoshihide Sawada",
-        "Keigo Nakamura"
+        "Lisa Schut",
+        "Yarin Gal",
+        "Sebastian Farquhar"
       ],
-      "url": "https://arxiv.org/abs/2202.01459",
-      "relevance": 55.8,
+      "url": "https://arxiv.org/abs/2502.15603",
+      "relevance": 66.0,
       "core_matched": [
-        "CBM",
-        "concept bottleneck"
+        "activation steering",
+        "internal representations",
+        "logit lens"
       ],
-      "citations": 106,
-      "venue": "IEEE Access"
+      "citations": 93,
+      "venue": "arXiv.org"
     },
     {
       "arxiv_id": "2411.11296",
@@ -826,26 +846,6 @@
       ],
       "citations": 92,
       "venue": "International Conference on Learning Representations"
-    },
-    {
-      "arxiv_id": "2502.15603",
-      "title": "Do Multilingual LLMs Think In English?",
-      "abstract": "Large language models (LLMs) have multilingual capabilities and can solve tasks across various languages. However, we show that current LLMs make key decisions in a representation space closest to English, regardless of their input and output languages. Exploring the internal representations with a logit lens for sentences in French, German, Dutch, and Mandarin, we show that the LLM first emits representations close to English for semantically-loaded words before translating them into the target language. We further show that activation steering in these LLMs is more effective when the steering vectors are computed in English rather than in the language of the inputs and outputs. This suggests that multilingual LLMs perform key reasoning steps in a representation that is heavily shaped by English in a way that is not transparent to system users.",
-      "year": 2025,
-      "authors": [
-        "Lisa Schut",
-        "Yarin Gal",
-        "Sebastian Farquhar"
-      ],
-      "url": "https://arxiv.org/abs/2502.15603",
-      "relevance": 66.0,
-      "core_matched": [
-        "activation steering",
-        "internal representations",
-        "logit lens"
-      ],
-      "citations": 90,
-      "venue": "arXiv.org"
     },
     {
       "arxiv_id": "2406.00034",
@@ -1075,6 +1075,23 @@
       "venue": "Neural Information Processing Systems"
     },
     {
+      "arxiv_id": "2502.14010",
+      "title": "Which Attention Heads Matter for In-Context Learning?",
+      "abstract": "Large language models (LLMs) exhibit impressive in-context learning (ICL) capability, enabling them to perform new tasks using only a few demonstrations in the prompt. Two different mechanisms have been proposed to explain ICL: induction heads that find and copy relevant tokens, and function vector (FV) heads whose activations compute a latent encoding of the ICL task. To better understand which of the two distinct mechanisms drives ICL, we study and compare induction heads and FV heads in 12 language models. Through detailed ablations, we discover that few-shot ICL performance depends primarily on FV heads, especially in larger models. In addition, we uncover that FV and induction heads are connected: many FV heads start as induction heads during training before transitioning to the FV mechanism. This leads us to speculate that induction facilitates learning the more complex FV mechanism that ultimately drives ICL.",
+      "year": 2025,
+      "authors": [
+        "Kayo Yin",
+        "Jacob Steinhardt"
+      ],
+      "url": "https://arxiv.org/abs/2502.14010",
+      "relevance": 20.0,
+      "core_matched": [
+        "induction heads"
+      ],
+      "citations": 68,
+      "venue": "International Conference on Machine Learning"
+    },
+    {
       "arxiv_id": "2502.07557",
       "title": "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation",
       "abstract": "Despite the implementation of safety alignment strategies, large language models (LLMs) remain vulnerable to jailbreak attacks, which undermine these safety guardrails and pose significant security threats. Some defenses have been proposed to detect or mitigate jailbreaks, but they are unable to withstand the test of time due to an insufficient understanding of jailbreak mechanisms. In this work, we investigate the mechanisms behind jailbreaks based on the Linear Representation Hypothesis (LRH), which states that neural networks encode high-level concepts as subspaces in their hidden representations. We define the toxic semantics in harmful and jailbreak prompts as toxic concepts and describe the semantics in jailbreak prompts that manipulate LLMs to comply with unsafe requests as jailbreak concepts. Through concept extraction and analysis, we reveal that LLMs can recognize the toxic concepts in both harmful and jailbreak prompts. However, unlike harmful prompts, jailbreak prompts activate the jailbreak concepts and alter the LLM output from rejection to compliance. Building on our analysis, we propose a comprehensive jailbreak defense framework, JBShield, consisting of two key components: jailbreak detection JBShield-D and mitigation JBShield-M. JBShield-D identifies jailbreak prompts by determining whether the input activates both toxic and jailbreak concepts. When a jailbreak prompt is detected, JBShield-M adjusts the hidden representations of the target LLM by enhancing the toxic concept and weakening the jailbreak concept, ensuring LLMs produce safe content. Extensive experiments demonstrate the superior performance of JBShield, achieving an average detection accuracy of 0.95 and reducing the average attack success rate of various jailbreak attacks to 2% from 61% across distinct LLMs.",
@@ -1094,23 +1111,6 @@
       ],
       "citations": 67,
       "venue": "USENIX Security Symposium"
-    },
-    {
-      "arxiv_id": "2502.14010",
-      "title": "Which Attention Heads Matter for In-Context Learning?",
-      "abstract": "Large language models (LLMs) exhibit impressive in-context learning (ICL) capability, enabling them to perform new tasks using only a few demonstrations in the prompt. Two different mechanisms have been proposed to explain ICL: induction heads that find and copy relevant tokens, and function vector (FV) heads whose activations compute a latent encoding of the ICL task. To better understand which of the two distinct mechanisms drives ICL, we study and compare induction heads and FV heads in 12 language models. Through detailed ablations, we discover that few-shot ICL performance depends primarily on FV heads, especially in larger models. In addition, we uncover that FV and induction heads are connected: many FV heads start as induction heads during training before transitioning to the FV mechanism. This leads us to speculate that induction facilitates learning the more complex FV mechanism that ultimately drives ICL.",
-      "year": 2025,
-      "authors": [
-        "Kayo Yin",
-        "Jacob Steinhardt"
-      ],
-      "url": "https://arxiv.org/abs/2502.14010",
-      "relevance": 20.0,
-      "core_matched": [
-        "induction heads"
-      ],
-      "citations": 67,
-      "venue": "International Conference on Machine Learning"
     },
     {
       "arxiv_id": "2408.00113",
@@ -1215,7 +1215,7 @@
         "SAEs",
         "sparse autoencoders"
       ],
-      "citations": 60,
+      "citations": 61,
       "venue": "arXiv.org"
     },
     {
@@ -1314,7 +1314,7 @@
         "activation patching",
         "logit lens"
       ],
-      "citations": 55,
+      "citations": 56,
       "venue": "AAAI Conference on Artificial Intelligence"
     },
     {
@@ -1332,7 +1332,7 @@
       "core_matched": [
         "activation steering"
       ],
-      "citations": 55,
+      "citations": 56,
       "venue": "Computer Vision and Pattern Recognition"
     },
     {
@@ -1371,6 +1371,24 @@
       ],
       "citations": 53,
       "venue": "International Conference on Learning Representations"
+    },
+    {
+      "arxiv_id": "2408.11491",
+      "title": "SCANS: Mitigating the Exaggerated Safety for LLMs via Safety-Conscious Activation Steering",
+      "abstract": "Safety alignment is indispensable for Large Language Models (LLMs) to defend threats from malicious instructions. However, recent researches reveal safety-aligned LLMs prone to reject benign queries due to the exaggerated safety issue, limiting their helpfulness. In this paper, we propose a Safety-Conscious Activation Steering (SCANS) method to mitigate the exaggerated safety concerns in aligned LLMs. First, SCANS extracts the refusal steering vectors within the activation space and utilizes vocabulary projection to anchor some specific safety-critical layers which influence model refusal behavior. Second, by tracking the hidden state transition, SCANS identifies the steering direction and steers the model behavior accordingly, achieving a balance between exaggerated safety and adequate safety. Experiments show that SCANS achieves new state-of-the-art performance on XSTest and OKTest benchmarks, without impairing their defense capability against harmful queries and maintaining almost unchanged model capability.",
+      "year": 2024,
+      "authors": [
+        "Zouying Cao",
+        "Yifei Yang",
+        "Hai Zhao"
+      ],
+      "url": "https://arxiv.org/abs/2408.11491",
+      "relevance": 40.0,
+      "core_matched": [
+        "activation steering"
+      ],
+      "citations": 52,
+      "venue": "AAAI Conference on Artificial Intelligence"
     },
     {
       "arxiv_id": "2406.17759",
@@ -1434,7 +1452,8 @@
     }
   ],
   "served": [
-    "improvingdictionarylearningwithgatedsparseautoencoders"
+    "improvingdictionarylearningwithgatedsparseautoencoders",
+    "sparseautoencoderslearnmonosemanticfeaturesinvisionlanguagemodels"
   ],
   "min_citations": 50,
   "cycle": 1

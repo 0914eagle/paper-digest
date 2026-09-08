@@ -1,0 +1,771 @@
+{
+  "date": "2026-09-07",
+  "generated_at": "2026-09-07T17:14:13",
+  "stats": {
+    "collected_raw": 1277,
+    "unique": 1150,
+    "already_seen": 714,
+    "hf_target_day": "2026-09-07",
+    "conference_pool": 0,
+    "interest_pool": 16,
+    "total_to_summarize": 25
+  },
+  "classic": {
+    "arxiv_id": "2504.02821",
+    "title": "Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models",
+    "abstract": "Sparse Autoencoders (SAEs) have recently gained attention as a means to improve the interpretability and steerability of Large Language Models (LLMs), both of which are essential for AI safety. In this work, we extend the application of SAEs to Vision-Language Models (VLMs), such as CLIP, and introduce a comprehensive framework for evaluating monosemanticity at the neuron-level in visual representations. To ensure that our evaluation aligns with human perception, we propose a benchmark derived from a large-scale user study. Our experimental results reveal that SAEs trained on VLMs significantly enhance the monosemanticity of individual neurons, with sparsity and wide latents being the most influential factors. Further, we demonstrate that applying SAE interventions on CLIP's vision encoder directly steers multimodal LLM outputs (e.g., LLaVA), without any modifications to the underlying language model. These findings emphasize the practicality and efficacy of SAEs as an unsupervised tool for enhancing both interpretability and control of VLMs. Code and benchmark data are available at https://github.com/ExplainableML/sae-for-vlm.",
+    "year": 2025,
+    "authors": [
+      "Mateusz Pach",
+      "Shyamgopal Karthik",
+      "Quentin Bouniot",
+      "Serge Belongie",
+      "Zeynep Akata"
+    ],
+    "url": "https://arxiv.org/abs/2504.02821",
+    "relevance": 142.8,
+    "core_matched": [
+      "SAE",
+      "SAEs",
+      "monosemantic",
+      "sparse autoencoders"
+    ],
+    "citations": 70,
+    "venue": "Neural Information Processing Systems"
+  },
+  "hf_daily": [
+    {
+      "title": "Iris: Climbing to the Search Frontier",
+      "abstract": "We present Iris-mini and Iris-pro, two search agents trained at the 35B-A3B and 397B-A17B scales, together with the data pipeline and training recipe behind them. Tasks are reverse-constructed from the hyperlink structure of a web corpus: we author multi-hop chains over an entity graph distilled from a seed page and its out-links, rewrite every non-answer entity into a descriptive reference so that no clue can be resolved by string matching, and admit only questions that a reference model fails closed-book yet solves once the supporting evidence is supplied. These questions are then turned into trajectories, which are filtered at both the trajectory and the turn level before SFT. The policy is then optimized by RL against live search, with the reward judge and the observation summarizer served inside the training cluster, and with over-long rollouts interrupted at the request level and resumed from their committed prefix at the next step. We alternate the two stages in a procedure we call SFT-RL climbing, returning the hardest solved and most efficient rollouts of each RL round to the next supervised pass. Because inference-time context management is worth more on these benchmarks than most reported differences between systems, we evaluate every benchmark both with and without it, holding the tool set, the context limit, and the judge fixed. All results come from a single ReAct agent, with no sub-agents and no test-time verification. With management enabled, on BrowseComp, BrowseComp-ZH, DeepSearchQA, and HLE the two models reach $82.2/84.8/86.9/52.3$ and $88.6/85.1/92.9/56.4$, the strongest overall results among open-source search agents in their respective parameter ranges. We plan to release the model weights together with the complete recipe for data construction, training, and evaluation.",
+      "authors": [
+        "Ziyuan Liu",
+        "Hengqi Liu",
+        "Zichuan Wang",
+        "Yang Qin",
+        "Jiachen Liang",
+        "Xu Chu",
+        "Shaowei Chen",
+        "Yuantao Gu"
+      ],
+      "arxiv_id": "2609.04304",
+      "url": "https://arxiv.org/abs/2609.04304",
+      "hf_upvotes": 45,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04304",
+      "score": 6.8,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Motion-Omni: End-to-End Joint Speech and Full-Body Motion for Spoken Dialogue",
+      "abstract": "An avatar that holds a conversation should decide what to say and to move while saying it, yet these abilities live in separate model families: spoken dialogue models produce speech without motion, and co-speech motion models produce motion only from audio handed to them. The standard remedy is a cascade that first generates the spoken response and then runs a motion model over the finished audio, which requires a second full inference pass and precludes any joint optimisation between the two. We present Motion-Omni, an end-to-end framework in which a spoken dialogue model natively outputs explicit facial expression together with hand, upper-body and lower-body motion, generated directly from the hidden states that produce the speech. Joint training is not optional here: with the speech pathway frozen, motion remains misaligned with the audio, and co-adapting the LLM, Speech Generator and Motion Generator under both objectives is what recovers alignment while retaining spoken-dialogue ability. Supervision comes from a scalable, model-agnostic pipeline that pseudo-labels consistent-voice speech responses with a replaceable motion teacher, yielding 422,856 quality-ranked pairs (1,402 hours). We further release SwDA-500 and, to our knowledge, the first public evaluation protocol for stochastic open-ended full-body spoken dialogue, matching audio across motion systems while unifying rendering, automatic metrics, human evaluation, and latency measurement. Instantiated with a Qwen2.5-7B-Instruct backbone, Motion-Omni-Q7 matches the same-audio teacher cascade to within 2% on reference-free motion metrics while responding 5.4 x faster (RTF=0.78, faster than real time), surpasses all non-teacher cascades on beat correlation and diversity, and reaches a 2.62% word error rate, the lowest among the omni-modal systems compared.",
+      "authors": [
+        "Chengqian Ma",
+        "Wei Tao",
+        "Haoyu Zhang",
+        "Yiwen Guo"
+      ],
+      "arxiv_id": "2609.04250",
+      "url": "https://arxiv.org/abs/2609.04250",
+      "hf_upvotes": 28,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04250",
+      "score": 6.5,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "hidden states"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+      "abstract": "We study the problem of generating a compositional 3D representation of a cluttered scene containing hundreds of objects. The goal is to represent the scene as a collection of individual object meshes placed in a shared world frame, as required by downstream applications such as gaming, AR/VR, simulation, and robotics. This task is challenging in densely cluttered scenes, where objects heavily occlude one another and each view reveals only a fraction of their geometry. Geometry-based approaches typically reconstruct the scene as a single representation and leave incomplete geometry in occluded regions, while existing compositional methods with generative priors are largely limited to relatively simple scenes. We show that complex scenes with hundreds of objects can instead be generated compositionally by adapting a strong single-object 3D generative prior to multi-view observations. We instantiate this paradigm with Pixal3D, extending it with a multi-view conditioning pathway that grounds object generation in multiple posed observations. Although the model is finetuned entirely on single objects in canonical space, it generalizes to large scenes with severe occlusion without any scene-level training, demonstrating the feasibility and scalability of this paradigm. We further introduce UE-MeshyScene, a photorealistic benchmark of densely cluttered scenes with hundreds of objects, per-object annotations, and ground-truth meshes. Across single-object, controlled multi-object, and UE-MeshyScene evaluations, our method consistently outperforms prior approaches, with larger gains as scene complexity and occlusion increase. Finally, we demonstrate broader applicability by converting generated 3DGS worlds, such as Marble and HY-World 2.0, into compositional mesh scenes.",
+      "authors": [
+        "Muyao Niu",
+        "Jixuan He",
+        "Ruihan Yu",
+        "Lian Fu",
+        "Yonghao Yu",
+        "Zheng-Hui Huang",
+        "Yifan Zhan",
+        "Fengbo Lan"
+      ],
+      "arxiv_id": "2609.05416",
+      "url": "https://arxiv.org/abs/2609.05416",
+      "hf_upvotes": 15,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.05416",
+      "score": 2.2,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
+      "abstract": "Large language models (LLMs) are increasingly used to formulate optimization models from natural-language problem descriptions, yet realistic operations research (OR) requests are often incomplete: missing objectives, constraints, or business rules can change the resulting mathematical program. Existing evaluations largely assume a complete specification and therefore overlook whether an agent knows when clarification is needed before modeling. We introduce OR-Clarify, a benchmark for pre-formulation clarification. Each task presents a partial public problem description, withholds structured hidden slots, and evaluates agents through bounded interaction with a simulated user. The benchmark supports both openended and choice-based clarification, and measures slot recovery, stopping behavior, silent assumptions, and interaction cost. We further propose Interactive Optimization (InterOPT), a two-stage framework that identifies unresolved formulation-critical gaps and uses them to guide whether to ask the next question or to stop. In our choice-based experiments, InterOPT substantially outperforms all baselines in exact slot recovery; in the open-ended setting, it remains competitive with strong prior methods. Together, OR-Clarify and InterOPT reframe OR assistance as a selective completeness decision: clarify when needed, stop when ready, and quantify what remains missing.",
+      "authors": [
+        "Sihan Ge",
+        "Yichen Lin",
+        "Chenyu Zhou",
+        "Jianghao Lin",
+        "Tao Yao",
+        "Dongdong Ge"
+      ],
+      "arxiv_id": "2609.05258",
+      "url": "https://arxiv.org/abs/2609.05258",
+      "hf_upvotes": 11,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.05258",
+      "score": 3.1,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Don't Drop Dropout: Optimizing Layer Sparsity for Efficient LLM Training and Inference",
+      "abstract": "Layer dropout (a.k.a. stochastic depth) has been shown to enable faster training, higher accuracy, and robustness to zero-shot layer pruning in both language and vision transformers. However, as models and datasets have scaled, dropout - particularly layer dropout - has largely disappeared from large language models (LLMs) pre-training recipes. While some prior work has reported that dropout can degrade accuracy, no comprehensive study has quantified, let alone mitigated, this effect. In this study, we show that layer dropout should be used in state-of-the-art LLM training, establishing best practices and scaling analysis for both training and post-training benefits. Concretely, with optimal layer distribution, time schedule, and optimizer hyperparameters, we observe that at the same training FLOPs layer dropout leads to lower loss. For a given number of training steps, LLMs can achieve lower or similar validation loss while saving upto 25% of training FLOPs. Moreover, layer dropout enables significant post-training optimizations, such as early exit, intermediate-layer skipping, and self-speculative decoding, yielding up to 1.5x inference speedup with negligible accuracy loss. Across more than 2400 training experiments, spanning models from 271M to 8.2B parameters and datasets up to 160B tokens, we demonstrate that these findings extend reliably to large-scale training regimes. All pre-training experiments were run on Cerebras CS-3 systems.",
+      "authors": [
+        "Mostafa Elhoushi",
+        "Alex Pretko",
+        "Nolan Dey",
+        "Bin Claire Zhang",
+        "Gavia Gray",
+        "Gurpreet Gosal",
+        "Abdulrahman Mahmoud",
+        "Shane Bergsma"
+      ],
+      "arxiv_id": "2609.05275",
+      "url": "https://arxiv.org/abs/2609.05275",
+      "hf_upvotes": 6,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.05275",
+      "score": 3.1,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models",
+        "transformers"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "RISE: Recursive Improvement via Self-Extrapolating Policy Distillation",
+      "abstract": "On-policy distillation (OPD) provides dense, per-token supervision for language model post-training, but its effectiveness is bottlenecked by teacher quality: external teachers suffer from distribution mismatch, while self-distillation with privileged conditioning is limited by in-context learning capacity. We propose \\textbf{RISE} (\\textbf{R}ecursive \\textbf{I}mprovement via \\textbf{S}elf-\\textbf{E}xtrapolating Policy Distillation), which constructs a synthetic teacher directly from the model's own RLVR training trajectory. By extrapolating the displacement between the current checkpoint and a trailing anchor---in parameter space or output logit space---RISE converts a sparse outcome-induced parameter update into a dense token-level target, without any external model or privileged conditioning. RISE combines RLVR and OPD in a complementary loop: outcome rewards ground the extrapolation toward correct reasoning, while the extrapolated teacher refines token-level decisions. Moreover, since the teacher is refreshed every iteration as the student improves, distillation becomes a recursive improvement mechanism rather than a one-shot compression step. Experiments spanning mathematical reasoning, multi-domain STEM, code generation, and multi-turn agentic tasks show that RISE outperforms RLVR-only training and on-policy self-distillation across all settings.",
+      "authors": [
+        "Yang Li",
+        "Semih Yavuz",
+        "Shafiq Joty"
+      ],
+      "arxiv_id": "2609.05295",
+      "url": "https://arxiv.org/abs/2609.05295",
+      "hf_upvotes": 5,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.05295",
+      "score": 3.0,
+      "core_score": 0.0,
+      "matched": [
+        "in-context learning",
+        "language model",
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+      "abstract": "Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-agents to handle planning, implementation, self-debugging, testing, and hardware profiling. We evaluate MaxKernel on JaxBench, a comprehensive suite of 50 diverse kernel tasks for TPUs, alongside complex, real-world workloads from state-of-the-art open-source models. We demonstrate that MaxKernel consistently generates highly optimized implementations, matching expert hand-tuned baselines and delivering significant performance across the benchmark. Our agent is open-sourced and available https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel.",
+      "authors": [
+        "Shangkun Wang",
+        "Nina Cai",
+        "Charles Hoong",
+        "Julian Walker",
+        "Gerson Kroiz",
+        "George Vanica",
+        "Deepak Patil",
+        "Andi Gavrilescu"
+      ],
+      "arxiv_id": "2609.04523",
+      "url": "https://arxiv.org/abs/2609.04523",
+      "hf_upvotes": 5,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04523",
+      "score": 2.2,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Enoki: Efficient Multi-Level Hallucination Detection",
+      "abstract": "Ensuring factuality remains a critical challenge for deploying LLMs in high-stakes settings. Existing hallucination detectors usually operate at a single level: claim-level methods provide interpretable factual units, while span-level methods localize unsupported text. Bridging these views is costly, as LLM-heavy pipelines require multiple decomposition and verification calls, and modular systems need additional claim-to-span alignment. We propose Enoki, an Open Information Extraction framework for multi-level hallucination detection. Enoki extracts text-anchored relational facts, verifies them against evidence, and projects unsupported facts back to hallucinated spans. This shared representation enables claim-level verification and span-level localization without requiring separate alignment. Enoki supports LLM-based, encoder-based, and rule-based extraction regimes, balancing accuracy and inference cost through a common interface. Experiments show that Enoki remains competitive with strong claim-level systems while using fewer resources and achieves superior performance on fine-grained span- and entity-level localization. We also release EnokiQA, a dual-granularity dataset with aligned claim-level verification and span-level localization annotations.",
+      "authors": [
+        "Elisei Rykov",
+        "Timur Ionov",
+        "Nikolay Ivanov",
+        "Maksim Savkin",
+        "Maksim Makarenko",
+        "Alexander Panchenko",
+        "Vasily Konovalov",
+        "Julia Belikova"
+      ],
+      "arxiv_id": "2609.00581",
+      "url": "https://arxiv.org/abs/2609.00581",
+      "hf_upvotes": 3,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.00581",
+      "score": 2.7,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "interpretable"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Group Adaptive Clipping Policy Optimization",
+      "abstract": "Group relative policy optimization for reinforcement learning with verifiable rewards (RLVR) typically uses a fixed importance-sampling (IS) ratio clipping boundary across all rollouts. We identify a key limitation: rare correct rollouts on harder problems and abundant correct rollouts on easier problems are clipped at comparable rates, despite contributing very different learning signals. Rollouts with low group success exhibit larger IS ratios and carry stronger gradient signal for exploration and solving new problems, yet are disproportionately suppressed by fixed clipping. To address this, we propose Group Adaptive Clipping Policy Optimization (GAPO), a plug-in modification to GRPO methods that adapts the clipping boundary to the rollout advantage. GAPO is motivated by a reverse-KL trust-region perspective, which suggests that rollouts with larger learning signal should receive proportionally greater update headroom. GAPO requires no reward shaping and preserves the standard PPO/GSPO surrogate while adapting only the clipping threshold. Across Qwen and Llama models, GAPO consistently improves both Pass@1 and Pass@k over fixed clipping and advantage-shaping baselines on math reasoning and coding benchmarks where the pass rates by the base model are relatively low.",
+      "authors": [
+        "Sheng Jia",
+        "Xiao Wang",
+        "Shiva Prasad Kasiviswanathan",
+        "Rein Houthooft"
+      ],
+      "arxiv_id": "2609.00444",
+      "url": "https://arxiv.org/abs/2609.00444",
+      "hf_upvotes": 3,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.00444",
+      "score": 1.2,
+      "core_score": 0.0,
+      "matched": [
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "abstract": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems. Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement. We introduce $\\tau^\\tau$-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users. Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%. The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs. We aim for $\\tau^\\tau$-bench to turn the work of cooperative agent building into a measurable target for coding agents.",
+      "authors": [
+        "Quan Shi",
+        "Keshav Dhandhania",
+        "Karthik Narasimhan",
+        "Victor Barres"
+      ],
+      "arxiv_id": "2609.04611",
+      "url": "https://arxiv.org/abs/2609.04611",
+      "hf_upvotes": 1,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04611",
+      "score": 0.1,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "When Quantization Breaks Memory: Recurrent-State Write-Back in Low-Precision Temporal Inference",
+      "abstract": "Quantization is widely used to reduce the computational and memory demands of neural-network inference. In recurrent networks, however, the quantized state is stored and returned at the next time step, so the rule used to store that state can alter subsequent computations. Here, we introduce recurrent-state write-back to denote this rule and isolate its effect in a compact GRU encoder--decoder for fluorescence lifetime imaging, a molecular imaging modality used in quantitative biological imaging. A central task is estimating two lifetime parameters, the short-lived component {\\tau}1 and the long-lived component {\\tau}2, from high-noise time-resolved fluorescence signals. Holding the trained model fixed, replacing continuous state propagation with deterministic 4-bit state storage increases estimation errors for {\\tau}1 and {\\tau}2 by approximately 70x and 300x, respectively. Failure occurs when repeated small updates remain below the write threshold, leaving the stored state nearly fixed while the network continues to propose change. Error feedback, residual memory, and direction memory carry information from these suppressed updates across time and recover accuracy without retraining. Precision sweeps show that increasing state precision can worsen a fixed recurrent solution, while matched training shows that compatibility with the state interface can be learned. To test whether this behavior extends beyond the GRU, we repeat the post-training intervention in an independently trained LSTM, where coarse write-back reproduces the failure, error feedback restores accuracy, and state-specific interventions reveal greater sensitivity of the cell state than the hidden state. Our results establish recurrent-state write-back as a key determinant of low-precision recurrent dynamics and identify the state-storage interface as a central design consideration for quantized recurrent inference.",
+      "authors": [
+        "Ismail Erbas",
+        "Xavier Intes",
+        "Vikas Pandey"
+      ],
+      "arxiv_id": "2609.04490",
+      "url": "https://arxiv.org/abs/2609.04490",
+      "hf_upvotes": 1,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04490",
+      "score": 1.6,
+      "core_score": 0.0,
+      "matched": [
+        "hidden state"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "AdaptVPR: Route-Aware Hard Positive Generation for Robust Visual Place Recognition",
+      "abstract": "Visual Place Recognition (VPR) localizes a query image by retrieving database images of the same or nearby place, yet its robustness is often degraded by domain shifts arising from illumination, weather, seasonal changes, and dynamic occlusions. One contributing factor is the limited appearance diversity of the same place in existing training data. To address this issue, we propose AdaptVPR, a route-aware generative augmentation framework that constructs same-place hard positives for robust VPR training. AdaptVPR first uses a vision language model to parse scene attributes and estimate editing feasibility, while a rule-based scheduler determines the generation route according to editability scores and risk constraints. The generation process is decomposed into three complementary routes: the Global Appearance Route introduces global scene changes in weather, illumination, and time of day; the Local Occlusion Route inserts plausible dynamic occluders; and the Dual Route combines both types of perturbations to produce more challenging appearance shifts. Each generated candidate is evaluated using a VPR-oriented verification scheme based on geometric consistency and appearance diversity, reducing the risk of structural drift while ensuring sufficient appearance variation. Global candidates are generated once and rejected if verification fails, while Local Occlusion and Dual candidates use verification feedback for limited prompt refinement and regeneration. Using this framework, we construct AdaptCities, containing 160K verified synthetic same-place hard positives. Experiments across multiple VPR baselines and vision foundation backbones show consistent gains on standard benchmarks and substantial improvements under challenging domain shifts, with R@1 gains of up to 9.2%. The source code and data resources are publicly available at https://github.com/chenshunpeng/AdaptVPR.",
+      "authors": [
+        "Shunpeng Chen",
+        "Jingyi Zhang",
+        "Changwei Wang",
+        "Shengpeng Xu",
+        "Yukun Song",
+        "Xingtian Pei",
+        "Jinzhou Lin",
+        "Li Guo"
+      ],
+      "arxiv_id": "2609.04369",
+      "url": "https://arxiv.org/abs/2609.04369",
+      "hf_upvotes": 0,
+      "hf_date": "2026-09-07",
+      "source": "arxiv_new+hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.04369",
+      "score": 1.2,
+      "core_score": 0.0,
+      "matched": [
+        "language model",
+        "vision language"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+      "abstract": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+      "authors": [
+        "Jitai Hao",
+        "Ke Yang",
+        "Qiang Huang",
+        "Jun Yu"
+      ],
+      "arxiv_id": "2609.02780",
+      "url": "https://arxiv.org/abs/2609.02780",
+      "hf_upvotes": 0,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02780",
+      "score": 2.0,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models",
+        "multimodal"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "To See a World in a Living Context: Unified Indoor-Outdoor Urban World Generation",
+      "abstract": "Text-driven 3D generation has advanced rapidly in creating large-scale outdoor environments and detailed indoor scenes, but these domains are usually synthesized independently, lacking the correspondence required for a coherent urban world. We present HoloWorld, a unified indoor-outdoor urban world generation framework built on a continuously updated cross-scale world context. Initializing from a user description, HoloWorld progressively represents and updates the diverse world information, from city-scale planning to individual buildings, allowing generated interiors to maintain explicit correspondence with their associated exterior buildings. Conditioned on the evolving context and previously generated neighboring blocks, HoloWorld autoregressively generates urban exteriors with consistent spatial organization and visual identity across blocks. The generated exterior representations are further grounded in 3D building instances and footprints, enabling building-specific indoor generation with geometry-constrained layouts and inherited appearance characteristics. To our knowledge, HoloWorld is the first framework to unify indoor and outdoor generation within a coherent 3D urban world. Extensive experiments demonstrate that HoloWorld achieves superior urban exterior generation performance, improving the average AQS score over the SOTA by 7.68\\% and obtaining the highest average RDR score, while maintaining strong building-level indoor-outdoor correspondence and cross-block continuity within a unified 3D urban world. Our project page: https://huangxb326.github.io/HoloWorld/.",
+      "authors": [
+        "Xiaobin Huang",
+        "Zilong Huang",
+        "Yang Luo",
+        "Hongchao Fan",
+        "Yiping Chen",
+        "Ting Han"
+      ],
+      "arxiv_id": "2608.05879",
+      "url": "https://arxiv.org/abs/2608.05879",
+      "hf_upvotes": 0,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2608.05879",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    }
+  ],
+  "conference": [],
+  "interest": [
+    {
+      "title": "FailSAE: Towards Interpretable Failure Prediction for Vision-Language Models via Sparse Autoencoders",
+      "abstract": "Vision-language models (VLMs), such as CLIP, have achieved strong performance across multimodal tasks by aligning visual and textual representations in a shared embedding space. As VLMs are increasingly used for high-stakes domains, failure prediction becomes critical for risk-aware deployment and human intervention. Existing failure prediction methods typically rely on confidence scores or auxiliary classifiers. Although these methods are effective on predicting VLM failures, they provide limited interpretability. In this work, we investigate the use of Sparse Autoencoders (SAEs) for interpretable failure prediction in VLMs. We formulate failure prediction as a classification task over sparse SAE latent activations and introduce a three-stage failure-aware training pipeline that encourages the learned latent directions to remain interpretable while becoming more informative for failure prediction. Our experiments show that the resulting framework outperforms the evaluated baselines in failure prediction. Further analysis suggests that failure-aware training encourages SAE latent directions to capture more class-specific concepts. We also use the SAE to provide a concept-level analysis of how model representations change during failures, revealing a shift from class-specific concepts toward more ambiguous or style-related concepts. Finally, we explore how the learned SAE latent directions can support runtime failure recovery.",
+      "authors": [
+        "Jie Ma",
+        "Zongxi Liu",
+        "Yi Zhu"
+      ],
+      "arxiv_id": "2609.04276",
+      "url": "https://arxiv.org/abs/2609.04276",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CV",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04276",
+      "score": 97.2,
+      "core_score": 36.0,
+      "matched": [
+        "SAE",
+        "SAEs",
+        "activations",
+        "interpretability",
+        "interpretable",
+        "language models",
+        "multimodal",
+        "sparse autoencoders",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "SharedSAE: One Feature Dictionary Across Language Models",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to interpret language model activations, but SAE training and latent labelling are typically repeated for every model. Here, we show that a single shared SAE can replace a collection of dedicated per-model SAEs. Our method, SharedSAE, combines a shared dictionary with model-specific encoder-decoder pairs. Unlike the closest prior method, which discards activation magnitudes and requires all models at inference, SharedSAE instead normalizes only selection scores, preserving magnitudes, and uses model dropout for single-model inference. We train SharedSAE on four 1B-scale base language models spanning distinct families and tokenizers. Despite sharing its latents across models, SharedSAE retains 96.6% of dedicated SAEs' mean explained variance; its latent activations exhibit cross-model correlations 1.8 times as high as separate SAEs aligned post-hoc, and its latent descriptions transfer across models. After the dictionary is frozen, new models can be efficiently adapted to it, achieving near-dedicated-SAE reconstruction quality while reusing the shared latent descriptions.",
+      "authors": [
+        "Daniil Ognev",
+        "C\\'elian Vasson",
+        "Lijie Hu",
+        "Kentaro Inui",
+        "Benjamin Heinzerling"
+      ],
+      "arxiv_id": "2609.04344",
+      "url": "https://arxiv.org/abs/2609.04344",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04344",
+      "score": 65.2,
+      "core_score": 26.0,
+      "matched": [
+        "SAE",
+        "SAEs",
+        "activation",
+        "activations",
+        "language model",
+        "language models",
+        "sparse autoencoders"
+      ],
+      "core_matched": [
+        "SAE",
+        "SAEs",
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3",
+      "abstract": "Sparse autoencoder (SAE) features are increasingly used to explain and steer language-model behavior, but it remains unclear whether a feature found in one language context plays the same causal role when processing prompts in another language. We study this question using translation-initiation features (Wu et al., 2026). We reproduce the SAE feature discovery method from Wu et al. in Gemma 2 and extend it to multilingual settings that vary prompt language, source language, and target language. We then test whether features that recur across settings affect translation behavior by amplifying or ablating their activations during inference. We also examine whether the method can be applied to Gemma 3. In both models, we observe an identical finding: although we can find more than 20 features that activate frequently across all discovery settings, causal validation shows that nearly all have small or inconsistent effects. In contrast, one feature -- Gemma 2's (L10, 5717) and Gemma 3's (L20, 2456) -- consistently improves COMET scores when amplified and degrades them when ablated across 23 language settings. These results show that feature recurrence can overstate cross-lingual transfer, while identifying a language-agnostic translation-initiation direction in Gemma 2 and Gemma 3.",
+      "authors": [
+        "Giang Son Nguyen",
+        "Nhi Ngoc-Yen Nguyen",
+        "Wray Buntine",
+        "Dung D. Le"
+      ],
+      "arxiv_id": "2609.04808",
+      "url": "https://arxiv.org/abs/2609.04808",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04808",
+      "score": 44.1,
+      "core_score": 26.0,
+      "matched": [
+        "SAE",
+        "activations",
+        "language model",
+        "sparse autoencoder"
+      ],
+      "core_matched": [
+        "SAE",
+        "sparse autoencoder"
+      ]
+    },
+    {
+      "title": "From Interpretability Methods to Interpretable Models",
+      "abstract": "More than a decade in, explainable AI (XAI) for computer vision has assembled a mature toolbox: attribution, feature visualization, concept-based, and circuit-based methods. Yet almost all of the field's effort has gone into building and comparing these methods, and little into the question they were meant to answer---how interpretable are our models, and are we making progress as they evolve? We argue for shifting the field's focus from methods to models, along two complementary lines. One is already within reach: existing tools let us characterize and compare what different models represent and compute. The other is harder, and largely neglected: whether a model can actually be understood by the humans who rely on it---the independent evaluators on whom trust and certification depend, not the experts confirming what they already expect. It can only be measured, not inferred. We review why the toolbox is mature enough to support both, survey the thin body of work comparing models, draw a parallel to systems neuroscience, and close with a model-centric XAI agenda.",
+      "authors": [
+        "Julien Colin",
+        "Nuria Oliver",
+        "Thomas Serre"
+      ],
+      "arxiv_id": "2609.05399",
+      "url": "https://arxiv.org/abs/2609.05399",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CV",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.05399",
+      "score": 42.3,
+      "core_score": 18.0,
+      "matched": [
+        "XAI",
+        "attribution",
+        "circuit",
+        "explainable",
+        "feature visualization",
+        "interpretability",
+        "interpretable"
+      ],
+      "core_matched": [
+        "XAI",
+        "feature visualization"
+      ]
+    },
+    {
+      "title": "MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering",
+      "abstract": "Medical visual question answering (Med-VQA) is often assumed to require medical fine-tuning, large models, or complex multi-agent pipelines. We revisit this assumption with \\textbf{MedProb}, a lightweight probing framework that predicts multiple-choice Med-VQA answers from frozen VLM representations without free-text generation. Across PATH-VQA, SLAKE, and VQA-RAD, MedProb recovers substantially more answer-relevant signal than prompting and performs stronger than medical VLMs and agentic systems. Probing also reduces the apparent gap between small and large models compared to prompting, suggesting that smaller VLMs contain more recoverable Med-VQA signal than generation-based evaluation reveals. Across 14 matched general-purpose and medical VLM pairs, medical adaptation does not consistently improve this linear decodability. Finally, free-text generation exhibits an answer-position bias of up to 10 percentage points, whereas MedProb also has positional bias, however, it is impacted differently than prompting. Our main results target the multiple-choice/multiclass Med-VQA setting; we additionally show the probe can be extended to open-ended generation via a rejection-sampling scoring procedure.",
+      "authors": [
+        "Erfan Nourbakhsh",
+        "Ke Yang",
+        "Anthony Rios"
+      ],
+      "arxiv_id": "2609.04336",
+      "url": "https://arxiv.org/abs/2609.04336",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04336",
+      "score": 40.0,
+      "core_score": 20.0,
+      "matched": [
+        "fine-tuning",
+        "internal representations",
+        "language models",
+        "probe",
+        "probing",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": [
+        "internal representations"
+      ]
+    },
+    {
+      "title": "Can Activation Steering Capture Multidimensional Authorship Style?",
+      "abstract": "Activation steering has shown promise for controlling LLM generation along well-defined attributes, but it remains unclear whether it can handle the multidimensional and hard-to-define nature of authorship style. We ask whether structured contrastive prompting along rhetorically-motivated dimensions can construct rich style representations directly in activation space, bypassing the need for natural language style descriptors or dedicated training. We find that the resulting directions share a common authorship backbone while conflicting on aspect-specific residuals that carry genuine stylistic signal, explaining why naive aggregation fails. We operationalize this in Aspect-Aware Activation Steering (A3S), a training-free framework that merges per-aspect contrastive directions with interference-aware aggregation and tunes steering strength per instance. A3S improves authorship style transfer where it is genuinely multi-aspect, outperforms a trained baseline in preference evaluations on out-of-domain benchmarks, and keeps target-exemplar overlap consistently low.",
+      "authors": [
+        "Hieu Tran",
+        "Calvin Bao",
+        "Marine Carpuat"
+      ],
+      "arxiv_id": "2609.04792",
+      "url": "https://arxiv.org/abs/2609.04792",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04792",
+      "score": 32.0,
+      "core_score": 20.0,
+      "matched": [
+        "activation",
+        "activation steering"
+      ],
+      "core_matched": [
+        "activation steering"
+      ]
+    },
+    {
+      "title": "Solving Hard XAI Queries Based on a Compiled Dual-Rail Encoding",
+      "abstract": "The widespread adoption of artificial intelligence (AI) within real-world applications has raised a lot of concerns regarding their trustworthiness, especially in critical applications. The field of eXplainable AI (XAI) has emerged with the objective of providing explanations to the users about the decisions made by AI systems. Several explanations for boolean classifiers have been introduced in the literature, including abductive and contrastive explanations, each giving a different insight on the decision of the classifier. However, computing an explanation for a decision of a boolean classifier is a hard problem in general. One way to deal with this complexity is to rely on a compiled representation of the classifier for which each explanation can be computed efficiently. Unfortunately, we prove in this paper that several classes of abductive explanations, remain hard to compute even for Ordered Binary Decision Diagrams, one of the most tractable subsets of the knowledge compilation map. Included in such classes are shorter abductive explanations or abductive explanations that include the explainee's preferences. To recover the benefits of working with compiled representations, we show that a proper representation of the dual-rail encoding of the classifier can be used to compute efficiently these classes of explanations.",
+      "authors": [
+        "Arthur Ledaguenel",
+        "Florent Capelli",
+        "Jean-Marie Lagniez"
+      ],
+      "arxiv_id": "2609.04931",
+      "url": "https://arxiv.org/abs/2609.04931",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04931",
+      "score": 22.0,
+      "core_score": 16.0,
+      "matched": [
+        "XAI",
+        "explainable"
+      ],
+      "core_matched": [
+        "XAI"
+      ]
+    },
+    {
+      "title": "Locating and Steering Refusal Beyond Attention",
+      "abstract": "Where inside a language model does refusal live, and does that place change when the architecture does? In a transformer, refusal is governed by a single direction in the residual stream, a finding that safety and interpretability tooling now depend on. State-space models (SSMs) route information through a recurrent update instead of attention, sharing no token-mixing mechanism with a transformer. Does the same safety representation survive this shift, or must it be rediscovered per architecture? It survives. A single rigid rotation, which can only reorient a space and not reshape it, aligns one model's representation space with another's, so the two genuinely share the representation. A harm probe trained on a transformer then flags an SSM's harmful inputs, and removing the aligned direction makes a model answer attacks it would otherwise refuse, while a random direction of the same size does far less. What is architecture-specific is not where the direction is steered but where it must be read. Each layer computes a fresh output that is then added into the residual stream, and harm is cleanly readable at this output, the write site, before the addition. A control that holds the intervention's strength fixed shows that what matters is where the direction is estimated, not where it is applied. Applied through a detector-triggered gate, this direction lowers jailbreak success in all four architecture families we test (SSM, transformer, recurrent, hybrid), and on the SSM it holds against an attacker that tunes its prompt against the defense. The gate only matches a trivial rule that returns a fixed refusal whenever the same detector fires, so what transfers across architectures is the direction itself, not defense strength. Safety tooling built on refusal therefore ports to a new architecture by re-estimating the direction at that architecture's write site, not by rebuilding it.",
+      "authors": [
+        "Preethi Carmel Bosco",
+        "Gopalakrishnan Srinivasan"
+      ],
+      "arxiv_id": "2609.04721",
+      "url": "https://arxiv.org/abs/2609.04721",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04721",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "interpretability",
+        "language model",
+        "probe",
+        "residual stream",
+        "transformer"
+      ],
+      "core_matched": [
+        "residual stream"
+      ]
+    },
+    {
+      "title": "Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning",
+      "abstract": "In many forms of reasoning, including arithmetic reasoning, generalizing across superficial changes in input format is effortless for humans: anyone who can solve 2+5 can also solve 'two plus five'. In contrast, LLMs are more brittle to surface variations of the prompts: for example, they solve numeric arithmetic problems almost perfectly but are substantially less accurate on verbal renditions of the same problems. Here, we ask whether generalization across formats can be predicted from the models' internals. Using attribution patching, we first independently localize the circuit that each model recruits to solve numeric arithmetic problems (2+5) vs. verbal ones, in three languages: English ('two plus five'), Spanish ('dos m\\'as cinco'), and Italian ('due pi\\`u cinque'); then, we test whether overlap with the model's own numeric circuit predicts its generalization to the verbal formats. Indeed, we find support for this idea at three levels: circuit overlap accounts for the relative difficulty of the three verbal formats, for which models generalize best, and for which items are solved correctly, rivaling supervised probes while requiring no labeled data.",
+      "authors": [
+        "Andrea Gregor de Varda",
+        "Sana Pandey",
+        "Pengrui Han",
+        "Jacob Andreas",
+        "Evelina Fedorenko"
+      ],
+      "arxiv_id": "2609.04463",
+      "url": "https://arxiv.org/abs/2609.04463",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.04463",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "attribution",
+        "attribution patching",
+        "circuit",
+        "circuits",
+        "reasoning"
+      ],
+      "core_matched": [
+        "attribution patching"
+      ]
+    },
+    {
+      "title": "Influence Score and Transformers interpretability: Measure of the Effective Impact of Attention Heads at inference time",
+      "abstract": "We propose an influence score to quantify the contribution of attention heads to classification decisions in Transformer-based models designed for prompt injection detection. The score combines directional influence on the logits with structural contribution within the residual stream, enabling a multi-scale analysis at the head, layer, and network levels. Applied to a DeBERTa model specialized for prompt injection detection, our framework reveals distinct decision behaviours between correct and erroneous predictions. Our method provides an effective compromise between fine-grained circuit analysis and global output-based methods, and offers a systematic way to study decision mechanisms in Transformer classifiers.",
+      "authors": [
+        "Lisa Bouger",
+        "Yannick Teglia",
+        "Philippe Loubet Moundi"
+      ],
+      "arxiv_id": "2609.05074",
+      "url": "https://arxiv.org/abs/2609.05074",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.05074",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "attention heads",
+        "circuit",
+        "interpretability",
+        "residual stream",
+        "transformer",
+        "transformers"
+      ],
+      "core_matched": [
+        "residual stream"
+      ]
+    }
+  ],
+  "conference_dive": [],
+  "also_ran": [
+    {
+      "title": "FailureSpot: Label-Efficient Timestamp-Level Failure Detection for Vision-Language-Action Models",
+      "score": 18.0,
+      "url": "https://arxiv.org/abs/2609.04277",
+      "matched": [
+        "internal representations",
+        "vision language",
+        "vision-language"
+      ]
+    },
+    {
+      "title": "Few-Shot Video Recognition via Hierarchical Metric Learning",
+      "score": 13.0,
+      "url": "https://arxiv.org/abs/2609.05242",
+      "matched": [
+        "alignment",
+        "dictionary learning"
+      ]
+    },
+    {
+      "title": "Sound-based Multi-Person 3D Pose Estimation",
+      "score": 10.0,
+      "url": "https://arxiv.org/abs/2609.04902",
+      "matched": [
+        "superposition"
+      ]
+    },
+    {
+      "title": "Controlling and Assessing Appropriate Persona Use in LLM-based Dialogue Generation",
+      "score": 10.0,
+      "url": "https://arxiv.org/abs/2609.04676",
+      "matched": [
+        "internal representations"
+      ]
+    },
+    {
+      "title": "How Faithful Is Attribution for Sales Forecasting? A Counterfactual Study",
+      "score": 9.0,
+      "url": "https://arxiv.org/abs/2609.04797",
+      "matched": [
+        "attribution",
+        "faithful",
+        "faithfulness",
+        "interpretability"
+      ]
+    },
+    {
+      "title": "AngelFingerprint: A Traceable, Explainable, and White-Box Stealthy Watermark for Text-Guided Image Editing",
+      "score": 8.2,
+      "url": "https://arxiv.org/abs/2609.04709",
+      "matched": [
+        "alignment",
+        "explainability",
+        "explainable",
+        "white-box"
+      ]
+    }
+  ]
+}
