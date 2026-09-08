@@ -1,0 +1,124 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-08T11:26:14",
+  "stats": {
+    "collected_raw": 1290,
+    "unique": 1157,
+    "already_seen": 1154,
+    "hf_target_day": "2026-09-07",
+    "conference_pool": 0,
+    "interest_pool": 0,
+    "total_to_summarize": 4
+  },
+  "classic": {
+    "arxiv_id": "2410.20526",
+    "title": "Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders",
+    "abstract": "Sparse Autoencoders (SAEs) have emerged as a powerful unsupervised method for extracting sparse representations from language models, yet scalable training remains a significant challenge. We introduce a suite of 256 SAEs, trained on each layer and sublayer of the Llama-3.1-8B-Base model, with 32K and 128K features. Modifications to a state-of-the-art SAE variant, Top-K SAEs, are evaluated across multiple dimensions. In particular, we assess the generalizability of SAEs trained on base models to longer contexts and fine-tuned models. Additionally, we analyze the geometry of learned SAE latents, confirming that \\emph{feature splitting} enables the discovery of new features. The Llama Scope SAE checkpoints are publicly available at~\\url{https://huggingface.co/fnlp/Llama-Scope}, alongside our scalable training, interpretation, and visualization tools at \\url{https://github.com/OpenMOSS/Language-Model-SAEs}. These contributions aim to advance the open-source Sparse Autoencoder ecosystem and support mechanistic interpretability research by reducing the need for redundant SAE training.",
+    "year": 2024,
+    "authors": [
+      "Zhengfu He",
+      "Wentao Shu",
+      "Xuyang Ge",
+      "Lingjie Chen",
+      "Junxuan Wang",
+      "Yunhua Zhou"
+    ],
+    "url": "https://arxiv.org/abs/2410.20526",
+    "relevance": 152.4,
+    "core_matched": [
+      "SAE",
+      "SAEs",
+      "mechanistic interpretability",
+      "sparse autoencoder",
+      "sparse autoencoders"
+    ],
+    "citations": 148,
+    "venue": "arXiv.org"
+  },
+  "hf_daily": [
+    {
+      "title": "Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
+      "abstract": "Multi-agent LLM systems commonly use an orchestrator to decompose a task for a team of workers and then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination, memory improvement, and the role of external verification. We model orchestrator-worker interaction as a bilevel coordination game: under bounded coupling, the workers' local-update game is an approximate potential game whose equilibrium slack is controlled by decomposition quality. We then analyse reflection as stochastic movement over semantic memory states. For free-form reflection, we derive a finite-time upper bound, prove worst-case tightness, and give a positive lower bound under a falsifiable persistent-harm condition. We further prove an information-theoretic impossibility result: no gate that observes only the generated transcript can improve uniformly over text-indistinguishable environments, whereas an environment-grounded gate can. Motivated by this separation, we introduce Stochastic Reflective Memory Ascent (SRMA), which accepts a candidate memory only after a grounded evaluation risk strictly decreases. Under calibration and non-degenerate corrective mass, SRMA converges exactly, geometrically or polynomially; matching constructions show that both rate regimes are order-tight. We also provide confidence gating for stochastic evaluation and re-anchoring guarantees for piecewise-stationary environments. Experiments instantiate these objects with environment-grounded metrics and test the predicted coordination and drift laws. On 500 SWE-bench instances, the complete Kimi-based system resolves 72.2% versus a 70.8% public mini-SWE-agent reference. Code: https://github.com/YihangChen9/Bilevel-Coordinated-Reflection",
+      "authors": [
+        "Yihang Chen",
+        "Yuxiang Chen",
+        "Yuxuan Huang",
+        "Meng Fang",
+        "Weilin Luo",
+        "Jun Wang"
+      ],
+      "arxiv_id": "2609.02750",
+      "url": "https://arxiv.org/abs/2609.02750",
+      "hf_upvotes": 94,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02750",
+      "score": 9.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Dr. Claw: An AI Scientist Workspace for Vibe Research",
+      "abstract": "Command-line coding agents (e.g., Claude Code, Gemini CLI) can already read and write files and sustain long sessions, yet end-to-end research still fragments across chat tools, IDEs, terminals, and writing environments, and the decisions that make it auditable are rarely preserved. We present Dr. Claw, an open-source workspace that wraps existing coding-agent executors in a controllable and auditable human-in-the-loop workflow rather than introducing another autonomous agent. Persistent state objects, a reusable skill library, and multi-executor coordination link human decisions to AI execution, turning planning, execution, and writing into one traceable, recoverable loop. We demonstrate Dr. Claw through an interactive three-view scenario and a failure-recovery walkthrough, and evaluate it against a bare command-line agent sharing the same backend executor, so the comparison contrasts the whole orchestration layer (task graph, state objects, and skill library) with the agent it wraps. Holding the executor fixed, Dr. Claw scores higher on research completeness while persisting an auditable, recoverable process trail. Demo access: repository https://github.com/OpenLAIR/dr-claw, released under AGPL-3.0 with GPL-3.0 upstream components.",
+      "authors": [
+        "Dingjie Song",
+        "Hanrong Zhang",
+        "Dawei Liu",
+        "Yixin Liu",
+        "Zongxia Li",
+        "Zhengqing Yuan",
+        "Siqi Zhang",
+        "Henry Peng Zou"
+      ],
+      "arxiv_id": "2609.00365",
+      "url": "https://arxiv.org/abs/2609.00365",
+      "hf_upvotes": 8,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.00365",
+      "score": 1.2,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing",
+      "abstract": "Change data synthesis provides a cost-effective solution for expanding training data and improving the performance of change detection models. However, existing synthesis methods typically rely on handcrafted rules to simulate changes, where limited coverage of class transitions restricts the diversity of synthesized data, while predefined transition designs limit their flexibility in accommodating varied change types. In this work, we introduce KnowChange, a knowledge-guided change data synthesis framework that leverages pretrained vision-language models as knowledge sources to reason about plausible change locations and class transitions from pre-change scenes and desired change types. By integrating knowledge-guided change simulation with generalizable synthesis models, KnowChange enables flexible synthesis of diverse change types within a unified framework. Extensive experiments demonstrate that KnowChange-generated data consistently outperforms existing synthetic datasets in both synthetic-to-real transfer and synthetic data augmentation, despite being generated at a compact scale. Further analyses show that the knowledge-guided change simulation can be seamlessly integrated into existing synthesis pipelines and enhance the downstream utility of synthesized data.",
+      "authors": [
+        "Yaoyi Qi",
+        "Xingxing Weng",
+        "Chao Pang",
+        "Yongkang Cui",
+        "Xiangyu Hao",
+        "Xiaokang Zhang",
+        "Guibo Zhu",
+        "Gui-Song Xia"
+      ],
+      "arxiv_id": "2608.24263",
+      "url": "https://arxiv.org/abs/2608.24263",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-07",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2608.24263",
+      "score": 2.0,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": []
+    }
+  ],
+  "conference": [],
+  "interest": [],
+  "conference_dive": [],
+  "also_ran": []
+}
