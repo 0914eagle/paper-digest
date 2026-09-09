@@ -1454,7 +1454,8 @@
   "served": [
     "improvingdictionarylearningwithgatedsparseautoencoders",
     "llamascopeextractingmillionsoffeaturesfromllama318bwithsparseautoencoders",
-    "sparseautoencoderslearnmonosemanticfeaturesinvisionlanguagemodels"
+    "sparseautoencoderslearnmonosemanticfeaturesinvisionlanguagemodels",
+    "steeringlanguagemodelrefusalwithsparseautoencoders"
   ],
   "min_citations": 50,
   "cycle": 1
