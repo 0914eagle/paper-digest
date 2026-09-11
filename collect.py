@@ -724,7 +724,15 @@ def main():
     out_path = os.path.join(ROOT, "data", "%s.json" % args.date)
     save_json(out_path, payload)
 
+    # 학회 oral 풀은 매일 똑같은 고정 목록이 다시 긁혀 온다. HF/arXiv 처럼 흘러가는
+    # 스트림이 아니라 천천히 꺼내 쓰는 백로그다. 그래서 안 뽑힌 것까지 seen 에 넣으면
+    # 첫날 712편이 통째로 소진되고 다음날부터 이 갈래가 영구히 0편이 된다.
+    # 오늘 실제로 내보낸 것만 소비 처리한다.
+    surfaced = hf_keys | conf_keys | {p["key"] for p in dive_fresh}
     for key in keys_today:
+        p = unique.get(key)
+        if p is not None and p.get("_is_conf") and key not in surfaced:
+            continue
         seen.setdefault(key, args.date)
     # seen 기록은 180일치만 유지
     cutoff = (date.today() - timedelta(days=180)).isoformat()
