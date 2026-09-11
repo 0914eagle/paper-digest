@@ -1,4 +1,5 @@
 # 논문 다이제스트 인덱스
+- [2026-09-11](digest/2026-09-11.md) — 요약 27편 · 오늘의 한 편: Legible Failures: Detecting and Repairing In-Context Binding Errors
 - [2026-09-10](digest/2026-09-10.md) — 요약 53편 · 오늘의 한 편: LLM Layers Immediately Correct Each Other
 - [2026-09-09](digest/2026-09-09.md) — 요약 4편 · 오늘의 한 편: Steering Language Model Refusal with Sparse Autoencoders
 - [2026-09-08](digest/2026-09-08.md) — 요약 4편 · 오늘의 한 편: Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders

@@ -1456,7 +1456,8 @@
     "improvingdictionarylearningwithgatedsparseautoencoders",
     "llamascopeextractingmillionsoffeaturesfromllama318bwithsparseautoencoders",
     "sparseautoencoderslearnmonosemanticfeaturesinvisionlanguagemodels",
-    "steeringlanguagemodelrefusalwithsparseautoencoders"
+    "steeringlanguagemodelrefusalwithsparseautoencoders",
+    "steeringlargelanguagemodelactivationsinsparsespaces"
   ],
   "min_citations": 50,
   "cycle": 1

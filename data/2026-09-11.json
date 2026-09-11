@@ -1,0 +1,873 @@
+{
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T13:17:42",
+  "stats": {
+    "collected_raw": 1254,
+    "unique": 1190,
+    "already_seen": 730,
+    "hf_target_day": "2026-09-10",
+    "conference_pool": 0,
+    "interest_pool": 20,
+    "total_to_summarize": 27
+  },
+  "classic": {
+    "arxiv_id": "2503.00177",
+    "title": "Steering Large Language Model Activations in Sparse Spaces",
+    "abstract": "A key challenge in AI alignment is guiding large language models (LLMs) to follow desired behaviors at test time. Activation steering, which modifies internal model activations during inference, offers a potential solution. However, prior work in dense activation spaces struggles with superposition, wherein multiple features become entangled, limiting interpretability and precise control. In contrast, sparse representations provide an untapped opportunity for more interpretable behavior modulation. In this work, we introduce sparse activation steering (SAS), a method that leverages sparse autoencoders (SAEs) to steer LLM behavior in sparse spaces. By isolating behavior-specific features through a contrastive prompt-pairing approach, we define a set of features that can selectively reinforce or suppress behaviors. Experiments on Gemma 2 LLMs show that SAS vectors enable nuanced behavioral modulation and finer-grained control. Furthermore, scaling SAEs improves monosemanticity of SAS vectors, suggesting more reliable and interpretable interventions.",
+    "year": 2025,
+    "authors": [
+      "Reza Bayat",
+      "Ali Rahimi-Kalahroudi",
+      "Mohammad Pezeshki",
+      "Sarath Chandar",
+      "Pascal Vincent"
+    ],
+    "url": "https://arxiv.org/abs/2503.00177",
+    "relevance": 115.9,
+    "core_matched": [
+      "SAEs",
+      "activation steering",
+      "sparse autoencoders",
+      "superposition"
+    ],
+    "citations": 62,
+    "venue": "arXiv.org"
+  },
+  "hf_daily": [
+    {
+      "title": "Scaling Automatic Research Agents via World Models",
+      "abstract": "Automating empirical research is a long-standing direction of AI. Recent automatic research (AutoResearch) agents bring this goal within reach, as modern LLMs show the capability to independently implement solutions and learn from the execution outcomes. Behind these gains, post-training (especially RL) plays a central role. In this paper, we identify a fundamental tension when scaling RL for these agents: the two components of every AutoResearch trajectory (agent generation and environment execution) scale in very different manners, since all generation shares compute through batching, while each execution occupies its exclusive sandbox and real machine time. As a result, the environment execution dominates the training cost and becomes the bottleneck as trajectories grow. To resolve this tension, we propose World Model RL (WMRL), which replaces environment execution with a world model to remove this bottleneck. Additionally, the world model can be imperfect, as its rewards are corrupted by bias and noise. Therefore, we further equip WMRL with two mitigations, Online Debiasing and Inverse-Variance Denoising, which offset the bias and suppress the noise respectively. Theoretically, we prove that both mitigations of WMRL strictly improve the convergence guarantee. Empirically, WMRL accelerates training by 3-4x on various tasks at different agent scales, while exceeding the performance of standard RL baselines. Moreover, our post-trained 4B and 9B agents outperform much larger open-weight agents of 48B and 120B on held-out benchmarks. Beyond AutoResearch, WMRL also transfers to post-training embodied VLA policies, which demonstrates the generalizability of our method.",
+      "authors": [
+        "Xiyuan Yang",
+        "Sheikh Sarwar",
+        "Jingru Cheng",
+        "Zhan Shi",
+        "Duanshun Li",
+        "Huiyuan Chen",
+        "Haiyang Zhang",
+        "Xing Fan"
+      ],
+      "arxiv_id": "2608.12564",
+      "url": "https://arxiv.org/abs/2608.12564",
+      "hf_upvotes": 428,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2608.12564",
+      "score": 10.5,
+      "core_score": 0.0,
+      "matched": [
+        "world model"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "abstract": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+      "authors": [
+        "Yanzhe Chen",
+        "Zechen Bai",
+        "Zhijun Cao",
+        "Wenzheng Zeng",
+        "Kevin Qinghong Lin",
+        "Yiqi Lin",
+        "Guoqiang Liang",
+        "Kevin Yuchen Ma"
+      ],
+      "arxiv_id": "2609.10522",
+      "url": "https://arxiv.org/abs/2609.10522",
+      "hf_upvotes": 130,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.10522",
+      "hf_date": "2026-09-10",
+      "score": 12.2,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning",
+        "language models",
+        "pretraining",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Programmable World Model",
+      "abstract": "Recent video world models generate increasingly realistic and interactive visual experiences, yet lack reliable mechanisms for maintaining persistent world state and enforcing programmable rules over extended interactions. We introduce Programmable World Model, a framework that decouples world-state evolution from visual observation generation. An agent translates natural-language instructions into executable programs that specify entity states and state-transition rules, enabling direct control over individual entities and their interactions. A lightweight engine executes these programs to update and maintain an explicit, persistent global world state, including off-screen entities and non-visual attributes. To connect world state with visual generation, we introduce state-augmented 3D oriented bounding boxes (OBBs) as an intermediate representation. This representation, together with the target camera trajectory, is deterministically compiled into pixel-aligned spatiotemporal conditioning signals for a pretrained video model serving as the generative renderer. This design allows users to create playable games with predefined mechanics, direct control over individual entities, and persistent world state throughout gameplay. We further introduce CombatStateBench, a benchmark for evaluating programmable world models. On CombatStateBench, our method achieves 94% Count Accuracy and 98% State Accuracy, substantially outperforming existing interactive video world models while supporting coherent long-horizon generation. These results demonstrate the effectiveness of separating explicit state evolution from generative rendering for building persistent, programmable worlds.",
+      "authors": [
+        "Zheng-Hui Huang",
+        "Guixu Lin",
+        "Jiacheng Lin",
+        "Yi-Chuan Huang",
+        "Ruihan Yu",
+        "Muyao Niu",
+        "Siqi Yang",
+        "Yu-Lun Liu"
+      ],
+      "arxiv_id": "2609.10540",
+      "url": "https://arxiv.org/abs/2609.10540",
+      "hf_upvotes": 81,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10540",
+      "score": 12.0,
+      "core_score": 0.0,
+      "matched": [
+        "world model"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks",
+      "abstract": "Agent usage is shifting toward long-horizon tasks such as coding and scientific discovery, among which terminal tasks are especially important. We introduce T1, a Mixture-of-Experts model of 122B total trained with reinforcement learning, operating a real shell in a cloud sandbox for up to 300+ tool-call turns per task, rewarded by executing each task's own verifier. We provide a comprehensive recipe: First, an aggressively warm-started to stabilize actor-critic training, with a dense process reward scoring trajectories by the absolute number of passing verifiers. Second, stable optimization through TITO construction, training on the exact sampled token identifiers with drift repair at turn boundaries, and rollout routing replay, recording the sampler's per-token expert choices at every MoE layer and replaying them during training. Third, fully out-of-distribution training corpus: isolated seeds and synthesized tasks disjoint from Terminal-Bench 2.1 ensures gains reflect genuine capability transfer over benchmark overfitting. Together, TITO and R3 cut the training-to-inference log-probability difference from 0.021 to 0.013, with exactly aligned zero token drift in the loss region. On Terminal-Bench 2.1, our post-train pipeline raises initial base model from 43.8% to T1 with 64.0% resolved. On Long-Horizon Terminal Bench, T1 reaches 27.9% and surpasses GPT-5.4 and GLM-5.1.",
+      "authors": [
+        "Junyao Yang",
+        "Yucheng Shi",
+        "Zhongzhi Li",
+        "Ruhan Wang",
+        "Zongxia Li",
+        "Haitao Mi",
+        "Leowei Liang"
+      ],
+      "arxiv_id": "2609.11042",
+      "url": "https://arxiv.org/abs/2609.11042",
+      "hf_upvotes": 24,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11042",
+      "hf_date": "2026-09-10",
+      "score": 3.6,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Generation",
+      "abstract": "Generating co-speech gestures that are temporally coherent, semantically aligned with speech, and grounded with surrounding objects remains challenging. Prior speech-driven gesture models emphasize audio-gesture alignment but do not explicitly account for posture constraints or surrounding objects, failing to capture the inherent correlation between body gestures and the physical space. We present Puppeteer, a posture-aware, object-grounded co-speech gesture diffusion model operating in a causal latent space. We decompose long gestures into structured primitives and learn a causal variational autoencoder that encodes them into temporally ordered latent tokens, each depending only on the past. We then perform conditional diffusion directly in the causal latent space, conditioning on speech signals, motion history, an initial posture reference, and object geometry to synthesize physically consistent gestures. This temporally ordered latent formulation enables explicit temporal control and supports tasks such as gesture in-betweening and gesture completion. To better assess co-speech gesture synthesis beyond existing measures, we introduce new evaluation metrics tailored to this task. We also created SceneGes, the first curated synthetic 3D dataset of embodied co-speech gestures and corresponding 3D objects, enabling object-grounded gesture generation. Experiments show that Puppeteer generates more diverse and temporally synchronized gestures than prior methods, while enabling object-grounded gesture synthesis.",
+      "authors": [
+        "Vida Adeli",
+        "Soroush Mehraban",
+        "Jacob Rommann",
+        "Harrison Sanborn",
+        "Cole Clifford",
+        "Babak Taati"
+      ],
+      "arxiv_id": "2609.00369",
+      "url": "https://arxiv.org/abs/2609.00369",
+      "hf_upvotes": 16,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.00369",
+      "score": 4.7,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "latent space"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents",
+      "abstract": "AI research agents combine prior knowledge, public sources, and experimental feedback to produce useful results. The Discovery Certification Protocol (DCP) turns claims about these results into executable recovery and feedback tests. Gate 1 validates useful improvement on sealed evaluation. Gate 2 gives matched agents the registered starting information and observed Web content while withholding the target research history. Every valid method reaching the numerical target supplies a recovery witness and triggers the Core veto. DCP Core requires adequate controls, zero observed recoveries, and a finite-sample bound on recovery in one fresh registered episode. Optional Gate 3 measures the average effect of truthful feedback relative to a specified neutral policy from a shared checkpoint. DCP Evidence adds this effect after independent null calibration and a registered effect margin. Two controlled audits exercise the complete protocol in SQLite optimization and virtual catalyst control under different models. Each produced zero recoveries in 96 episodes, with an upper bound of 0.0468. Each paired study yielded 30 truthful recoveries and zero neutral recoveries, with passing 60-pair null studies. Additional cases exercise Core, recovered, and audit-incomplete decisions. A deterministic, LLM-free verifier reproduces the decisions from frozen evidence. DCP provides a common evidence language for useful outcomes, alternative routes, and feedback effects across AI research.",
+      "authors": [
+        "Jingjie Ning",
+        "Shanshan Zhong",
+        "Xiaochuan Li",
+        "Ji Zeng"
+      ],
+      "arxiv_id": "2609.09219",
+      "url": "https://arxiv.org/abs/2609.09219",
+      "hf_upvotes": 15,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09219",
+      "hf_date": "2026-09-10",
+      "score": 2.2,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in reasoning and code generation, raising the prospect that they could assist in developing and optimizing the very infrastructure that powers them. However, existing benchmarks mainly focus on isolated kernels, predefined operators, or pre-specified optimization targets, and therefore fail to evaluate the ability of LLMs to perform open-ended, long-horizon LLM infrastructure engineering. To address this gap, we present Φ-Bench, a benchmark for systematically evaluating LLMs on engineering the LLM infrastructure stack. Derived from optimization problems studied in frontier research and grounded in real-world code repositories, Φ-Bench provides broad coverage of the LLM infrastructure stack and spans tasks of varying complexity, ranging from localized kernel-level function completion to long-horizon implementation and end-to-end system optimization. Extensive experiments on frontier LLMs reveal their current capabilities and limitations in engineering complex LLM infrastructure, offering insights into the challenges that remain on the path toward autonomous optimization of future AI infrastructure.",
+      "authors": [
+        "Leilei Ding",
+        "Shumin Wang",
+        "Yuting Huang",
+        "Fanqi Wan",
+        "Yinmin Zhang",
+        "Qi Han",
+        "Yiming Xu",
+        "Feiyuan Zhang"
+      ],
+      "arxiv_id": "2609.10226",
+      "url": "https://arxiv.org/abs/2609.10226",
+      "hf_upvotes": 9,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10226",
+      "score": 5.1,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models",
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "AgenticGen: Reward-Guided Agentic Video Generation for Advertising",
+      "abstract": "Advertising video generation is not only a video synthesis task, but also a product-conditioned reasoning problem whose success is measured by online business metrics. Recent video foundation models can generate realistic clips from multimodal conditions, yet they do not optimize how a product should be transformed into an effective advertisement or how future generation should be improved from online business feedback. To close this loop, we propose AgenticGen, a reward-guided agentic framework that decomposes advertising video generation into two trainable reasoning stages, strategy selection and draft generation, thereby exposing optimization targets that online business feedback can supervise. AgenticGen learns a performance-based reward from accumulated online feedback and a complementary rubric-based reward aligned with human quality standards, then uses them to supervise policy optimization. DPO first moves the agentic policies toward online preferences, and GRPO further refines both stages with process and outcome rewards. Offline experiments validate the reward models and successive policy optimization. Online A/B experiments in the TikTok advertising system show that AgenticGen after DPO and GRPO improves CTR by 2.72%, CVR by 2.63%, and Advv by 9.61% over the SFT baseline.",
+      "authors": [
+        "Xingyuan Bu",
+        "Chengru Song",
+        "Hao Zhou",
+        "Tao Zhou",
+        "Dong Li",
+        "Wei Li",
+        "Shilong Li",
+        "Hao Shi"
+      ],
+      "arxiv_id": "2609.09187",
+      "url": "https://arxiv.org/abs/2609.09187",
+      "hf_upvotes": 7,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09187",
+      "hf_date": "2026-09-10",
+      "score": 2.3,
+      "core_score": 0.0,
+      "matched": [
+        "multimodal",
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "StochBench: A Domain-Specific Benchmark for Stochastic Processes in Lean",
+      "abstract": "Leading benchmarks for formal theorem proving with large language models are small collections drawn from competition math, such as the IMO and Putnam, that poorly represent field-specific applications. We introduce StochBench, a Lean 4 benchmark of 450 graduate stochastic-processes problems at varying abstraction levels, each paired with its natural-language source. Addressing a field underrepresented in Mathlib, it covers finite and countable Markov chains, renewal processes, random walks, martingales, stopping times, queues, Brownian motion, stochastic calculus, weak convergence, and Poisson and continuous-time Markov processes. Our Opus 4.8-based agent achieves a 34.9% proof rate (157/450) under a 15-minute per-problem limit. StochBench better represents domain-specific applied mathematics while remaining challenging for advanced provers.",
+      "authors": [
+        "Idan Davidovich",
+        "Debargha Ganguly",
+        "Vikash Singh",
+        "Vipin Chaudhary"
+      ],
+      "arxiv_id": "2609.09264",
+      "url": "https://arxiv.org/abs/2609.09264",
+      "hf_upvotes": 6,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.09264",
+      "score": 2.4,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Why Is Video Still So Expensive? A Survey of Inference-Efficiency Mechanisms in Video and Audiovisual LLMs",
+      "abstract": "Video understanding has rapidly evolved toward video large language models (VideoLLMs): systems that couple video representations with pretrained large language models and condition generation on a textual prompt. Their strong performance on captioning, question answering, retrieval and temporal grounding comes at a computation and memory cost that grows with frame count and context length, limiting deployment in real-time, mobile and resource-constrained settings. This survey covers inference-efficiency mechanisms for visual and audiovisual VideoLLMs that report concrete reductions in parameter count, FLOPs per input, latency, memory, or visual and audio token count. We analyze bottlenecks across frame sampling, modality encoding, connector-level token reduction, and LLM prefilling and decoding. We organize methods by the pipeline stage at which they act, covering VideoLLMs developed since late 2022 together with earlier frame-sampling and vision-encoder mechanisms that remain components of current pipelines. We assemble literature-reported accuracy--cost comparisons under shared host models and input protocols wherever available, distinguish them from heterogeneous cross-paper evidence, and identify gaps in audiovisual efficiency and standardized evaluation. We maintain a repository at https://github.com/momentslab/awesome-efficient-videollm.",
+      "authors": [
+        "Killian Steunou",
+        "Yannis Tevissen",
+        "Mounîm A. El Yacoubi"
+      ],
+      "arxiv_id": "2609.10355",
+      "url": "https://arxiv.org/abs/2609.10355",
+      "hf_upvotes": 5,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10355",
+      "score": 2.2,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "large language models"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "A Three-Layer Caching Architecture for Low-Latency LLM Web Search on Commodity CPU Hardware",
+      "abstract": "AI-powered search products such as ChatGPT search, Google's AI Overviews, and Perplexity provide LLM-synthesized answers grounded in live web results. We developed OreoLook (formerly lixSearch), an open-source answer engine using automated browser agents and provider-routed LLM inference. Its local search, caching, session-management, and embedding stack runs on commodity CPU hardware; answer synthesis is performed by a remote inference provider. As usage grew, sessions lost context, equivalent queries triggered redundant work, and URLs were repeatedly embedded across sessions. We present a three-layer caching architecture: (1) a Session Context Window maintaining a rolling window of recent messages in Redis with automatic overflow to Huffman-compressed disk archives; (2) a Semantic Query Cache catches rephrasings via cosine similarity on embedding vectors, eliminating redundant LLM invocations; and (3) a URL Embedding Cache that deduplicates embedding computations across sessions. Deployed on a single 8-vCPU Intel Cascade Lake server (2 GHz, 32 GB RAM) running 30 Hypercorn worker processes across three containerized replicas, the evaluated system reported an 89.3% aggregate Redis keyspace hit rate with 0.1 ms read latency and just 1.38 MB of memory overhead. A background LRU eviction daemon migrates idle sessions from Redis to disk and re-hydrates them on demand, enabling conversations that can be resumed hours or days later under the configured retention policy.",
+      "authors": [
+        "Ayushman Bhattacharya",
+        "Nihal Gazi"
+      ],
+      "arxiv_id": "2609.05463",
+      "url": "https://arxiv.org/abs/2609.05463",
+      "hf_upvotes": 5,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.05463",
+      "score": 0.8,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "RESCUE-BENCH: Towards Relation-Aware Multi-Party Emotional Support Conversation Systems",
+      "abstract": "Existing emotional support conversation systems mainly focus on one-on-one seeker-supporter interactions and individual emotional states, leaving interpersonal relations in multi-party scenarios underexplored. In this work, we introduce relation-aware emotional support conversation, a new task that evaluates whether LLMs can capture and utilize the evolving dynamics of relationships to offer more effective emotional support. We construct RESCUE (Relation-aware Emotional Support Conversation Understanding and Evaluation Benchmark) from real couple and family interview conversations, containing 191 samples, 7,079 annotated turns, and 1,064.8 minutes of video. Based on rich annotations of socio-emotional and support-related dynamics, RESCUE defines six tasks that evaluate two core capabilities required for relation-aware emotional support: Relational Understanding and Relation-Sensitive Support. Experiments with ten LLMs show that current models perform relatively well on tasks relying on local emotional or intervention cues, but struggle with relation-intensive tasks such as relation pattern prediction, viewpoint prediction, and support strategy prediction. These findings reveal the limitations of current LLMs in modeling interpersonal relations and making relation-sensitive support decisions.",
+      "authors": [
+        "Haichuan Hu",
+        "Yang Xiao",
+        "Mingni Tang",
+        "Jiawen Duan",
+        "Quanjun Zhang",
+        "Congqing He",
+        "Hao Zhang",
+        "Jiashuo Wang"
+      ],
+      "arxiv_id": "2609.09657",
+      "url": "https://arxiv.org/abs/2609.09657",
+      "hf_upvotes": 3,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09657",
+      "hf_date": "2026-09-10",
+      "score": 0.4,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "The Semantic Bottleneck: Leveraging Semantic Representations for Non-Invasive Speech Decoding",
+      "abstract": "Non-invasive speech decoding remains constrained by the low signal-to-noise ratio of neural recordings, which makes fine-grained reconstruction of phonemes or individual words difficult. Motivated by neuroscientific evidence that high-level semantic representations are distributed across cortical regions and evolve over slower temporal scales, we hypothesize that semantic content may provide a more suitable target for non-invasive decoding than low-level acoustic or lexical features. We introduce Brain2Semantics2Text, a method that reconstructs text through an intermediate semantic embedding space. Our model maps sentence-level MEG responses into a semantic manifold and then inverts the predicted embeddings into natural language. This semantic bottleneck enables recovery of high-level meaning without word-level alignment. We describe the core principles of the approach, its implementation, and the strategies used to mitigate the challenges of learning a reliable neural-to-semantic mapping. Finally, we compare against prior non-invasive Brain2Text methods and show improved sentence-level results.",
+      "authors": [
+        "Gilad D. Landau",
+        "Dulhan Jayalath",
+        "Oiwi Parker Jones"
+      ],
+      "arxiv_id": "2609.10296",
+      "url": "https://arxiv.org/abs/2609.10296",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10296",
+      "score": 1.1,
+      "core_score": 0.0,
+      "matched": [
+        "alignment"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "From Reweighting to Rewriting: Unlocking the Intervention Effects of Influential Samples in Training Data Attribution",
+      "abstract": "Training data attribution (TDA) aims to identify training examples that shape model behavior, but its intervention value depends on both which examples are selected and how they are modified. Influence functions (IF) estimate behavioral changes under infinitesimal reweighting, yet IF-selected examples often show limited advantages over random selection under conventional weight-based interventions. This raises the question of whether influential examples lack intervention value or whether reweighting fails to realize their behavioral leverage.We introduce influence-guided response rewriting, which uses IF to identify intervention targets and replaces their responses with behavior-aligned or behavior-opposed supervision while keeping instructions fixed. Across four open-weight LLMs, we compare rewriting and reweighting on the same influence-selected examples using epistemic abstention as our primary testbed. Response rewriting produces stronger, more persistent, and bidirectional behavioral shifts, while reweighting the same examples yields weak and inconsistent effects. Further analyses show that influence-selected examples provide greater rewriting leverage than alternative selectors, with changes remaining concentrated on target-relevant behaviors. The same qualitative contrast extends to safety refusal. These results distinguish the local reweighting effects captured by influence estimates from the broader intervention leverage of the examples they identify, motivating intervention-aware evaluation of TDA methods.",
+      "authors": [
+        "Yuzhang Luo",
+        "Chenpeng Wang",
+        "Jianhui Chen",
+        "Liangming Pan"
+      ],
+      "arxiv_id": "2609.02771",
+      "url": "https://arxiv.org/abs/2609.02771",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.02771",
+      "score": 3.3,
+      "core_score": 0.0,
+      "matched": [
+        "attribution"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Reference-Based Bias Detection in LLMs via Relative Representations of Hidden States",
+      "abstract": "Existing bias auditing methods typically rely on model outputs, requiring costly benchmarks or judge models and potentially missing internal shifts that never appear in generated text. We propose a reference-based method that audits bias in hidden-state representations across related model variants, for example before and after fine-tuning. Because fine-tuning reshapes representation geometry, absolute hidden states are not directly comparable, so we encode each sentence by its similarities to a fixed set of anchor sentences, yielding relative representations in a shared comparison space. There we measure how target groups shift in their association with positive and negative attributes, a quantity we call the Representational Bias Shift $\\Delta B$. Across three model families and the WildGuardMix, DecodingTrust and ToxiGen benchmarks, $\\Delta B$ correlates with output-level bias change in 15 of the 18 settings we test, reaching $|r| = 0.84$ ($p < 0.001$) under full fine-tuning and becoming more model-dependent under parameter-efficient adaptation. Thresholding $\\Delta B$ detects checkpoints whose bias increased with ROC AUC between $0.65$ and $0.99$, and on WildGuardMix and DecodingTrust it separates them better than a SEAT-based baseline for all three families. $\\Delta B$ is also stable under changes to the anchor set, attribute sets and target templates. Our method requires no task-specific evaluation data and audits a model in about three minutes, using $3$-$50\\times$ less compute than the output-level benchmarks considered here. We view it as complementary to output-based auditing rather than a replacement for it.",
+      "authors": [
+        "Marek Jeli\\'nski",
+        "Jan Dubi\\'nski",
+        "Maciej Chrabaszcz",
+        "Sebastian Cygert"
+      ],
+      "arxiv_id": "2609.10060",
+      "url": "https://arxiv.org/abs/2609.10060",
+      "hf_upvotes": 1,
+      "source": "arxiv_new+hf_daily",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.10060",
+      "hf_date": "2026-09-10",
+      "score": 5.4,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning",
+        "hidden state",
+        "hidden states"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "The Price of Sparsity: Sufficient Conditions for Sparse Recovery using Sparse and Sparsified Measurements",
+      "abstract": "We consider the problem of support recovery for sparse binary signals from noisy linear measurements. For sparse Gaussian measurement matrices we identify sufficient conditions on the minimal sample size for maximum-likelihood recovery in the high-SNR regime ds/p to infty, where p denotes the signal dimension, s the number of non-zero components of the signal, and d the expected number of non-zero components per row of measurement. Combined with known lower bounds, this yields an information-theoretic threshold of order slog(p/s) / log(ds/p), making explicit the price of measurement sparsity. In particular, we highlight a regime where the sample-complexity loss from measurement sparsity is logarithmic while the computational gain is nearly linear. Second, we study recovery after sparsifying an originally dense Gaussian design: the observations are generated from the dense design, while estimation uses an independently sparsified design and a rescaled response. In the proportional regime s=αp, d=ψp, we prove that, for every fixed target error level δ and every slack varepsilon>0, a sample size of order p/ψ^2 is sufficient for support recovery for arbitrarily small ψ.",
+      "authors": [
+        "Youssef Chaabouni",
+        "David Gamarnik"
+      ],
+      "arxiv_id": "2509.01809",
+      "url": "https://arxiv.org/abs/2509.01809",
+      "hf_upvotes": 1,
+      "hf_date": "2026-09-10",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2509.01809",
+      "score": 0.1,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    }
+  ],
+  "conference": [],
+  "interest": [
+    {
+      "title": "High-probability guarantees for linear accessibility in feature superposition",
+      "abstract": "Neural networks can leverage feature superposition to encode more concepts than dimensions, but cross-feature interference constrains the linear accessibility of simultaneously active features. By framing linear accessibility as a compressed sensing problem, we derive high-probability bounds for fixed supports under subgaussian noise, proving the sufficient dimension scales linearly ($d=O_{\\varepsilon}(k \\log m)$) rather than prior worst-case quadratic limits. We then validate these bounds across system parameters through Gaussian-tail approximations. These results quantify the geometric constraints of the linear representation hypothesis, providing a framework for evaluating sparse autoencoders, compositional generalization, and neural interpretability.",
+      "authors": [
+        "Enrico Vompa"
+      ],
+      "arxiv_id": "2609.09556",
+      "url": "https://arxiv.org/abs/2609.09556",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09556",
+      "score": 74.0,
+      "core_score": 40.0,
+      "matched": [
+        "interpretability",
+        "linear representation",
+        "sparse autoencoders",
+        "superposition"
+      ],
+      "core_matched": [
+        "linear representation",
+        "sparse autoencoders",
+        "superposition"
+      ]
+    },
+    {
+      "title": "Do Agents Know When They Succeed? Calibrating Agent Confidence from Internal Representations",
+      "abstract": "As agentic systems getting adopted rapidly in safety critical applications, it is vital to measure the confidence associated with the agentic actions. In comparison to the traditional machine learning systems, agentic workflows have complex failure modes with planning, tool invocation and dynamic environment interactions. In this paper, we investigate whether model's internal representations provide stronger signals of eventual task success in multi-turn agentic setups. We introduce two complementary methods: Latent Trajectory Dynamics (LTD), which summarizes changes in residual-stream representations across an an interaction trajectory, and the Action Representation Probe (ARP), which predicts success from representations formed at action decisions. Across three interactive benchmarks (Bash, SQL, Python) and three model families (Qwen14B, Qwen7B, DeepSeek6.7B), our methods consistently outperform surface level generation and sequence-based calibration baselines providing a zero-overhead reliability monitor that requires neither prompt alterations nor multi-sample rollouts.",
+      "authors": [
+        "Priyanka Mary Mammen",
+        "Emil Joswin",
+        "Srujananjali Medicherla"
+      ],
+      "arxiv_id": "2609.09448",
+      "url": "https://arxiv.org/abs/2609.09448",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09448",
+      "score": 46.5,
+      "core_score": 30.0,
+      "matched": [
+        "internal representations",
+        "probe",
+        "residual stream"
+      ],
+      "core_matched": [
+        "internal representations",
+        "residual stream"
+      ]
+    },
+    {
+      "title": "Analyzing Traditional and Neural Approaches to Multilingual Readability Assessment",
+      "abstract": "Transformer-based models excel at Automatic Readability Assessment (ARA), yet feature-based models remain in active use because their predictions tie back to linguistic properties. This matters because readability labels are subjective and rater-dependent, so high accuracy on noisy ground truth may reflect surface patterns rather than the linguistic structure that defines difficulty. We test whether transformers internalize the same features as traditional models across Arabic, English, French, Hindi, and Russian using the ReadMe++ dataset. Shapley Additive Explanations (SHAP) identify the features driving traditional classifiers, which we then use as TCAV concept sets to probe multilingual XLM-R and language-specific encoders. Transformers recover surface-length, syntactic, and lexical-diversity signals, and reflect the ordinal CEFR structure of the traditional models. Alignment varies by model family, language, and layer, with language-specific encoders tracking traditional models more clearly than XLM-R. High linear separability does not always imply directional influence, limiting linear probing for count-based readability features.",
+      "authors": [
+        "Joshua Wong",
+        "Chris Tanner"
+      ],
+      "arxiv_id": "2609.10792",
+      "url": "https://arxiv.org/abs/2609.10792",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.CL",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.10792",
+      "score": 42.3,
+      "core_score": 18.0,
+      "matched": [
+        "TCAV",
+        "alignment",
+        "linear probing",
+        "probe",
+        "probing",
+        "transformer",
+        "transformers"
+      ],
+      "core_matched": [
+        "TCAV",
+        "linear probing"
+      ]
+    },
+    {
+      "title": "Legible Failures: Detecting and Repairing In-Context Binding Errors",
+      "abstract": "A wrong answer does not show whether the model lacked the needed information or held it and failed to use it. On an entity-obligation binding task, a language model can emit an incorrect prompt-supplied binding while a linear probe can recover the correct one from its frozen hidden state. We measure how often this occurs across 16 public checkpoints, each evaluated with three seeds. We fit a probe on a training fold, select its layer on a validation fold, and report results on a disjoint test fold. On the trials each model gets wrong, probe accuracy exceeds the strict present-obligation baseline, 1/K = 0.125, by +0.196 (95% CI [+0.101, +0.296], bootstrapped over models). A query-entity counterfactual rules out token presence and recency. A score built from the sign of probe-output disagreement improves failure detection over the model's own confidence by +0.079 AUROC (95% CI [+0.036, +0.126]). Raw probe confidence gives no measurable improvement over model confidence. Steering the residual stream toward the probe-decoded binding, with no gold label, raises accuracy on all eight models tested by a mean of +0.168 (95% CI [+0.066, +0.280]). Where recent studies report that probe-detected errors are resistant to interventions, we find that in-context binding is a setting in which probes are actionable.",
+      "authors": [
+        "Manas Venkata Sai Ravulapalli",
+        "Samrath Singh Chadha",
+        "Abhinav M. Hari"
+      ],
+      "arxiv_id": "2609.11216",
+      "url": "https://arxiv.org/abs/2609.11216",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11216",
+      "score": 42.0,
+      "core_score": 20.0,
+      "matched": [
+        "hidden state",
+        "language model",
+        "linear probe",
+        "probe",
+        "residual stream"
+      ],
+      "core_matched": [
+        "linear probe",
+        "residual stream"
+      ]
+    },
+    {
+      "title": "GEOSTEER: Geodesic Optimization for Activation Steering in Large Language Models",
+      "abstract": "Activation steering provides a lightweight way to control large language models (LLMs) by modifying their hidden activations at inference time. Among these approaches, norm-preserving steering aims to change model behavior without altering the activation norm, reducing the risk of representation collapse and degradation. However, existing norm-preserving methods are limited by predefined steering trajectories and by their reliance on one-step updates, which may fail to capture the complex structure of activation distributions. We propose GeoSteer, an optimization-based method for norm-preserving activation steering. GeoSteer formulates steering as a Riemannian optimization problem and updates activations through a sequence of small geodesic steps on the representation manifold. To avoid fixed steering directions, GeoSteer learns a nonlinear activation-space objective that distinguishes desired from undesired activations, and uses this function to adaptively guide each steering step. This multistep formulation yields smoother, more stable, and more consistent steering behavior while preserving the activation norm. Across TruthfulQA, RealToxicityPrompts, and UltraFeedback benchmarks, GeoSteer consistently improves over state-of-the-art activation steering baselines. These results suggest that norm-preserving steering can be made more effective by replacing predefined one-step edits with adaptive, geometry-aware optimization.",
+      "authors": [
+        "Xuan Cuong Ngo",
+        "Hao Vo",
+        "Ngan Le"
+      ],
+      "arxiv_id": "2609.10658",
+      "url": "https://arxiv.org/abs/2609.10658",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.10658",
+      "score": 40.0,
+      "core_score": 20.0,
+      "matched": [
+        "activation",
+        "activation steering",
+        "activations",
+        "language models",
+        "large language models"
+      ],
+      "core_matched": [
+        "activation steering"
+      ]
+    },
+    {
+      "title": "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models",
+      "abstract": "Energy consumption forecasting relies on increasingly complex machine learning (ML) models, such as Genetic Programming-based symbolic regressors, whose predictions can be difficult for facility managers and building operators to interpret. Explainable Artificial Intelligence (XAI) techniques address this opacity, but traditional XAI dashboards require substantial technical expertise and provide limited flexibility for dynamic, context-aware inquiry. Conversational XAI systems offer a promising alternative; however, previous approaches, such as TalkToModel, were constrained by rigid custom grammars and achieved only 76.8% intent-parsing accuracy. This paper introduces the Explainability Assistant, an open-source conversational XAI system that leverages the function-calling capabilities of modern Large Language Models (LLMs) to overcome these limitations. The system achieves 94% intent-parsing accuracy, supports flexible natural language interaction, and adapts to different ML problem types without task-specific fine-tuning. We present the system's architecture and report results from a comparative evaluation conducted with energy domain specialists, contrasting the Explainability Assistant with a traditional XAI dashboard. The evaluation suggests improved usability and consistent task accuracy, with all experts unanimously preferring the conversational interface for practical use.",
+      "authors": [
+        "Rodion Krjut\\v{s}kov",
+        "Eduard Barbu",
+        "Nikos Sakkas",
+        "Sofia Yfanti"
+      ],
+      "arxiv_id": "2609.11860",
+      "url": "https://arxiv.org/abs/2609.11860",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11860",
+      "score": 32.0,
+      "core_score": 16.0,
+      "matched": [
+        "XAI",
+        "explainability",
+        "explainable",
+        "fine-tuning",
+        "language models",
+        "large language models"
+      ],
+      "core_matched": [
+        "XAI"
+      ]
+    },
+    {
+      "title": "XAI-Arena: Can LLMs Assess the Quality of XAI Explanations?",
+      "abstract": "Evaluating the quality of explanations produced by explainable AI (XAI) methods remains challenging because existing approaches often rely on subjective human judgment, limiting reproducibility, scalability, and comparability between studies. We examine whether LLMs can serve as a reproducible and scalable mechanism to make comparative assessments of the quality of XAI explanations. We introduce XAI-Arena, an LLM-as-a-judge framework for scalable, reproducible, multidimensional, and stakeholder-sensitive evaluation of XAI explanation quality. XAI-Arena then allows us to compare XAI explanations along various dimensions, namely, perceived simplicity, clarity, task adequacy, trust calibration, actionability, transparency, faithfulness, and overall interpretability. We then benchmark XAI explanation methods across various datasets, machine learning models, and stakeholder personas. Human validation shows a strong positive association between LLM-generated and human ratings (Spearman's rho=.693, p<.001). Together, LLM-based evaluations can capture systematic differences in XAI explanation quality and provide a scalable and reproducible framework for comparative assessment of XAI explanations.",
+      "authors": [
+        "Yanfei Hu Fleischhauer",
+        "Alona Zharova",
+        "Nadja Klein",
+        "Stefan Feuerriegel"
+      ],
+      "arxiv_id": "2609.09428",
+      "url": "https://arxiv.org/abs/2609.09428",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.AI",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.09428",
+      "score": 32.0,
+      "core_score": 16.0,
+      "matched": [
+        "XAI",
+        "explainable",
+        "faithfulness",
+        "interpretability"
+      ],
+      "core_matched": [
+        "XAI"
+      ]
+    },
+    {
+      "title": "The information geometry of large language models is shared, learned, and controllable",
+      "abstract": "Large language models learn similar behaviours, yet it remains unclear what structure they share or how to change one behaviour without disturbing others. The Fisher-Rao geometry of next-token probabilities connects these questions: behaviour determines this geometry up to output-preserving symmetries, whereas activation geometry depends on coordinates. Across transformer, state-space and recurrent models, output geometries agree more strongly than activation geometries, and shared geometry supports semantic-category transfer. Agreement with human word choices increases with predictive accuracy, scale and training, and improves further after model-only calibration. Token probabilities and read-out geometry jointly predict the spectrum and its effective dimension. Controlled language assignments show that geometry follows the language law across architectures. Pretraining corpus statistics predict held-out fact acquisition without recalibration, while randomised experiments show that deeper evidence substantially delays acquisition across every tested architecture and evidence construction. Finally, the geometry prescribes minimum-disturbance local interventions, predicts their relative cost, and supports reusable control: updates learned on donor prompts transfer to unseen prompts while better preserving behaviour on reference prompts than Euclidean control. The same geometric correction improves steering, editing, attribution, dictionary learning and fine-tuning.",
+      "authors": [
+        "Dario Picozzi"
+      ],
+      "arxiv_id": "2609.11063",
+      "url": "https://arxiv.org/abs/2609.11063",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11063",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "activation",
+        "attribution",
+        "dictionary learning",
+        "fine-tuning",
+        "language models",
+        "large language models",
+        "pretraining",
+        "transformer"
+      ],
+      "core_matched": [
+        "dictionary learning"
+      ]
+    },
+    {
+      "title": "Beyond Solver Verdicts: Generative Reward Models for Autoformalization",
+      "abstract": "Neurosymbolic systems rely on mathematical solvers to guarantee reasoning correctness, yet solvers are fundamentally blind to whether a formal translation maintains strict reference-equivalence to a designated formalization. We formalize this vulnerability as Verdict-Preserving-Unfaithfulness (VPU): a failure mode where an incorrect encoding executes successfully and matches the expected verdict. We theoretically prove that structural, verdict-only verification heuristics are mathematically bounded to chance-level detection on these deceptively valid traces. To resolve this, we introduce Generative Verification (GenV), which distills an offline Z3-equivalence oracle into a reference-free, continuous reference-equivalence score by repurposing the language model's native vocabulary space. Mechanistic analysis via decision-projected logit lenses and sparse autoencoders shows this generative readout natively extracts precise spatial error coordinates without explicit localization training. Empirically, our oracle-mined verifier (GenV+HN) achieves 0.961 AUROC in reference-equivalence verification, generalizes zero-shot across unseen translators and divergent formal styles, and yields an 11.3-point downstream accuracy gain in agentic test-time compute allocation.",
+      "authors": [
+        "Vikash Singh",
+        "Debargha Ganguly",
+        "Aman Goel",
+        "Ali Torkamani",
+        "Xiaoxue Han",
+        "Joseph Lilien",
+        "Ferhat Erata",
+        "Vipin Chaudhary"
+      ],
+      "arxiv_id": "2609.11085",
+      "url": "https://arxiv.org/abs/2609.11085",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11085",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "language model",
+        "mechanistic",
+        "reasoning",
+        "sparse autoencoders"
+      ],
+      "core_matched": [
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "Generative Replay Mitigates Sample Starvation in Quantum Architecture Search",
+      "abstract": "Reinforcement learning (RL) can automate quantum architecture search, but its scalability is limited when useful circuit trajectories become rare in the rapidly expanding search space. Existing replay mechanisms reuse observed transitions; the proposed learned model produces additional predicted one step transitions from real state-action seeds. Here we introduce GenQAS, a tensor network-guided RL framework that combines a fixed matrix product state warm-start with prioritized generative replay. A learned local transition model generates synthetic circuit transitions on demand and mixes them with real experience during Double Deep Q-Network updates. Under a random exploration analysis, near ground state circuits occupy a rapidly shrinking region of the accessible state space. We investigate whether real data anchored synthetic replay can improve the effective training signal in this regime. Across chemical Hamiltonian benchmarks from 6 to 12 qubits, GenQAS improves fixed-budget success probability and identifies compact circuits at competitive energy error. At 12 qubits, it improves final success probability by up to $7.0\\times$ over passive replay. On a 15-qubit transverse field Ising model, GenQAS increases success probability from $12\\%$ to $21\\%$. In a noisy 6-qubit BeH$_2$ transfer experiment, generative replay reduces the steps to chemical accuracy by $92.7\\%$. These results show that generative replay can mitigate sample starvation in quantum architecture search and support more resource efficient circuit discovery.",
+      "authors": [
+        "Akash Kundu",
+        "Amit Kumar Jaiswal",
+        "Sebastian Feld",
+        "Prayag Tiwari"
+      ],
+      "arxiv_id": "2609.11248",
+      "url": "https://arxiv.org/abs/2609.11248",
+      "hf_upvotes": 0,
+      "source": "arxiv_new",
+      "primary_cat": "cs.LG",
+      "venue": null,
+      "year": "2026",
+      "key": "2609.11248",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "circuit",
+        "circuit discovery",
+        "circuits"
+      ],
+      "core_matched": [
+        "circuit discovery"
+      ]
+    }
+  ],
+  "conference_dive": [],
+  "also_ran": [
+    {
+      "title": "Characterizing Text Branch Sensitivity in Medical Vision-Language Segmentation via Evidence Decoupling",
+      "score": 20.0,
+      "url": "https://arxiv.org/abs/2609.02663",
+      "matched": [
+        "internal representation",
+        "language models",
+        "multimodal",
+        "representation analysis",
+        "vision language",
+        "vision-language"
+      ]
+    },
+    {
+      "title": "How Fragile Is Safety Alignment at Frontier Scale? A Single-Direction Attack on a 320B MoE",
+      "score": 20.0,
+      "url": "https://arxiv.org/abs/2609.09793",
+      "matched": [
+        "alignment",
+        "language model",
+        "residual stream",
+        "white-box"
+      ]
+    },
+    {
+      "title": "Subgroup Membership Inference Audits of Differentially Private Synthetic Text",
+      "score": 19.0,
+      "url": "https://arxiv.org/abs/2609.09848",
+      "matched": [
+        "activation",
+        "activation steering",
+        "fine-tuning"
+      ]
+    },
+    {
+      "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+      "score": 16.5,
+      "url": "https://arxiv.org/abs/2609.10715",
+      "matched": [
+        "hidden states",
+        "language model",
+        "language models",
+        "latent space",
+        "pretraining"
+      ]
+    },
+    {
+      "title": "The Platonic brain bridge hypothesis: human brain networks as an architectural prior for omni models",
+      "score": 16.0,
+      "url": "https://arxiv.org/abs/2609.10947",
+      "matched": [
+        "hidden states",
+        "sparse autoencoders"
+      ]
+    },
+    {
+      "title": "From Plausible to Actionable: A Position on LLM Self-Explanations",
+      "score": 16.0,
+      "url": "https://arxiv.org/abs/2607.15957",
+      "matched": [
+        "XAI",
+        "explainable",
+        "faithful",
+        "faithfulness",
+        "language models",
+        "large language models",
+        "reasoning"
+      ]
+    },
+    {
+      "title": "Story Imprinting: AI Assistants Absorb Traits from Human Characters They Resemble",
+      "score": 13.0,
+      "url": "https://arxiv.org/abs/2609.10883",
+      "matched": [
+        "internal representation",
+        "language models"
+      ]
+    },
+    {
+      "title": "Arbitrary Cipher Attacks Against Large Language Models Do Not Require Fine-Tuning",
+      "score": 9.0,
+      "url": "https://arxiv.org/abs/2609.09553",
+      "matched": [
+        "alignment",
+        "black-box",
+        "fine-tuning",
+        "in-context learning",
+        "language model",
+        "language models",
+        "large language model",
+        "large language models"
+      ]
+    },
+    {
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "score": 8.3,
+      "url": "https://arxiv.org/abs/2609.11929",
+      "matched": [
+        "fine-tuning",
+        "multimodal"
+      ]
+    },
+    {
+      "title": "Quantifying Logical Consistency in Transformers via Query-Key Alignment",
+      "score": 8.2,
+      "url": "https://arxiv.org/abs/2502.17017",
+      "matched": [
+        "alignment",
+        "attention heads",
+        "chain-of-thought",
+        "language models",
+        "large language models",
+        "reasoning",
+        "transformer",
+        "transformers"
+      ]
+    }
+  ]
+}
