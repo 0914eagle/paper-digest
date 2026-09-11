@@ -44,7 +44,18 @@
         "interpretable feature",
         "latent direction",
         "concept vector",
-        "weight interpretability"
+        "weight interpretability",
+        "training data attribution",
+        "data attribution",
+        "influence function",
+        "influence functions",
+        "datamodel",
+        "datamodels",
+        "tracin",
+        "data shapley",
+        "training data influence",
+        "example attribution",
+        "instance attribution"
       ]
     },
     "tier2_adjacent": {
@@ -87,7 +98,13 @@
         "inductive bias",
         "memorization",
         "attention head",
-        "attention heads"
+        "attention heads",
+        "data valuation",
+        "data influence",
+        "data provenance",
+        "data curation",
+        "training dynamics",
+        "pretraining data"
       ]
     },
     "tier3_llm": {
@@ -170,7 +187,9 @@
       "abs:\"activation steering\" OR abs:\"steering vector\"",
       "abs:\"circuit\" AND abs:\"language model\"",
       "abs:\"probing\" AND abs:\"representation\"",
-      "abs:\"interpretability\" AND abs:\"vision-language\""
+      "abs:\"interpretability\" AND abs:\"vision-language\"",
+      "abs:\"training data attribution\" OR abs:\"data attribution\"",
+      "abs:\"influence function\" AND abs:\"language model\""
     ],
     "targeted_per_query": 15
   },
