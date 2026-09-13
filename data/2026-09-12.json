@@ -1,0 +1,505 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T08:57:04",
+  "stats": {
+    "collected_raw": 1239,
+    "unique": 1174,
+    "already_seen": 464,
+    "hf_target_day": "2026-09-11",
+    "conference_pool": 702,
+    "interest_pool": 0,
+    "total_to_summarize": 19
+  },
+  "classic": {
+    "arxiv_id": "2406.11944",
+    "title": "Transcoders Find Interpretable LLM Feature Circuits",
+    "abstract": "A key goal in mechanistic interpretability is circuit analysis: finding sparse subgraphs of models corresponding to specific behaviors or capabilities. However, MLP sublayers make fine-grained circuit analysis on transformer-based language models difficult. In particular, interpretable features -- such as those found by sparse autoencoders (SAEs) -- are typically linear combinations of extremely many neurons, each with its own nonlinearity to account for. Circuit analysis in this setting thus either yields intractably large circuits or fails to disentangle local and global behavior. To address this we explore transcoders, which seek to faithfully approximate a densely activating MLP layer with a wider, sparsely-activating MLP layer. We introduce a novel method for using transcoders to perform weights-based circuit analysis through MLP sublayers. The resulting circuits neatly factorize into input-dependent and input-invariant terms. We then successfully train transcoders on language models with 120M, 410M, and 1.4B parameters, and find them to perform at least on par with SAEs in terms of sparsity, faithfulness, and human-interpretability. Finally, we apply transcoders to reverse-engineer unknown circuits in the model, and we obtain novel insights regarding the \"greater-than circuit\" in GPT2-small. Our results suggest that transcoders can prove effective in decomposing model computations involving MLPs into interpretable circuits. Code is available at https://github.com/jacobdunefsky/transcoder_circuits/.",
+    "year": 2024,
+    "authors": [
+      "Jacob Dunefsky",
+      "Philippe Chlenski",
+      "Neel Nanda"
+    ],
+    "url": "https://arxiv.org/abs/2406.11944",
+    "relevance": 115.9,
+    "core_matched": [
+      "SAEs",
+      "mechanistic interpretability",
+      "sparse autoencoders",
+      "transcoder"
+    ],
+    "citations": 210,
+    "venue": "Neural Information Processing Systems"
+  },
+  "hf_daily": [
+    {
+      "title": "X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation",
+      "abstract": "Reducing audio-encoder depth lowers the inference cost of speech large language models, but removing complete blocks perturbs the embeddings consumed by the decoder and can cause deletion and premature end-of-sequence errors. We introduce X-AuT, a progressive framework that selects layer combinations through short behavioral probes and restores the pruned model through representation alignment, cross-scale distillation, scheduled student-policy supervision, and LoRA finetuning. The language-model backbone remains frozen, while attention LoRA adapters and the tied output embedding adapt during distillation. Training uses the highest-agreement tier from a transcript-consistency pipeline, followed by source reweighting during finetuning. On ten public Chinese--English benchmarks, compressing Qwen3-ASR-0.6B from 18 to 16 audio-encoder layers reduces macro-average error from 5.61% to 5.27%. The 14-layer model reaches 5.75% with 20.7% fewer audio-tower parameters. Under the matched recipe, the 1.7B teacher yields 5.55% mean error, compared with 8.45% for self-distillation, and progressive 18rightarrow14 pruning outperforms direct pruning (5.75% vs. 6.73%). These single-run results establish two practical operating points and show that the accuracy effects vary across benchmarks. Project website: https://xpeng-ai.github.io/x-aut",
+      "authors": [
+        "Haojun Zhang",
+        "Yi Zou",
+        "Min Chen",
+        "Qize Yu",
+        "Lianrui Fan",
+        "Xini Ding",
+        "Hao Li",
+        "Shuchang Zhou"
+      ],
+      "arxiv_id": "2609.11412",
+      "url": "https://arxiv.org/abs/2609.11412",
+      "hf_upvotes": 13,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.11412",
+      "score": 5.0,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "language model",
+        "language models",
+        "large language models"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
+      "abstract": "Mainstream robotic policies often adopt a Markovian formulation, but many complex real-world manipulation tasks are inherently non-Markovian, requiring long-horizon memory beyond the current observation. Existing memory mechanisms often rely on language summaries, growing visual windows, or their combinations, and may therefore lose fine-grained visual evidence or face a trade-off between history coverage and execution efficiency. We introduce MaP-WAM, a Memory-as-Plans framework that decomposes memory-dependent world-action modeling into memory-grounded planning and plan-conditioned execution, and uses long-term multimodal episodic context as planning-time evidence rather than repeatedly conditioning the executor on the full history. MaP-WAM represents memory as completed segment records containing language instructions and sparse visual context, and converts this episodic memory into compact plans comprising the next segment-level language plan and corresponding visual guidance. A World-Action-Progress (WAP) model executes each plan over an unknown duration by jointly predicting action chunks and corresponding execution progress at inference time, calibrating predicted progress through plan-observation alignment for adaptive segment transitions and closed-loop context updates. MaP-WAM keeps the executor context length fixed, while structured attention further enables key-value caching in both planning and execution. MaP-WAM achieves state-of-the-art performance on RMBench with an 83.3% success rate and attains 78.0% success on real-robot tasks, while maintaining approximately constant executor inference latency as task history grows.",
+      "authors": [
+        "Sizhe Zhao",
+        "Haozhe Xie",
+        "Weiyu Zhao",
+        "Chenchu Zhang",
+        "Huan Wang",
+        "Chenyang Wang",
+        "Qinglin Liu",
+        "Shengping Zhang"
+      ],
+      "arxiv_id": "2609.11561",
+      "url": "https://arxiv.org/abs/2609.11561",
+      "hf_upvotes": 9,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.11561",
+      "score": 2.6,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "multimodal"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "TempCloze: Can Video-LLMs Identify the Missing Middle?",
+      "abstract": "Temporal reasoning benchmarks for Video-LLMs are often mediated by language, leaving room for linguistic shortcuts from option wording, answer correlations, or language priors. To reduce such shortcuts, we introduce TempCloze, a video cloze benchmark for evaluating visual temporal reasoning in Video-LLMs. Given the beginning and ending clips of a video, models must identify the true missing middle from four candidates. TempCloze contains 1,521 carefully filtered videos from seven sources, mainly long-take and egocentric videos. We construct same-source distractors along three dimensions: Semantic asks what event should happen, Alignment probes when it should occur, and Progression tests how it should unfold, while shared scenes and objects reduce appearance cues. Our evaluation of 10 proprietary and 21 open-source Video-LLMs reveals Alignment as the primary bottleneck: models often recognize plausible semantic content and local event progression but struggle with temporal alignment. We further conduct error pattern and behavioral sensitivity analyses on TempCloze-Mixed and TempCloze-Hard with four representative models to examine where errors arise and how candidate order, context direction, visible span, frame density, and test-time scaling influence model choices.",
+      "authors": [
+        "Wenqi Pei",
+        "Henry Hengyuan Zhao",
+        "Yilai Liu",
+        "Jiahao Meng",
+        "Han Chen",
+        "Ziyu Wang",
+        "Hongyang Du"
+      ],
+      "arxiv_id": "2609.01515",
+      "url": "https://arxiv.org/abs/2609.01515",
+      "hf_upvotes": 6,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.01515",
+      "score": 2.4,
+      "core_score": 0.0,
+      "matched": [
+        "alignment",
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "DRG-MAPPO: Hierarchical Dynamic Role-Graph Multi-Agent Reinforcement Learning for Cooperative Air Combat",
+      "abstract": "Multi-Agent Reinforcement Learning (MARL) has emerged as a pivotal paradigm for complex decision-making in autonomous systems and air combat. While MARL has demonstrated significant potential in air combat, achieving sophisticated tactical coordination remains a non-trivial challenge. This difficulty is largely attributed to two primary limitations: (1) the absence of structured relational modeling hinders agents from capturing complex, time-varying interactions among battlefield entities; and (2) conventional flat architectures often lack the capability to explicitly model tactical roles, leading to ambiguous task allocation in highly dynamic environments. To address these challenges, we propose Hierarchical Dynamic Role-Graph Multi-Agent Proximal Policy Optimization (DRG-MAPPO), a novel MARL framework that integrates graph-based relational modeling with dynamic role assignment. Specifically, DRG-MAPPO constructs a graph-based representation of battlefield interactions and leverages graph attention mechanisms to extract critical relational features among allies, enemies, and threats. Subsequently, a high-level policy employs a dynamic role assignment mechanism to determine tactical responsibilities (e.g., ``leader'' and ``supporter''). Conditioned on these roles and encoded graph-relational features, a low-level policy executes discrete maneuver actions, facilitating the joint optimization of tactical strategy and collaborative execution. Furthermore, a target-priority auxiliary task is designed to foster the emergence of behaviors such as focus-fire. Experimental results demonstrate that DRG-MAPPO achieves a state-of-the-art win rate of 87%, suggesting that our framework effectively balances relational modeling, interpretability, and optimization stability for cooperative air combat.",
+      "authors": [
+        "Junlin Liu",
+        "Chengwei Li",
+        "Yang Gao",
+        "Hui Chang",
+        "Xinchen Zhang",
+        "Zhijun Zhao",
+        "Hao Zhao"
+      ],
+      "arxiv_id": "2609.11155",
+      "url": "https://arxiv.org/abs/2609.11155",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.11155",
+      "score": 1.8,
+      "core_score": 0.0,
+      "matched": [
+        "interpretability"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+      "abstract": "Late-interaction retrieval is the state-of-the-art for visual document search, but it pays for its accuracy in storage. Existing compression methods retain a subset or local average of the N~1,000 vectors per page. Under aggressive storage budgets, however, these methods degrade sharply, and alternatives require retraining the encoder. Investigating this degradation across three encoders, we found two consistent properties: the vectors lie exactly on the unit sphere and concentrate near a manifold of intrinsic dimension five to six. This geometry yields two insights. First, standard k-means centroids fall inside the sphere, causing systematic underestimation of MaxSim scores. Normalizing them to the surface is a free correction worth up to +0.093 nDCG@5 over raw centroids. Second, because the page manifold has few degrees of freedom, the full set of vectors can be regenerated from only a few. To this end, we introduce Generative Late-Interaction Embeddings (GLIE): k << N vectors per page learned from the normalized centroids to serve as both a lightweight index and a basis for regenerating the page's full embedding set. At query time, search runs exclusively on these k vectors, and a decoder expands only the top candidates back to all N vectors for exact rescoring. At four vectors per page on ViDoRe v1, GLIE retains nearly 80% of the uncompressed system's nDCG@5, against 70% for the best prior post-hoc method. These results use a 415K-parameter network fitted in under three GPU-minutes on just a thousand training pages. At a matched training budget, fine-tuning the encoder does not reach even the training-free stage of GLIE, and the full system beats it at every budget. These patterns hold across a second encoder and ViDoRe v2. By reconstructing evidence on demand rather than sampling it, GLIE opens a new axis for storage-efficient retrieval, with the decoder as its main design surface.",
+      "authors": [
+        "Mohamed Eltahir",
+        "Talal Aloushan",
+        "Rose Khairoalsendi",
+        "Jana Shata",
+        "Mohammed Alhassan",
+        "Leen Alrehaili",
+        "Tanveer Hussain",
+        "Naeemullah Khan"
+      ],
+      "arxiv_id": "2609.11808",
+      "url": "https://arxiv.org/abs/2609.11808",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.11808",
+      "score": 1.1,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning",
+      "abstract": "Reasoning language models have made substantial advances on a variety of complex tasks, yet their capabilities remain overwhelmingly English-centric: models primarily reason in English regardless of the language they are prompted in. This is inaccessible for non-English-speaking users, risks losing the intent of the original question, and forgoes knowledge more readily expressed in the target language. In this work, we advance L2 reasoning, the ability of a model to reason consistently in the language of the user's prompt, thus building an in-language bridge between the prompt and the answer. We approach this problem from a data-centric angle, investigating how to optimize data composition and scheduling in SFT for reasoning generalization. Building Tiny Aya L2-Thinker at 3.35B scale, we achieve an L2 reasoning rate above 93% across 60 languages on 6 benchmarks spanning math, commonsense reasoning, instruction following, open-ended generation, and cultural reasoning while keeping performance strong. We show the path to generalizing L2 reasoning to held-out languages goes through broader language coverage, readily available multilingual non-reasoning data, and a sufficient English reasoning backbone. These findings indicate that reasoning is a language-agnostic behavior that can be transferred across typologically diverse languages through careful data mixing and without requiring reasoning supervision in every target language. We release our model weights and multilingual reasoning data to support further research on accessible, in-language reasoning.",
+      "authors": [
+        "Mehrnaz Mofakhami",
+        "Ananya Sahu",
+        "Alejandro R. Salamanca",
+        "Daniel D&#39;souza",
+        "Alexandre Berard",
+        "Thomas Euyang",
+        "Marzieh Fadaee",
+        "Julia Kreutzer"
+      ],
+      "arxiv_id": "2609.10445",
+      "url": "https://arxiv.org/abs/2609.10445",
+      "hf_upvotes": 2,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10445",
+      "score": 2.5,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "reasoning"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2",
+      "abstract": "In systems built on Robot Operating System 2 (ROS 2) and using Data Distribution Service (DDS), a single network-impaired or throttled subscriber on a RELIABLE topic can cause backpressure that degrades throughput and latency for all other subscribers, including safety-critical ones sharing the publisher, because the publisher's DDS writer can no longer accept new samples. We present Adaptive Bridge, a proxy-based layer that decouples critical subscribers from degraded or noncritical ones, thereby isolating the critical path through topic splitting and dynamic rate control. The proxy acts as a middleman and subscribes to the original topic and republishes the messages to two independent DDS writers: one RELIABLE writer for critical nodes and one BEST EFFORT writer for noncritical or degraded nodes, thus isolating the degraded nodes and safeguarding the publisher and critical nodes from backpressure. A probe-based classifier actively monitors subscriber health through sampling with hysteresis and adjusts subscriber rate limits in real time. We evaluate the system under a Gilbert-Elliott bursty wireless loss model using a reproducible Docker-based harness. The results show that using the Adaptive Bridge in our evaluation harness reduces the critical subscriber tail p95 latency from up to 15 s to 1.55 ms across all impairment severities while preserving the publisher's configured throughput.",
+      "authors": [
+        "Kaushalraj Puwar",
+        "B. Thangaraju"
+      ],
+      "arxiv_id": "2608.15380",
+      "url": "https://arxiv.org/abs/2608.15380",
+      "hf_upvotes": 1,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2608.15380",
+      "score": 1.6,
+      "core_score": 0.0,
+      "matched": [
+        "probe"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+      "abstract": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method specifications, defined by whether they provide sufficient methodological information for a competent implementer or coding agent to construct the intended method without unsupported assumptions. We construct evidence-grounded specifications and their supported resolutions from papers, codebases, issue threads, and reproduction artifacts. We introduce IdeaAMBIG, a benchmark of 660 evidence-grounded instances: 163 real-world gaps from reproducibility reports and GitHub issues, and 497 controlled synthetic gaps injected into codification-ready references. IdeaAMBIG evaluates three capabilities: codification-readiness assessment, defect localization, and clarification action generation. Defect localization receives only the specification, whereas clarification additionally receives the annotated defect. Across 13 LLMs, the best model achieves 9.6% Macro Defect Recovery Rate on real-world instances but 80.6% Macro Clarification Action Success Rate when given the defect. In an oracle study, supplying the gold resolution raises the downstream codification-ready rate from 14% to 98%. Across all evaluated models, defect localization is the main bottleneck, with stronger clarification given the defect.",
+      "authors": [
+        "Yiling Ma",
+        "Yilun Zhao",
+        "Sihong Wu",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "arxiv_id": "2609.10539",
+      "url": "https://arxiv.org/abs/2609.10539",
+      "hf_upvotes": 0,
+      "hf_date": "2026-09-11",
+      "source": "hf_daily",
+      "venue": null,
+      "year": null,
+      "key": "2609.10539",
+      "score": 1.5,
+      "core_score": 0.0,
+      "matched": [
+        "faithful"
+      ],
+      "core_matched": []
+    }
+  ],
+  "conference": [
+    {
+      "title": "Rethinking Data Shapley for Data Selection Tasks: Misleads and Merits",
+      "abstract": "Data Shapley provides a principled approach to data valuation and plays a crucial role in data-centric machine learning (ML) research. Data selection is considered a standard application of Data Shapley. However, its data selection performance has shown to be inconsistent across settings in the literature. This study aims to deepen our understanding of this phenomenon. We introduce a hypothesis testing framework and show that Data Shapley's performance can be no better than random selection without specific constraints on utility functions. We identify a class of utility functions, monotonically transformed modular functions, within which Data Shapley optimally selects data. Based on this insight, we propose a heuristic for predicting Data Shapley’s effectiveness in data selection tasks. Our experiments corroborate these findings, adding new insights into when Data Shapley may or may not succeed.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35471",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "rethinkingdatashapleyfordataselectiontasksmisleadsandmerits",
+      "score": 26.0,
+      "core_score": 20.0,
+      "matched": [
+        "data shapley",
+        "data valuation"
+      ],
+      "core_matched": [
+        "data shapley"
+      ]
+    },
+    {
+      "title": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "abstract": "The trustworthiness of Large Language Models (LLMs) refers to the extent to which their outputs are reliable, safe, and ethically aligned, and it has become a crucial consideration alongside their cognitive performance. In practice, Reinforcement Learning From Human Feedback (RLHF) has been widely used to align LLMs with labeled human preferences, but its assumed effect on model trustworthiness hasn't been rigorously evaluated. To bridge this knowledge gap, this study investigates how models aligned with general-purpose preference data perform across five trustworthiness verticals: toxicity, stereotypical bias, machine ethics, truthfulness, and privacy. Our results demonstrate that RLHF on human preferences doesn't automatically guarantee trustworthiness, and reverse effects are often observed. Furthermore, we propose to adapt efficient influence function based data attribution methods to the RLHF setting to better understand the influence of fine-tuning data on individual trustworthiness benchmarks, and show its feasibility by providing our estimated attribution scores. Together, our results underscore the need for more nuanced approaches for model alignment from both the data and framework perspectives, and we hope this research will guide the community towards developing language models that are increasingly capable without sacrificing trustworthiness.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31884",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "morerlhfmoretrustontheimpactofpreferencealignmentontrustworthiness",
+      "score": 47.0,
+      "core_score": 20.0,
+      "matched": [
+        "alignment",
+        "attribution",
+        "data attribution",
+        "fine-tuning",
+        "influence function",
+        "language models",
+        "large language models",
+        "rlhf"
+      ],
+      "core_matched": [
+        "data attribution",
+        "influence function"
+      ]
+    },
+    {
+      "title": "Probabilistic Learning to Defer: Handling Missing Expert Annotations and Controlling Workload Distribution",
+      "abstract": "Recent progress in machine learning research is gradually shifting its focus towards *human-AI cooperation* due to the advantages of exploiting the reliability of human experts and the efficiency of AI models. One of the promising approaches in human-AI cooperation is *learning to defer* (L2D), where the system analyses the input data and decides to make its own decision or defer to human experts. Although L2D has demonstrated state-of-the-art performance, in its standard setting, L2D entails a severe limitation: all human experts must annotate the whole training dataset of interest, resulting in a time-consuming and expensive annotation process that can subsequently influence the size and diversity of the training set. Moreover, the current L2D does not have a principled way to control workload distribution among human experts and the AI classifier, which is critical to optimise resource allocation. We, therefore, propose a new probabilistic modelling approach inspired by the mixture-of-experts, where the Expectation - Maximisation algorithm is leverage to address the issue of missing expert's annotations. Furthermore, we introduce a constraint, which can be solved efficiently during the E-step, to control the workload distribution among human experts and the AI classifier. Empirical evaluation on synthetic and real-world datasets shows that our proposed probabilistic approach performs competitively, or surpasses previously proposed methods assessed on the same benchmarks.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31728",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "probabilisticlearningtodeferhandlingmissingexpertannotationsandcontrollingworkloaddistribu",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Capturing the Temporal Dependence of Training Data Influence",
+      "abstract": "Traditional data influence estimation methods, like influence function, assume that learning algorithms are permutation-invariant with respect to training data. However, modern training paradigms—especially for foundation models using stochastic algorithms and non-convergent, multi-stage curricula—are sensitive to data ordering, thus violating this assumption. This mismatch renders influence functions inadequate for answering some critical questions in current machine learning: How can we differentiate the influence of the same data contributing at different stages of training? More generally, how can we capture the dependence of data influence on the optimization trajectory during training? To address this gap, we formalize the concept of \\emph{trajectory-specific leave-one-out (LOO) influence}, which quantifies the impact of removing a data point from a specific iteration during training, accounting for the exact sequence of data encountered and the model's optimization trajectory. However, exactly evaluating the trajectory-specific LOO presents a significant computational challenge. To address this, we propose \\emph{data value embedding}, a novel technique enabling efficient approximation of trajectory-specific LOO. Specifically, we compute a training data embedding that encapsulates the cumulative interactions between data and the evolving model parameters. The LOO can then be efficiently approximated through a simple dot-product between the data value embedding and the gradient of the given test data. As data value embedding captures training data ordering, it offers valuable insights into model training dynamics. In particular, we uncover distinct phases of data influence, revealing that data points in the early and late stages of training exert a greater impact on the final model. These insights translate into actionable strategies for managing the computational overhead of data selection by strategically timing the selection process, potentially opening new avenues in data curation research.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31746",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "capturingthetemporaldependenceoftrainingdatainfluence",
+      "score": 92.0,
+      "core_score": 40.0,
+      "matched": [
+        "data curation",
+        "data influence",
+        "influence function",
+        "influence functions",
+        "training data influence",
+        "training dynamics"
+      ],
+      "core_matched": [
+        "influence function",
+        "influence functions",
+        "training data influence"
+      ]
+    },
+    {
+      "title": "Influence Functions for Scalable Data Attribution in Diffusion Models",
+      "abstract": "Diffusion models have led to significant advancements in generative modelling. Yet their widespread adoption poses challenges regarding data attribution and interpretability. In this paper, we aim to help address such challenges in diffusion models by extending influence functions. Influence function-based data attribution methods approximate how a model's output would have changed if some training data were removed. In supervised learning, this is usually used for predicting how the loss on a particular example would change. For diffusion models, we focus on predicting the change in the probability of generating a particular example via several proxy measurements. We show how to formulate influence functions for such quantities and how previously proposed methods can be interpreted as particular design choices in our framework. To ensure scalability of the Hessian computations in influence functions, we use a K-FAC approximation based on generalised Gauss-Newton matrices specifically tailored to diffusion models. We show that our recommended method outperforms previously proposed data attribution methods on common data attribution evaluations, such as the Linear Data-modelling Score (LDS) or retraining without top influences, without the need for method-specific hyperparameter tuning.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31807",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "influencefunctionsforscalabledataattributionindiffusionmodels",
+      "score": 103.0,
+      "core_score": 50.0,
+      "matched": [
+        "attribution",
+        "data attribution",
+        "influence function",
+        "influence functions",
+        "interpretability"
+      ],
+      "core_matched": [
+        "data attribution",
+        "influence function",
+        "influence functions"
+      ]
+    },
+    {
+      "title": "Privacy Auditing with One (1) Training Run",
+      "abstract": "We propose a scheme for auditing differentially private machine learning systems with a single training run. This exploits the parallelism of being able to add or remove multiple training examples independently. We analyze this using the connection between differential privacy and statistical generalization, which avoids the cost of group privacy. Our auditing scheme requires minimal assumptions about the algorithm and can be applied in the black-box or white-box setting. We demonstrate the effectiveness of our framework by applying it to DP-SGD, where we can achieve meaningful empirical privacy lower bounds by training only one model. In contrast, standard methods would require training hundreds of models.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://neurips.cc/virtual/2023/oral/73837",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "NEURIPS 2023",
+      "presentation": "oral",
+      "year": "2023",
+      "_is_conf": true,
+      "key": "privacyauditingwithone1trainingrun",
+      "score": 3.0,
+      "core_score": 0.0,
+      "matched": [
+        "black-box",
+        "white-box"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Data Shapley in One Training Run",
+      "abstract": "Data Shapley offers a principled framework for attributing the contribution of data within machine learning contexts. However, the traditional notion of Data Shapley requires re-training models on various data subsets, which becomes computationally infeasible for large-scale models. Additionally, this retraining-based definition cannot evaluate the contribution of data for a specific model training run, which may often be of interest in practice. This paper introduces a novel concept, In-Run Data Shapley, which eliminates the need for model retraining and is specifically designed for assessing data contribution for a particular model of interest. In-Run Data Shapley calculates the Shapley value for each gradient update iteration and accumulates these values throughout the training process. We present several techniques that allow the efficient scaling of In-Run Data Shapley to the size of foundation models. In its most optimized implementation, our method adds negligible runtime overhead compared to standard model training. This dramatic efficiency improvement makes it possible to perform data attribution for the foundation model pretraining stage. We present several case studies that offer fresh insights into pretraining data's contribution and discuss their implications for copyright in generative AI and pretraining data curation.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31879",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "datashapleyinonetrainingrun",
+      "score": 61.5,
+      "core_score": 30.0,
+      "matched": [
+        "attribution",
+        "data attribution",
+        "data curation",
+        "data shapley",
+        "pretraining",
+        "pretraining data"
+      ],
+      "core_matched": [
+        "data attribution",
+        "data shapley"
+      ]
+    },
+    {
+      "title": "SK-VQA: Synthetic Knowledge Generation at Scale for Training Context-Augmented Multimodal LLMs",
+      "abstract": "Multimodal retrieval-augmented generation (RAG) plays a crucial role in domains such as knowledge-based visual question answering (KB-VQA), where models should effectively integrate additional knowledge to generate a response. However, existing vision and language models (VLMs) are not inherently designed for context-augmented generation, limiting their effectiveness in such tasks. While synthetic data generation has recently gained attention for training large VLMs, its application for context-augmented generation remains underexplored. To address this gap, we introduce SKVQA, a large-scale synthetic multimodal dataset containing over 2 million visual question-answer pairs, each associated with external knowledge sources to determine the final answer. Compared to previous datasets, SKVQA exhibits 11× more unique questions, greater domain diversity, and a broader spectrum of image sources. Through human evaluations, we confirm the high quality of the generated question-answer pairs and their contextual relevance. Extensive experiments show that SKVQA serves both as a challenging benchmark for knowledge-based VQA and as an effective training resource for adapting generative multimodal models to context-augmented generation. Our results further indicate that models trained on SKVQA demonstrate enhanced generalization in both context-aware VQA and multimodal RAG settings.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2025/oral/47247",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "skvqasyntheticknowledgegenerationatscalefortrainingcontextaugmentedmultimodalllms",
+      "score": 1.8,
+      "core_score": 0.0,
+      "matched": [
+        "language models",
+        "multimodal"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Outlier Gradient Analysis: Efficiently Identifying Detrimental Training Samples for Deep Learning Models",
+      "abstract": "A core data-centric learning challenge is the identification of training samples that are detrimental to model performance. Influence functions serve as a prominent tool for this task and offer a robust framework for assessing training data influence on model predictions. Despite their widespread use, their high computational cost associated with calculating the inverse of the Hessian matrix pose constraints, particularly when analyzing large-sized deep models. In this paper, we establish a bridge between identifying detrimental training samples via influence functions and outlier gradient detection. This transformation not only presents a straightforward and Hessian-free formulation but also provides insights into the role of the gradient in sample impact. Through systematic empirical evaluations, we first validate the hypothesis of our proposed outlier gradient analysis approach on synthetic datasets. We then demonstrate its effectiveness in detecting mislabeled samples in vision models and selecting data samples for improving performance of natural language processing transformer models. We also extend its use to influential sample identification for fine-tuning Large Language Models.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2025/oral/47177",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "outliergradientanalysisefficientlyidentifyingdetrimentaltrainingsamplesfordeeplearningmode",
+      "score": 45.0,
+      "core_score": 20.0,
+      "matched": [
+        "data influence",
+        "fine-tuning",
+        "influence functions",
+        "language models",
+        "large language models",
+        "training data influence",
+        "transformer"
+      ],
+      "core_matched": [
+        "influence functions",
+        "training data influence"
+      ]
+    },
+    {
+      "title": "Second-Order Min-Max Optimization with Lazy Hessians",
+      "abstract": "This paper studies second-order methods for convex-concave minimax optimization. Monteiro & Svaiter (2012) proposed a method to solve the problem with an optimal iteration complexity of $\\mathcal{O}(\\epsilon^{-3/2})$ to find an $\\epsilon$-saddle point. However, it is unclear whether thecomputational complexity, $\\mathcal{O}((N+ d^2) d \\epsilon^{-2/3})$, can be improved. In the above, we follow Doikov et al. (2023) and assume the complexity of obtaining a first-order oracle as $N$ and the complexity of obtaining a second-order oracle as $dN$. In this paper, we show that the computation cost can be reduced by reusing Hessian across iterations. Our methods take the overall computational complexity of $\\tilde{\\mathcal{O}}( (N+d^2)(d+ d^{2/3}\\epsilon^{-2/3}))$, which improves those of previous methods by a factor of $d^{1/3}$. Furthermore, we generalize our method to strongly-convex-strongly-concave minimax problems and establish the complexity of $\\tilde{\\mathcal{O}}((N+d^2) (d + d^{2/3} \\kappa^{2/3}) )$ when the condition number of the problem is $\\kappa$, enjoying a similar speedup upon the state-of-the-art method. Numerical experiments on both real and synthetic datasets also verify the efficiency of our method.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31795",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "secondorderminmaxoptimizationwithlazyhessians",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    }
+  ],
+  "interest": [],
+  "conference_dive": [],
+  "also_ran": []
+}

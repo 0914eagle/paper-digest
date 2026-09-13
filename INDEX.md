@@ -1,4 +1,5 @@
 # 논문 다이제스트 인덱스
+- [2026-09-13](digest/2026-09-13.md) — 요약 11편 · 오늘의 한 편: The Geometry of Categorical and Hierarchical Concepts in Large Language Models
 - [2026-09-11](digest/2026-09-11.md) — 요약 27편 · 오늘의 한 편: Legible Failures: Detecting and Repairing In-Context Binding Errors
 - [2026-09-10](digest/2026-09-10.md) — 요약 53편 · 오늘의 한 편: LLM Layers Immediately Correct Each Other
 - [2026-09-09](digest/2026-09-09.md) — 요약 4편 · 오늘의 한 편: Steering Language Model Refusal with Sparse Autoencoders

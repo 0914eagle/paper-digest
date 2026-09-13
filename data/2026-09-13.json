@@ -1,0 +1,280 @@
+{
+  "date": "2026-09-13",
+  "generated_at": "2026-09-13T23:00:48",
+  "stats": {
+    "collected_raw": 712,
+    "unique": 712,
+    "already_seen": 20,
+    "hf_target_day": "2026-09-12",
+    "conference_pool": 692,
+    "interest_pool": 0,
+    "total_to_summarize": 11
+  },
+  "classic": {
+    "arxiv_id": "2308.14179",
+    "title": "Towards Vision-Language Mechanistic Interpretability: A Causal Tracing Tool for BLIP",
+    "abstract": "Mechanistic interpretability seeks to understand the neural mechanisms that enable specific behaviors in Large Language Models (LLMs) by leveraging causality-based methods. While these approaches have identified neural circuits that copy spans of text, capture factual knowledge, and more, they remain unusable for multimodal models since adapting these tools to the vision-language domain requires considerable architectural changes. In this work, we adapt a unimodal causal tracing tool to BLIP to enable the study of the neural mechanisms underlying image-conditioned text generation. We demonstrate our approach on a visual question answering dataset, highlighting the causal relevance of later layer representations for all tokens. Furthermore, we release our BLIP causal tracing tool as open source to enable further experimentation in vision-language mechanistic interpretability by the community. Our code is available at https://github.com/vedantpalit/Towards-Vision-Language-Mechanistic-Interpretability.",
+    "year": 2023,
+    "authors": [
+      "Vedant Palit",
+      "Rohan Pandey",
+      "Aryaman Arora",
+      "Paul Pu Liang"
+    ],
+    "url": "https://arxiv.org/abs/2308.14179",
+    "relevance": 94.0,
+    "core_matched": [
+      "causal tracing",
+      "mechanistic interpretability"
+    ],
+    "citations": 70,
+    "venue": "2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)"
+  },
+  "hf_daily": [],
+  "conference": [
+    {
+      "title": "I/O Complexity of Attention, or How Optimal is FlashAttention?",
+      "abstract": "Attention is at the heart of the popular Transformer architecture, yet suffers from quadratic time and memory complexity. In a recent significant development, FlashAttention shows that the I/O complexity of attention is the true bottleneck in scaling Transformers. Given two levels of memory hierarchy, a fast cache (e.g. GPU on-chip SRAM) where computation happens and a slow memory (e.g. GPU high-bandwidth memory) where the data resides, the I/O complexity measures the number of accesses to the slow memory. FlashAttention is an I/O-aware algorithm for self-attention that requires $\\frac{N^2d^2}{M}$ I/O operations where $N$ is the dimension of the attention matrix, $d$ is the head-dimension and $M$ is the size of cache. Naturally, to further reduce the computational costs of Attention, the authors ask the question: is FlashAttention's I/O complexity optimal for every value of $M$? We resolve the above question in its full generality by showing an I/O complexity lower bound that matches the upper bound provided by FlashAttention for any values of $M \\geq d^2$ within any constant factors. Moreover, our lower bounds do not rely on using combinatorial matrix multiplication for computing the attention matrix: even if one uses fast matrix multiplication, the above I/O complexity bounds cannot be improved. Further, we give a better algorithm with lower I/O complexity for $M < d^2$, and show that it is optimal for combinatorial algorithms. We do so by introducing a new communication complexity protocol for matrix compression, and connecting communication complexity to I/O complexity. We believe this connection could be of independent interest and will find more applications in proving I/O complexity lower bounds in future.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35531",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "iocomplexityofattentionorhowoptimalisflashattention",
+      "score": 1.5,
+      "core_score": 0.0,
+      "matched": [
+        "transformer",
+        "transformers"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "Wide Neural Networks Trained with Weight Decay Provably Exhibit Neural Collapse",
+      "abstract": "Deep neural networks (DNNs) at convergence consistently represent the training data in the last layer via a geometric structure referred to as neural collapse. This empirical evidence has spurred a line of theoretical research aimed at proving the emergence of neural collapse, mostly focusing on the unconstrained features model. Here, the features of the penultimate layer are free variables, which makes the model data-agnostic and puts into question its ability to capture DNN training. Our work addresses the issue, moving away from unconstrained features and studying DNNs that end with at least two linear layers. We first prove generic guarantees on neural collapse that assume \\emph{(i)} low training error and balancedness of linear layers (for within-class variability collapse), and \\emph{(ii)} bounded conditioning of the features before the linear part (for orthogonality of class-means, and their alignment with weight matrices). The balancedness refers to the fact that $W_{\\ell+1}^\\top W_{\\ell+1}\\approx W_\\ell W_\\ell ^\\top$ for any pair ofconsecutive weight matricesof the linear part, and the bounded conditioning requires a well-behaved ratio between largest and smallest non-zero singular values of the features. We then show that such assumptions hold for gradient descent training with weight decay: \\emph{(i)} for networks with a wide first layer, we prove low training error and balancedness, and \\emph{(ii)} for solutions that are either nearly optimal or stable under large learning rates, we additionally prove the bounded conditioning. Taken together, our results are the first to show neural collapse in the end-to-end training of DNNs.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31931",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "wideneuralnetworkstrainedwithweightdecayprovablyexhibitneuralcollapse",
+      "score": 0.8,
+      "core_score": 0.0,
+      "matched": [
+        "alignment"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "GIC: Gaussian-Informed Continuum for Physical Property Identification and Simulation",
+      "abstract": "This paper studies the problem of estimating physical properties (system identification) through visual observations. To facilitate geometry-aware guidance in physical property estimation, we introduce a novel hybrid framework that leverages 3D Gaussian representation to not only capture explicit shapes but also enable the simulated continuum to render object masks as 2D shape surrogates during training. We propose a new dynamic 3D Gaussian framework based on motion factorization to recover the object as 3D Gaussian point sets across different time states. Furthermore, we develop a coarse-to-fine filling strategy to generate the density fields of the object from the Gaussian reconstruction, allowing for the extraction of object continuums along with their surfaces and the integration of Gaussian attributes into these continuum. In addition to the extracted object surfaces, the Gaussian-informed continuum also enables the rendering of object masks during simulations, serving as 2D-shape guidance for physical property estimation. Extensive experimental evaluations demonstrate that our pipeline achieves state-of-the-art performance across multiple benchmarks and metrics. Additionally, we illustrate the effectiveness of the proposed method through real-world demonstrations, showcasing its practical utility. Our project page is at https://jukgei.github.io/project/gic.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://neurips.cc/virtual/2024/oral/97976",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "NEURIPS 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "gicgaussianinformedcontinuumforphysicalpropertyidentificationandsimulation",
+      "score": 0.0,
+      "core_score": 0.0,
+      "matched": [],
+      "core_matched": []
+    },
+    {
+      "title": "Candidate Pseudolabel Learning: Enhancing Vision-Language Models by Prompt Tuning with Unlabeled Data",
+      "abstract": "Fine-tuning vision-language models (VLMs) with abundant unlabeled data recently has attracted increasing attention. Existing methods that resort to the pseudolabeling strategy would suffer from heavily incorrect hard pseudolabels when VLMs exhibit low zero-shot performance in downstream tasks. To alleviate this issue, we propose a **C**andidate **P**seudolabel **L**earning method, termed **CPL**, to fine-tune VLMs with suitable candidate pseudolabels of unlabeled data in downstream tasks. The core of our method lies in the generation strategy of candidate pseudolabels, which progressively generates refined candidate pseudolabels by both intra- and inter-instance label selection, based on a confidence score matrix for all unlabeled data. This strategy can result in better performance in true label inclusion and class-balanced instance selection. In this way, we can directly apply existing loss functions to learn with generated candidate psueudolabels. Extensive experiments on nine benchmark datasets with three learning paradigms demonstrate the effectiveness of our method. Our code can be found here.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35456",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "candidatepseudolabellearningenhancingvisionlanguagemodelsbyprompttuningwithunlabeleddata",
+      "score": 4.2,
+      "core_score": 0.0,
+      "matched": [
+        "fine-tuning",
+        "language models",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": []
+    },
+    {
+      "title": "ViP: A Differentially Private Foundation Model for Computer Vision",
+      "abstract": "Artificial intelligence (AI) has seen a tremendous surge in capabilities thanks to the use of foundation models trained on internet-scale data. On the flip side, the uncurated nature of internet-scale data also poses significant privacy and legal risks, as they often contain personal information or copyrighted material that should not be trained on without permission. In this work, we propose as a mitigation measure a recipe to train foundation vision models via self-supervised learning with differential privacy (DP) guarantee. We identify masked autoencoders as a suitable learning algorithm that aligns well with DP-SGD, and train *ViP*---a **Vi**sion transformer with differential **P**rivacy---under a strict privacy budget of $\\epsilon=8$ on the LAION400M dataset. We evaluate the quality of representation learned by ViP using standard downstream vision tasks; in particular, ViP achieves a (non-private) linear probing accuracy of 55.7% on ImageNet, comparable to that of end-to-end trained AlexNet (trained and evaluated on ImageNet). Our result suggests that scaling to internet-scale data can be practical for private learning. Code and DP pre-trained models are available at https://github.com/facebookresearch/ViP-MAE.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://icml.cc/virtual/2024/oral/35567",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICML 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "vipadifferentiallyprivatefoundationmodelforcomputervision",
+      "score": 19.0,
+      "core_score": 10.0,
+      "matched": [
+        "linear probing",
+        "probing",
+        "transformer"
+      ],
+      "core_matched": [
+        "linear probing"
+      ]
+    },
+    {
+      "title": "MIND over Body: Adaptive Thinking using Dynamic Computation",
+      "abstract": "While the human brain efficiently handles various computations with a limited number of neurons, traditional deep learning networks require a significant increase in parameters to improve performance. Yet, these parameters are used inefficiently as the networks employ the same amount of computation for inputs of the same size, regardless of the input's complexity. We address this inefficiency by introducing self-introspection capabilities to the network, enabling it to adjust the number of used parameters based on the internal representation of the task and adapt the computation time based on the task complexity. This enables the network to adaptively reuse parameters across tasks, dynamically adjusting the computational effort to match the complexity of the input. We demonstrate the effectiveness of this method on language modeling and computer vision tasks. Notably, our model achieves 96.62\\% accuracy on ImageNet with just a three-layer network, surpassing much larger ResNet-50 and EfficientNet. When applied to a transformer architecture, the approach achieves 95.8\\%/88.7\\% F1 scores on the SQuAD v1.1/v2.0 datasets at negligible parameter cost. These results showcase the potential for dynamic and reflective computation, contributing to the creation of intelligent systems that efficiently manage resources based on input data complexity.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31891",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "mindoverbodyadaptivethinkingusingdynamiccomputation",
+      "score": 19.0,
+      "core_score": 10.0,
+      "matched": [
+        "internal representation",
+        "introspection",
+        "transformer"
+      ],
+      "core_matched": [
+        "internal representation"
+      ]
+    },
+    {
+      "title": "The Geometry of Categorical and Hierarchical Concepts in Large Language Models",
+      "abstract": "The linear representation hypothesis is the informal idea that semantic concepts are encoded as linear directions in the representation spaces of large language models (LLMs). Previous work has shown how to make this notion precise for representing binary concepts that have natural contrasts (e.g., {male, female}) as _directions_ in representation space. However, many natural concepts do not have natural contrasts (e.g., whether the output is about an animal). In this work, we show how to extend the formalization of the linear representation hypothesis to represent features (e.g., is_animal) as _vectors_. This allows us to immediately formalize the representation of categorical concepts as polytopes in the representation space. Further, we use the formalization to prove a relationship between the hierarchical structure of concepts and the geometry of their representations. We validate these theoretical results on the Gemma and LLaMA-3 large language models, estimating representations for 900+ hierarchically related concepts using data from WordNet.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2025/oral/31817",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2025",
+      "presentation": "oral",
+      "year": "2025",
+      "_is_conf": true,
+      "key": "thegeometryofcategoricalandhierarchicalconceptsinlargelanguagemodels",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "language models",
+        "large language models",
+        "linear representation"
+      ],
+      "core_matched": [
+        "linear representation"
+      ]
+    },
+    {
+      "title": "Learning Transformer Programs",
+      "abstract": "Recent research in mechanistic interpretability has attempted to reverse-engineer Transformer models by carefully inspecting network weights and activations. However, these approaches require considerable manual effort and still fall short of providing complete, faithful descriptions of the underlying algorithms. In this work, we introduce a procedure for training Transformers that are mechanistically interpretable by design. We build on RASP [Weiss et al., 2021], a programming language that can be compiled into Transformer weights. Instead of compiling human-written programs into Transformers, we design a modified Transformer that can be trained using gradient-based optimization and then automatically converted into a discrete, human-readable program. We refer to these models as Transformer Programs. To validate our approach, we learn Transformer Programs for a variety of problems, including an in-context learning task, a suite of algorithmic problems (e.g. sorting, recognizing Dyck languages), and NLP tasks including named entity recognition and text classification. The Transformer Programs can automatically find reasonable solutions, performing on par with standard Transformers of comparable size; and, more importantly, they are easy to interpret. To demonstrate these advantages, we convert Transformers into Python programs and use off-the-shelf code analysis tools to debug model errors and identify the “circuits” used to solve different sub-problems. We hope that Transformer Programs open a new path toward the goal of intrinsically interpretable machine learning.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://neurips.cc/virtual/2023/oral/73853",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "NEURIPS 2023",
+      "presentation": "oral",
+      "year": "2023",
+      "_is_conf": true,
+      "key": "learningtransformerprograms",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "activations",
+        "circuits",
+        "faithful",
+        "in-context learning",
+        "interpretability",
+        "interpretable",
+        "mechanistic",
+        "mechanistic interpretability",
+        "transformer",
+        "transformers"
+      ],
+      "core_matched": [
+        "mechanistic interpretability"
+      ]
+    },
+    {
+      "title": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "abstract": "Transformer models exhibit in-context learning: the ability to accurately predict the response to a novel query based on illustrative examples in the input sequence, which contrasts with traditional in-weights learning of query-output relationships. What aspects of the training data distribution and architecture favor in-context vs in-weights learning? Recent work has shown that specific distributional properties inherent in language, such as burstiness, large dictionaries and skewed rank-frequency distributions, control the trade-off or simultaneous appearance of these two forms of learning. We first show that these results are recapitulated in a minimal attention-only network trained on a simplified dataset. In-context learning (ICL) is driven by the abrupt emergence of an induction head, which subsequently competes with in-weights learning. By identifying progress measures that precede in-context learning and targeted experiments, we construct a two-parameter model of an induction head which emulates the full data distributional dependencies displayed by the attention-based network. A phenomenological model of induction head formation traces its abrupt emergence to the sequential learning of three nested logits enabled by an intrinsic curriculum. We propose that the sharp transitions in attention-based networks arise due to a specific chain of multi-layer operations necessary to achieve ICL, which is implemented by nested nonlinearities sequentially learned during training.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://iclr.cc/virtual/2024/oral/19749",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "ICLR 2024",
+      "presentation": "oral",
+      "year": "2024",
+      "_is_conf": true,
+      "key": "themechanisticbasisofdatadependenceandabruptlearninginanincontextclassificationtask",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "in-context learning",
+        "induction head",
+        "mechanistic",
+        "transformer"
+      ],
+      "core_matched": [
+        "induction head"
+      ]
+    },
+    {
+      "title": "Quilt-1M: One Million Image-Text Pairs for Histopathology",
+      "abstract": "Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of analogous data in the medical field, specifically in histopathology, has slowed comparable progress. To enable similar representation learning for histopathology, we turn to YouTube, an untapped resource of videos, offering $1,087$ hours of valuable educational histopathology videos from expert clinicians.From YouTube, we curate QUILT: a large-scale vision-language dataset consisting of $802, 144$ image and text pairs.QUILT was automatically curated using a mixture of models, including large language models, handcrafted algorithms, human knowledge databases, and automatic speech recognition.In comparison, the most comprehensive datasets curated for histopathology amass only around $200$K samples.We combine QUILT with datasets from other sources, including Twitter, research papers, and the internet in general, to create an even larger dataset: QUILT-1M, with $1$M paired image-text samples, marking it as the largest vision-language histopathology dataset to date. We demonstrate the value of QUILT-1M by fine-tuning a pre-trained CLIP model. Our model outperforms state-of-the-art models on both zero-shot and linear probing tasks for classifying new histopathology images across $13$ diverse patch-level datasets of $8$ different sub-pathologies and cross-modal retrieval tasks.",
+      "authors": [],
+      "arxiv_id": null,
+      "url": "https://neurips.cc/virtual/2023/oral/73744",
+      "hf_upvotes": 0,
+      "source": "conference",
+      "venue": "NEURIPS 2023",
+      "presentation": "oral",
+      "year": "2023",
+      "_is_conf": true,
+      "key": "quilt1monemillionimagetextpairsforhistopathology",
+      "score": 20.0,
+      "core_score": 10.0,
+      "matched": [
+        "cross-modal",
+        "fine-tuning",
+        "image-text",
+        "language models",
+        "large language models",
+        "linear probing",
+        "multi-modal",
+        "probing",
+        "vision language",
+        "vision-language"
+      ],
+      "core_matched": [
+        "linear probing"
+      ]
+    }
+  ],
+  "interest": [],
+  "conference_dive": [],
+  "also_ran": []
+}

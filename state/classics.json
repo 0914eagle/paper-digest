@@ -1457,7 +1457,9 @@
     "llamascopeextractingmillionsoffeaturesfromllama318bwithsparseautoencoders",
     "sparseautoencoderslearnmonosemanticfeaturesinvisionlanguagemodels",
     "steeringlanguagemodelrefusalwithsparseautoencoders",
-    "steeringlargelanguagemodelactivationsinsparsespaces"
+    "steeringlargelanguagemodelactivationsinsparsespaces",
+    "towardsvisionlanguagemechanisticinterpretabilityacausaltracingtoolforblip",
+    "transcodersfindinterpretablellmfeaturecircuits"
   ],
   "min_citations": 50,
   "cycle": 1
