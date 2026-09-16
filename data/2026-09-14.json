@@ -5,10 +5,10 @@
     "collected_raw": 717,
     "unique": 717,
     "already_seen": 30,
-    "hf_target_day": "2026-09-14",
+    "hf_target_day": "2026-09-13",
     "conference_pool": 682,
     "interest_pool": 0,
-    "total_to_summarize": 16
+    "total_to_summarize": 11
   },
   "classic": {
     "arxiv_id": "2310.10348",
@@ -30,137 +30,7 @@
     "citations": 214,
     "venue": "BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP"
   },
-  "hf_daily": [
-    {
-      "title": "Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models",
-      "abstract": "Robot foundation models achieve strong in-distribution performance but often degrade under visual distribution shifts. When learning to generate actions from pretrained visual representations, models may exploit task-irrelevant visual cues that correlate with demonstrated actions within the training distribution. Such vision-action shortcuts can undermine generalization when these correlations change under distribution shifts. Mitigating these shortcuts requires constraining how visual information is used for action generation while preserving task-relevant spatial information. We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a pose-supervised latent interface. Stage 1 trains the action expert to generate action chunks conditioned on language, robot state, and each demonstrated chunk's terminal SE(3) end-effector pose, learning goal-directed action generation independently of visual cues. Stage 2 introduces a latent interface that aggregates visual and semantic representations and serves as the pretrained action expert's only visual conditioning pathway. The interface is supervised to reconstruct the terminal pose previously used to condition Stage 1, encouraging it to retain the goal-relevant spatial information needed for action generation. Across four vision-language-action and world-action architectures (Pi0.5, MolmoAct2, FAST-WAM, and ImageWAM), LIT improves overall LIBERO-Plus success by 3.87-10.70 percentage points while preserving or improving average LIBERO success. Real-world evaluations show 13.30-16.70 percentage-point gains in success aggregated across three tasks under unseen camera configurations, lighting variations, and distractors.",
-      "authors": [
-        "Jianman Lin",
-        "Shailesh Shailesh",
-        "Zhongyi Luo",
-        "Jiafei Duan"
-      ],
-      "arxiv_id": "2609.12641",
-      "url": "https://arxiv.org/abs/2609.12641",
-      "hf_upvotes": 10,
-      "hf_date": "2026-09-14",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2609.12641",
-      "score": 2.5,
-      "core_score": 0.0,
-      "matched": [
-        "vision language",
-        "vision-language"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "PLC-DPO: Posterior Label Correction in Noisy and Ambiguous Preference Optimization",
-      "abstract": "Direct Preference Optimization (DPO) simplifies alignment through pairwise comparisons but assumes all observed preferences are reliable. Real data often violates this assumption, leading to reversed, weak, or ambiguous labels that cause harmful policy updates. To address this, we propose Posterior Label Correction DPO (PLC-DPO) to robustly optimize preferences by routing each pair's training signal as a clean, flip, or tie case. The key idea is to use the calibrated policy-reference margin as online evidence to take appropriate correction actions. This reframes noisy preference learning as actively correcting supervision direction and strength rather than merely filtering suspicious examples. Across 57 dataset-model-benchmark cells, PLC-DPO obtains the best mean win rate against DPO (60.5 vs. 55.5 for the next-best method). Injected-noise and tie stress tests, human disagreement analysis, and self-confirmation diagnostics further show that the routing remains stable and distinguishes flipped from weakly directional pairs.",
-      "authors": [
-        "Boryeong Cho",
-        "Sumyeong Ahn",
-        "Se-Young Yun"
-      ],
-      "arxiv_id": "2608.30597",
-      "url": "https://arxiv.org/abs/2608.30597",
-      "hf_upvotes": 6,
-      "hf_date": "2026-09-14",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2608.30597",
-      "score": 1.6,
-      "core_score": 0.0,
-      "matched": [
-        "alignment"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
-      "abstract": "Large language model (LLM) agents can benefit from reusable skills distilled from prior task experience, yet existing skill optimization methods often rely on costly execution-based evaluation and substantial task data. We introduce COBRA-Skills, an efficient framework that formulates skill optimization as budgeted sequential optimization over a dynamically evolving candidate space. COBRA-Skills couples contextual-bandit-guided prioritization with evidence-grounded skill evolution, selectively allocating evaluations to promising or informative candidates while continually refining the skill population from execution feedback. Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark. Further analyses show that COBRA-Skills remains robust to changes in the agent harness and performs effectively when the target model itself is used for skill generation and refinement.",
-      "authors": [
-        "Pingchen Lu",
-        "Xiangyi Wang",
-        "Xiang Li",
-        "Jie Mao",
-        "Zikun Qu",
-        "Junfeng Luo",
-        "Yao Shu",
-        "Bryan Kian Hsiang Low"
-      ],
-      "arxiv_id": "2609.11682",
-      "url": "https://arxiv.org/abs/2609.11682",
-      "hf_upvotes": 2,
-      "hf_date": "2026-09-14",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2609.11682",
-      "score": 1.8,
-      "core_score": 0.0,
-      "matched": [
-        "language model",
-        "large language model"
-      ],
-      "core_matched": []
-    },
-    {
-      "title": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image",
-      "abstract": "Part-aware 3D asset generation enables applications such as editing, articulation, simulation, and fabrication, yet existing methods can generate visually complete individual parts without ensuring that they form a valid physical assembly. Consequently, generated neighboring parts may interpenetrate, lack valid connections, or collapse under gravity. We propose a physics-guided framework for improving single-image part-aware 3D generation with physically compatible geometry and stable connections. Our method resolves inter-part penetration, recovers a contact graph between neighboring parts, and introduces parameterized connectors at their contact surfaces. Using feedback from physical simulation, we refine connector placement, orientation, and dimensions to improve assembly stability while preserving the generated geometry. We further introduce a physics-based evaluation protocol that complements conventional geometric metrics by directly testing assembly validity and stability under gravity. Experiments comparing against multiple part-aware 3D generators show substantial improvements in physical realizability and stability while maintaining geometric quality. We additionally validate the resulting parts through 3D printing and real-world assembly.",
-      "authors": [
-        "Yu-Rou Tuan",
-        "Hao-Tang Tsui",
-        "Nicolas Ugrinovic",
-        "Kris Kitani",
-        "Xiaoxuan Ma"
-      ],
-      "arxiv_id": "2609.13146",
-      "url": "https://arxiv.org/abs/2609.13146",
-      "hf_upvotes": 1,
-      "hf_date": "2026-09-14",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2609.13146",
-      "score": 0.1,
-      "core_score": 0.0,
-      "matched": [],
-      "core_matched": []
-    },
-    {
-      "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
-      "abstract": "Post-training attention sparsification reduces the quadratic cumulative attention cost of pretrained Transformers by selecting a small set of context units (tokens or blocks) for each query. Existing trainable methods usually use a lightweight selector to score context units, followed by hard Top-K selection that blocks gradients from the language modeling loss. Consequently, these methods commonly distill layer-wise dense attention distributions. Although this encourages the selector to rank context units by dense attention weights in the original model, the ranking is not directly aligned with their impact on predictions under a fixed attention budget (i.e., the number of attended context units per query), potentially wasting the limited budget on less useful units. To address this misalignment, we propose Simple Attention Sparsification (SAS), a gated sparse attention mechanism that optimizes context ranking end-to-end with the language modeling loss. The key idea is to inject the selector's continuous scores into attention logits during training, allowing the loss to update the selector through standard backpropagation. We identify several choices crucial for this simple design to work well in practice: placing the gate inside the attention softmax in log form, using normalized softmax gates to calibrate historical context against the always-retained current block, and preserving continuous selector scores so the model learns relative priorities rather than only hard selections. To support long-sequence training, we implement a memory-efficient Triton kernel that integrates SAS into FlashAttention-style computation. Across reasoning, long-context understanding, and agentic tasks, SAS consistently outperforms trainable sparse attention baselines across attention budgets, with especially large gains under tight budgets, demonstrating more effective context ranking for downstream tasks.",
-      "authors": [
-        "Zhiwei Li",
-        "Lei Zhu",
-        "Hao Gu",
-        "Xiang Hu",
-        "Yan Wang",
-        "Haitao Mi",
-        "Sirui Han",
-        "Leo Liang"
-      ],
-      "arxiv_id": "2609.13141",
-      "url": "https://arxiv.org/abs/2609.13141",
-      "hf_upvotes": 1,
-      "hf_date": "2026-09-14",
-      "source": "hf_daily",
-      "venue": null,
-      "year": null,
-      "key": "2609.13141",
-      "score": 1.6,
-      "core_score": 0.0,
-      "matched": [
-        "reasoning",
-        "transformers"
-      ],
-      "core_matched": []
-    }
-  ],
+  "hf_daily": [],
   "conference": [
     {
       "title": "Proving Test Set Contamination in Black-Box Language Models",

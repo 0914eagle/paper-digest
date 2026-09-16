@@ -1,5 +1,6 @@
 # 논문 다이제스트 인덱스
-- [2026-09-14](digest/2026-09-14.md) — 요약 16편 · 오늘의 한 편: ConceptAttention: Diffusion Transformers Learn Highly Interpretable Features
+- [2026-09-16](digest/2026-09-16.md) — 요약 53편 · 오늘의 한 편: What Does an LLM Learn from Reinforcement Learning? A Mechanistic Interpretability Perspective with Fixed-SAE Track
+- [2026-09-14](digest/2026-09-14.md) — 요약 11편 · 오늘의 한 편: ConceptAttention: Diffusion Transformers Learn Highly Interpretable Features
 - [2026-09-13](digest/2026-09-13.md) — 요약 11편 · 오늘의 한 편: The Geometry of Categorical and Hierarchical Concepts in Large Language Models
 - [2026-09-11](digest/2026-09-11.md) — 요약 27편 · 오늘의 한 편: Legible Failures: Detecting and Repairing In-Context Binding Errors
 - [2026-09-10](digest/2026-09-10.md) — 요약 53편 · 오늘의 한 편: LLM Layers Immediately Correct Each Other

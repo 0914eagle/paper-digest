@@ -645,12 +645,7 @@ def main():
         target_day = date.today().isoformat()
     hf_all = [p for p in unique.values()
               if p.get("hf_date") == target_day and p["key"] not in seen_before]
-    if not hf_all:   # 전날 것이 아직 없으면 있는 날짜 중 가장 최근으로
-        hf_days = sorted({p["hf_date"] for p in unique.values() if p.get("hf_date")}, reverse=True)
-        if hf_days:
-            target_day = hf_days[0]
-            hf_all = [p for p in unique.values()
-                      if p.get("hf_date") == target_day and p["key"] not in seen_before]
+    # 전날 것이 비어 있으면 그대로 0편. 다른 날짜로 대체하지 않는다.
     hf_all.sort(key=lambda x: (x.get("hf_upvotes") or 0), reverse=True)
     hf_keys = {p["key"] for p in hf_all}
 
@@ -729,9 +724,15 @@ def main():
     # 첫날 712편이 통째로 소진되고 다음날부터 이 갈래가 영구히 0편이 된다.
     # 오늘 실제로 내보낸 것만 소비 처리한다.
     surfaced = hf_keys | conf_keys | {p["key"] for p in dive_fresh}
+    interest_keys = {p["key"] for p in interest_picks}
     for key in keys_today:
         p = unique.get(key)
         if p is not None and p.get("_is_conf") and key not in surfaced:
+            continue
+        # target_day 이후 날짜의 HF 논문(보통 당일자)은 다음 날의 "전날 것"이다.
+        # 오늘 seen 에 넣으면 내일 그 날짜 갈래가 통째로 빈다.
+        if (p is not None and (p.get("hf_date") or "") > target_day
+                and key not in surfaced and key not in interest_keys):
             continue
         seen.setdefault(key, args.date)
     # seen 기록은 180일치만 유지
